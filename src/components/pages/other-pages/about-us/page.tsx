@@ -10,7 +10,7 @@ const AboutUsContent: FC<IAboutUsContentProps> = ({ side }) => {
     <section className="about-section three-image about_page animated-section section-b-space">
       <Animation />
       <div className="container">
-        <TitleThree classTitle="title-1" title="rica" subTitle={AboutUs} />
+        <TitleThree classTitle="title-1" subTitle={AboutUs} />
         <div className="row">
           <div className={`col-xl-7 ${side === "right" ? "order-xl-1" : ""}`}>
             <div className="image-section">
@@ -31,10 +31,8 @@ const AboutUsContent: FC<IAboutUsContentProps> = ({ side }) => {
                 <div className="title-3">
                   <span className="title-label">introduction</span>
                 </div>
-                <h5>
-                  <span>multipurpose theme</span>
-                </h5>
-                <h2>welcome to rica</h2>
+               
+                <h2>Welcome to ST Travels and Consulting</h2>
                 <p>Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the 1500s, Lorem Ipsum has been the.....</p>
                 <img src="/assets/images/mix/signature.png" className="img-fluid" alt="" />
                 <div className="buttons-about">

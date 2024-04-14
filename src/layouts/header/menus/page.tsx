@@ -3,6 +3,7 @@ import { Back } from "@/constant/constant";
 import {Fragment, useState} from 'react';
 import MeghaMenu from "./meghamenu";
 import DropdownMenu from "./dropdown";
+import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false)
@@ -32,11 +33,9 @@ const Sidebar: React.FC = () => {
           {MENUITEMS.map((item, i) => {
             return (
               <Fragment key={i}>
-                {item.megaMenu ? (
-                  <MeghaMenu item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
-                ) : (
-                  <DropdownMenu level={0} item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
-                )}
+                   <li className="mega-menu">
+                    <Link href={item.link}>{item.title}</Link>
+</li>
               </Fragment>
             );
           })}

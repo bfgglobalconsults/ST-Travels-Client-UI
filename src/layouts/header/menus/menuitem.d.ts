@@ -1,6 +1,7 @@
 interface IMenuItemProps {
   path?: string;
   title: string;
+  link: string;
   type: string;
   megaMenu?: boolean;
   children?: IMenuChildProps[];

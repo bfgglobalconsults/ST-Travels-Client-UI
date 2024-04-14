@@ -17,7 +17,12 @@ const BookingNow: FC = () => {
   }, []);
   
   return (
-    <CustomLayout title="light_header custom-user-header" loader="no" logo="dark">
+    <CustomLayout
+      title="bg-white"
+      loader="no"
+      logo="light"
+      userBgClass="user rounded5"
+    >
       <BreadcrumbTwo title="booking" />
       <BookingNowComponent />
     </CustomLayout>

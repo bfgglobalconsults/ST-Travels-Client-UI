@@ -17,10 +17,16 @@ const LeftSidebar: FC = () => {
   }, [dispatch]);
 
   return (
-    <CustomLayout title="light_header custom-user-header" loader="pre">
+    <CustomLayout title="bg-white" loader="flight" userBgClass="user rounded5">
       <BannerBreadcrumbs />
       <SearchSection />
-      <GridView side={"left"} value={data} type={"flight"} schedule={true} latestFilter />
+      <GridView
+        side={"left"}
+        value={data}
+        type={"flight"}
+        schedule={true}
+        latestFilter
+      />
     </CustomLayout>
   );
 };

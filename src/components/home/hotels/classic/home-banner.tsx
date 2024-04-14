@@ -20,8 +20,6 @@ const HomeBanner: React.FC = () => {
               <Img src={banner.img} className="img-fluid d-none bg-img" alt="" />
               <div className="home-content">
                 <div>
-                  <h1>{banner.title}</h1>
-                  <h5>{banner.subTitle}</h5>
                   <h2>{banner.description}</h2>
                   <Link href={`/${i18LangStatus}/hotel/booking/booking-page`} className="btn btn-solid">{banner.btn}</Link>
                 </div>

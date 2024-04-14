@@ -20,8 +20,6 @@ interface IGalleryProps {
 interface IBannerProps {
   id: number;
   img: string;
-  title: string;
-  subTitle: string;
   description: string;
   btn: string;
 }

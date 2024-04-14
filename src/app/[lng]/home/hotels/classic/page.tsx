@@ -17,7 +17,7 @@ import SearchHotel from "@/components/home/hotels/classic/SearchHotel";
 const Classic: React.FC = () => {
   return (
     <>
-      <CustomLayout title="overlay-black" userBgClass="user user-light">
+      <CustomLayout title="bg-white" userBgClass="user rounded5">
         <HomeBanner />
         <SearchHotel/>
         <AboutComponent />

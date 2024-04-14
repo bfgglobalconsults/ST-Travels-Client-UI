@@ -30,7 +30,7 @@ const AboutComponent: React.FC = () => {
                 <Link href="/pages/other-pages/user-dashboard">privacy</Link>
               </li>
               <li>
-                <Link href="https://support.pixelstrap.com/">support</Link>
+                <Link href="/">support</Link>
               </li>
             </ul>
           </div>

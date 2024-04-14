@@ -15,7 +15,7 @@ import CustomLayout from "@/layouts/layout";
 
 const Modern: FC = () => {
   return (
-    <CustomLayout title="overlay-black" userBgClass="user user-light bg_dark" footerPlace={true}>
+    <CustomLayout title="bg-white" userBgClass="user rounded5" footerPlace={true}>
       <HomeBanner />
       <BookingTable />
       <NewOffers />
@@ -25,7 +25,7 @@ const Modern: FC = () => {
       <Testimonial />
       <Gallery />
       <ServiceComponent />
-      <SpecialOffer />
+      {/* <SpecialOffer /> */}
       <SubscribeOne />
     </CustomLayout>
   );

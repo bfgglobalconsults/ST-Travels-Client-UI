@@ -6,7 +6,7 @@ import BodyContent from "@/components/pages/other-pages/user-dashboard/page";
 
 const UserDashboard: FC = () => {
   return (
-    <CustomLayout title="inner-page" userBgClass="user user-light" loader="no">
+    <CustomLayout title="bg-white" userBgClass="user rounded5" loader="no">
       <Breadcrumb title={"home"} subTitle={"dashboard"} bannerImg={"/assets/images/inner-bg.jpg"} />
       <BodyContent />
     </CustomLayout>
