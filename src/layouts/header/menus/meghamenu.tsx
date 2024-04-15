@@ -20,7 +20,7 @@ const MeghaMenu = ({ item, setIsOpen, isOpen }: IMeghaMenuProps) => {
           temp[0] = item.title !== temp[0] && item.title;
           setIsOpen(temp);
         }}
-        href={"#javascript"}
+        href={Array.isArray(item.link) ? item.link[0] : item.link || ""} // Ensure a default value if link is undefined
         className={`nav-link menu-title ${
           item.title === isOpen[0] ? "active" : ""
         }`}

@@ -3,8 +3,8 @@ import "@/public/assets/scss/globals.scss";
 import { languages } from "../i18n/settings";
 
 export const metadata = {
-  title: "Rica",
-  description: "themes.pixelstrap.com",
+  title: "ST Travels",
+  description: "ST Travels and Consulting",
 };
 
 export async function generateStaticParams() {

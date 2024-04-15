@@ -6,7 +6,7 @@ interface ILink {
 interface ISubMenu {
   title?: string;
   path?: string;
-  links?: ILink[];
+  links?: string;
   children?: ISubMenu[];
 }
 
@@ -14,6 +14,7 @@ interface IMeghaMenuProps {
   isOpen: any; setIsOpen: any
   item: {
     title?: string;
+    link?:  string;
     children?: ISubMenu[];
   };
 }

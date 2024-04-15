@@ -12,26 +12,24 @@ const Links: React.FC = () => {
           <div className="footer-links">
             <ul>
               <li>
-                <Link href="/home/hotels/classic">home</Link>
+                <Link href="/">home</Link>
               </li>
               <li>
-                <Link href="/home/cab/modern">our vehical</Link>
+                <Link href="/">our vehical</Link>
               </li>
               <li>
-                <Link href="/pages/element-pages/video">latest video</Link>
+                <Link href="/">latest video</Link>
               </li>
               <li>
-                <Link href="/pages/element-pages/service">services</Link>
+                <Link href="/">services</Link>
               </li>
               <li>
-                <Link href="/tour/booking/booking-page">booking deal</Link>
+                <Link href="/">booking deal</Link>
               </li>
               <li>
-                <Link href="/pages/other-pages/contact-us-1">emergency call</Link>
+                <Link href="/">emergency call</Link>
               </li>
-              <li>
-                <Link href="/pages/element-pages/app">mobile app</Link>
-              </li>
+         
             </ul>
           </div>
         </div>

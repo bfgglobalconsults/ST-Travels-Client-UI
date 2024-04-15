@@ -12,7 +12,7 @@ const AboutComponent: React.FC = () => {
           <div className="footer-links">
             <ul>
               <li>
-                <Link href="/pages/other-pages/about-us-1">about us</Link>
+                <Link href="/pages/other-pages/about-us-2">about us</Link>
               </li>
               <li>
                 <Link href="/pages/other-pages/faq">FAQ</Link>
@@ -30,7 +30,7 @@ const AboutComponent: React.FC = () => {
                 <Link href="/pages/other-pages/user-dashboard">privacy</Link>
               </li>
               <li>
-                <Link href="https://support.pixelstrap.com/">support</Link>
+                <Link href="/">support</Link>
               </li>
             </ul>
           </div>

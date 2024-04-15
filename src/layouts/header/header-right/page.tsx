@@ -15,18 +15,18 @@ const HeaderRight: React.FC<IHeaderRightProps> = ({ userBgClass }) => {
           {value.title === "currency" && <Currency value={value} />}
           {value.title === "language" && <Language value={value} />}
           {value.title === "user" && (
-            <li className={`${userBgClass && userBgClass}`} >
-              <Link href="/pages/other-pages/login">
+            <li className={`${userBgClass && userBgClass}`}>
+              <Link href="/pages/other-pages/user-dashboard">
                 <i className="fas fa-user"></i>
               </Link>
             </li>
           )}
           {value.title === "setting" && (
             <li className="setting">
-              <a href="#js"  onClick={()=>setSettingIcon(!settingIcon)}>
+              <a href="#js" onClick={() => setSettingIcon(!settingIcon)}>
                 <i className="fas fa-cog" />
               </a>
-              <ul className={`setting-open ${settingIcon ?"show ":""} `}>
+              <ul className={`setting-open ${settingIcon ? "show " : ""} `}>
                 <Currency value={currencyDropDownData} />
                 <Language value={languageDropDownData} />
               </ul>

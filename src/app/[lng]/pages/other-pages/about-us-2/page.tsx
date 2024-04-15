@@ -10,7 +10,7 @@ import Reviews from "@/components/home/hotels/classic/reviews";
 
 const AboutUs2: FC = () => {
   return (
-    <CustomLayout title="inner-page overlay-black" userBgClass="user user-light">
+    <CustomLayout title="bg-white" userBgClass="user rounded5">
       <Breadcrumb title={"home"} subTitle={"about us"} videoPath={"/assets/video/sea.mp4"} />
       <AboutUsContent side={"right"} />
       <ServiceContent />

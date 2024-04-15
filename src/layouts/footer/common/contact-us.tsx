@@ -11,7 +11,7 @@ const ContactUsComponent: React.FC = () => {
         <div className="contact-detail">
           <div className="footer-logo">
             <a href="/">
-              <Image src="/assets/images/icon/footer-logo.png" alt="" className="img-fluid" width={139} height={53} />
+              <Image src="/assets/images/icon/ST-TRAVELS-WHITE.png" alt="" className="img-fluid" width={139} height={53} />
             </a>
           </div>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>

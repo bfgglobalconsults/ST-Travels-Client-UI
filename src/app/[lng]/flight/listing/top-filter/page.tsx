@@ -28,10 +28,25 @@ const TopSidebar: FC = () => {
   }, [dispatch]);
 
   return (
-    <CustomLayout title="light_header custom-user-header" loader="flight" logo="dark">
-      <BreadcrumbOne title={"about"} subTitle={"elements"} mainTitle="Flight top Filter" bannerImg={"/assets/images/flights/flight-breadcrumb2.jpg"} />
+    <CustomLayout
+      title="bg-white"
+      loader="flight"
+      logo="light"
+      userBgClass="user rounded5"
+    >
+      <BreadcrumbOne
+        title={"about"}
+        subTitle={"elements"}
+        mainTitle="Flight top Filter"
+        bannerImg={"/assets/images/flights/flight-breadcrumb2.jpg"}
+      />
       <SearchSection />
-      <GridView value={data} topFilter={true} type={"flight"} schedule={false} />
+      <GridView
+        value={data}
+        topFilter={true}
+        type={"flight"}
+        schedule={false}
+      />
     </CustomLayout>
   );
 };

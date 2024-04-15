@@ -6,7 +6,7 @@ import LoginPage from "@/components/pages/other-pages/login/page";
 
 const Login: FC = () => {
   return (
-    <CustomLayout title="inner-page" userBgClass="user user-light">
+    <CustomLayout title="bg-white" userBgClass="user rounded5">
       <Breadcrumb title={"home"} subTitle={"login"} bannerImg={"/assets/images/inner-bg.jpg"} />
       <LoginPage title="login" />
     </CustomLayout>

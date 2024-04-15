@@ -292,7 +292,7 @@ section,
     z-index: 1;
     width: 0.75rem;
     height: 0.75rem;
-    background: rgba(var(--theme-color1),1);
+    background: rgba(var(--theme-color3),1);
     border-radius: 50%;
   }
   &:after {
@@ -327,7 +327,7 @@ section,
     z-index: 1;
     width: 0.75rem;
     height: 0.375rem;
-    border: 2px solid rgba(var(--theme-color1),1);
+    border: 2px solid rgba(var(--theme-color3),1);
     border-top-style: none;
     border-right-style: none;
   }
@@ -444,7 +444,7 @@ section,
   }
   &.white-btn {
     background-color: white !important;
-    color: rgba(var(--theme-color1),1) !important;
+    color: rgba(var(--theme-color3),1) !important;
     box-shadow: none !important;
   }
   &.black-btn {
@@ -459,24 +459,24 @@ section,
     }
   }
   &.btn-solid {
-    background-color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3),1);
     color: $white-1;
     padding: 9px 20px;
-    box-shadow: 1px 11px 20px 0px rgba(var(--theme-color1), 0.12);
+    box-shadow: 1px 11px 20px 0px rgba(var(--theme-color3), 0.12);
     &:hover {
       transition: 0.3s ease-in-out;
       background-color: $white-1;
-      color: rgba(var(--theme-color1),1);
-      border: 1px solid rgba(var(--theme-color1),1);
-      box-shadow: 1px 11px 20px 0px rgba(var(--theme-color1), 0.22);
+      color: rgba(var(--theme-color3),1);
+      border: 1px solid rgba(var(--theme-color3),1);
+      box-shadow: 1px 11px 20px 0px rgba(var(--theme-color3), 0.22);
     }
     &.btn-outline {
       background-color: transparent;
-      border: 1px solid rgba(var(--theme-color1),1);
-      color: rgba(var(--theme-color1),1);
+      border: 1px solid rgba(var(--theme-color3),1);
+      color: rgba(var(--theme-color3),1);
       &:hover {
         color: $white-1;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
       }
     }
     &.color2 {
@@ -493,10 +493,10 @@ section,
   }
   &.btn-curve {
     border-radius: 5px;
-    background-color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3),1);
     color: $white-1;
     padding: 9px 20px;
-    box-shadow: 1px 11px 20px 0px rgba(var(--theme-color1), 0.12);
+    box-shadow: 1px 11px 20px 0px rgba(var(--theme-color3), 0.12);
     &.btn-lower {
       text-transform: capitalize;
     }
@@ -535,8 +535,8 @@ section,
 
 .btn-outline {
   background-color: $white-1;
-  border: 1px solid rgba(var(--theme-color1),1);
-  color: rgba(var(--theme-color1),1);
+  border: 1px solid rgba(var(--theme-color3),1);
+  color: rgba(var(--theme-color3),1);
 }
 
 .btn-close {
@@ -554,7 +554,7 @@ section,
   .title-label {
     font-size: 14px;
     color: $white-1;
-    background-color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3),1);
     text-transform: uppercase;
     padding: 4px 18px;
     line-height: 1.7;
@@ -563,7 +563,7 @@ section,
     font-weight: 600;
     &.white-label {
       background-color: $white-1;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
     }
   }
   h2 {
@@ -632,7 +632,7 @@ section,
   &.color-1 {
     h2 {
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
   }
@@ -643,7 +643,7 @@ section,
   .title-label {
     font-size: 14px;
     color: $white-1;
-    background-color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3),1);
     text-transform: capitalize;
     padding: 4px 18px 6px;
     line-height: 1;
@@ -660,7 +660,7 @@ section,
       font-family: $font_3, $font_4;
       font-size: calc(35px + (85 - 35) * ((100vw - 320px) / (1920 - 320)));
       position: absolute;
-      color: rgba(var(--theme-color1), 0.1);
+      color: rgba(var(--theme-color3), 0.1);
       left: 50%;
       transform: translate(-50%, -50%);
       top: 50%;
@@ -694,7 +694,7 @@ section,
   &.white-title {
     .title-label {
       background-color: $white-1;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
     }
     h2 {
       color: $white-1;
@@ -945,9 +945,9 @@ header {
         font-size: 14px;
         text-transform: capitalize;
         font-weight: 700;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         margin-bottom: 0;
-        border: 1px dashed rgba(var(--theme-color1), 0.4);
+        border: 1px dashed rgba(var(--theme-color3), 0.4);
         border-radius: 4px;
         padding: 5px 10px;
       }
@@ -982,7 +982,7 @@ header {
         padding: 6px 12px;
         border: 1px solid $custom-1;
         i {
-          color: rgba(var(--theme-color2),1);
+          color: rgba(var(--theme-color3),1);
           font-size: 12px;
         }
         &.user-light {
@@ -992,7 +992,7 @@ header {
           }
         }
         &.bg_dark {
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
         }
       }
       .setting {
@@ -1218,9 +1218,9 @@ header {
     &.nav-pills .nav-link.active,
     &.nav-pills .show > .nav-link {
       background-color: transparent;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       svg {
-        fill: rgba(var(--theme-color1),1);
+        fill: rgba(var(--theme-color3),1);
       }
       &:after {
         opacity: 1;
@@ -1252,28 +1252,28 @@ header {
   .rmdp-wrapper{
     .rmdp-arrow-container{
       &:hover{
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         .rmdp-arrow{
           border-color: $white-6;
         }
       }
       .rmdp-arrow{
-        border-color: rgba(var(--theme-color1),1);
+        border-color: rgba(var(--theme-color3),1);
       }
     }
     .rmdp-week-day{
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
     }
     .rmdp-day{
       &.rmdp-selected{
         span:not(.highlight){
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
         }
       }
     }
     .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden){
       span:hover{
-        background-color: rgba(var(--theme-color1), 0.5);
+        background-color: rgba(var(--theme-color3), 0.5);
       }
     }
   } 
@@ -1440,7 +1440,7 @@ header {
               color: $grey-darker;
               transition: all 0.5s ease;
               &:hover {
-                color: rgba(var(--theme-color1),1);
+                color: rgba(var(--theme-color3),1);
                 transition: all 0.5s ease;
               }
             }
@@ -1573,7 +1573,7 @@ header {
           width: 70px;
           height: 70px;
           border-radius: 100%;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           z-index: -1;
           left: 0;
           box-shadow: 1px 11px 20px 0px rgba(239, 63, 62, 0.12);
@@ -1689,7 +1689,7 @@ header {
       }
       [type="radio"]:checked + label:before {
         background-color: $white-1;
-        border: 4px solid rgba(var(--theme-color1),1);
+        border: 4px solid rgba(var(--theme-color3),1);
         transition: all 0.5s ease;
       }
     }
@@ -1712,7 +1712,7 @@ header {
           text-align: center;
           cursor: pointer;
           &.active {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
             transition: all 0.5s ease;
           }
         }
@@ -1882,7 +1882,7 @@ header {
       width: 3px;
     }
     &::-webkit-scrollbar-thumb {
-      background: rgba(var(--theme-color1),1);
+      background: rgba(var(--theme-color3),1);
     }
   }
   &.show {
@@ -2493,7 +2493,7 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         height: 100%;
         position: relative;
         z-index: 1;
@@ -2507,7 +2507,7 @@ section {
           left: -37px;
           width: 70px;
           height: 100%;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           border-radius: 100%;
           z-index: -1;
         }
@@ -2517,7 +2517,7 @@ section {
           left: -45px;
           width: 70px;
           height: 100%;
-          background-color: rgba(var(--theme-color1), 0.3);
+          background-color: rgba(var(--theme-color3), 0.3);
           border-radius: 100%;
           z-index: -1;
         }
@@ -2611,7 +2611,7 @@ section {
   }
   [type="radio"]:checked + label:before {
     background-color: $white-1;
-    border: 4px solid rgba(var(--theme-color1),1);
+    border: 4px solid rgba(var(--theme-color3),1);
     transition: all 0.5s ease;
   }
   &.dark-circle {
@@ -2624,7 +2624,7 @@ section {
       border: 4px solid #b5b5b5;
     }
     [type="radio"]:checked + label:before {
-      border: 4px solid rgba(var(--theme-color1),1);
+      border: 4px solid rgba(var(--theme-color3),1);
     }
   }
 }
@@ -2765,7 +2765,7 @@ section {
     .nav-link.active,
     .show > .nav-link {
       color: $white-1;
-      background-color: rgba(var(--theme-color1),1);
+      background-color: rgba(var(--theme-color3),1);
     }
     .nav-link {
       color: $white-1;
@@ -2827,7 +2827,7 @@ section {
     }
     &:hover {
       &:before {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         transition: all 0.5s ease;
       }
     }
@@ -2935,7 +2935,7 @@ section {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(var(--theme-color1), 0.4);
+      background: rgba(var(--theme-color3), 0.4);
       transform: scale(1);
       transition: all 0.5s ease;
       i {
@@ -2990,14 +2990,14 @@ section {
       }
       .blog-date {
         padding: 10px 12px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
         top: 35px;
         left: 35px;
-        box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color1), 0.4);
+        box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color3), 0.4);
         text-align: center;
         h5 {
           color: $white-1;
@@ -3020,7 +3020,7 @@ section {
       padding: 70px 55px;
       h5 {
         font-size: 14px;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         text-transform: capitalize;
         font-weight: 600;
         margin-bottom: 20px;
@@ -3093,7 +3093,7 @@ section {
           color: rgba(var(--theme-color2),1);
           margin-right: 3px;
           &.color-1 {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
         }
       }
@@ -3123,7 +3123,7 @@ section {
       }
       .blog-details {
         h5 {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           transition: all 0.5s ease;
         }
       }
@@ -3192,7 +3192,7 @@ section {
       .blog-details {
         h6 {
           i {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
         }
       }
@@ -3233,7 +3233,7 @@ section {
       span {
         font-size: 14px;
         color: $white-1;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         text-transform: uppercase;
         padding: 5px 18px;
         line-height: 1;
@@ -3246,7 +3246,7 @@ section {
           position: absolute;
           right: -65px;
           top: 0;
-          background: linear-gradient(to right, rgba(var(--theme-color1), 0.25) 0%, rgba(var(--theme-color1), 0.05) 100%);
+          background: linear-gradient(to right, rgba(var(--theme-color3), 0.25) 0%, rgba(var(--theme-color3), 0.05) 100%);
           width: 70px;
           height: 26px;
         }
@@ -3254,7 +3254,7 @@ section {
       &.label-white {
         span {
           background-color: $white-1;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           &:after {
             background: linear-gradient(to right, rgba(white, 0.25) 0%, rgba(white, 0.05) 100%);
             width: 40px;
@@ -3338,7 +3338,7 @@ section {
       margin-bottom: 30px;
       margin-top: -4px;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h2 {
@@ -3431,14 +3431,14 @@ section {
       align-items: center;
       justify-content: center;
       margin: 0 auto;
-      background-color: rgba(var(--theme-color1), 0.05);
+      background-color: rgba(var(--theme-color3), 0.05);
       border-radius: 100%;
       margin-bottom: 40px;
       transition: all 0.5s ease;
       svg {
         width: 45px;
         height: 45px;
-        fill: rgba(var(--theme-color1),1);
+        fill: rgba(var(--theme-color3),1);
       }
     }
     h3 {
@@ -3460,7 +3460,7 @@ section {
       justify-content: center;
       h6 {
         margin-bottom: 0;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         margin-left: 12px;
         text-transform: capitalize;
         font-weight: 800;
@@ -3507,8 +3507,8 @@ section {
         height: 80px;
         padding: 18px 20px;
         border-radius: 20px;
-        background-color: rgba(var(--theme-color1),1);
-        box-shadow: 7.5px 12.99px 40px 0px rgba(var(--theme-color1), 0.25);
+        background-color: rgba(var(--theme-color3),1);
+        box-shadow: 7.5px 12.99px 40px 0px rgba(var(--theme-color3), 0.25);
         margin-bottom: 30px;
       }
     }
@@ -3618,7 +3618,7 @@ section {
       }
       .service-btn {
         .btn {
-          box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color1), 0.5);
+          box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color3), 0.5);
           transition: all 0.5s ease;
         }
       }
@@ -3654,7 +3654,7 @@ section {
     }
     .content-sec {
       h5 {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         text-transform: capitalize;
         font-weight: 700;
         margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
@@ -3690,7 +3690,7 @@ section {
         box-shadow: 10px 17.321px 40px 0px rgba(0, 0, 0, 0.1);
       }
       .design {
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         padding: 20px;
         border-radius: 100%;
         position: absolute;
@@ -3741,13 +3741,13 @@ section {
       transform: rotate(-12deg);
       i {
         font-size: 102px;
-        color: rgba(var(--theme-color1), 0.05);
+        color: rgba(var(--theme-color3), 0.05);
       }
     }
   }
   .slick-prev,
   .slick-next {
-    background-color: rgba(var(--theme-color1), 0.12);
+    background-color: rgba(var(--theme-color3), 0.12);
     border-radius: 100%;
     display: flex;
     z-index: 1;
@@ -3755,7 +3755,7 @@ section {
     &:before {
       font-family: unset;
       font-size: 26px;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       position: absolute;
       top: -4px;
     }
@@ -3836,7 +3836,7 @@ section {
         z-index: -1;
         i {
           font-size: 72px;
-          color: rgba(var(--theme-color1), 0.05);
+          color: rgba(var(--theme-color3), 0.05);
         }
       }
     }
@@ -3940,7 +3940,7 @@ section {
     }
     .btn-subscribe {
       background-color: $white-1;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       text-transform: capitalize;
       border-radius: 0 50px 50px 0;
       padding: 8px 20px;
@@ -3970,7 +3970,7 @@ section {
       position: absolute;
       width: 3px;
       height: 30px;
-      background-color: rgba(var(--theme-color1),1);
+      background-color: rgba(var(--theme-color3),1);
       right: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -3986,7 +3986,7 @@ section {
       position: absolute;
       font-size: 14px;
       color: $white-1;
-      background-color: rgba(var(--theme-color1),1);
+      background-color: rgba(var(--theme-color3),1);
       left: -40%;
       border-radius: 50px;
       padding: 5px 14px 3px;
@@ -4053,10 +4053,10 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         padding: 5px;
         left: -15px;
-        box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color1), 0.4);
+        box-shadow: 2.5px 4.33px 25px 0px rgba(var(--theme-color3), 0.4);
         h3 {
           font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
           color: $white-1;
@@ -4080,7 +4080,7 @@ section {
       margin-bottom: 15px;
       margin-top: -2px;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h3 {
@@ -4092,7 +4092,7 @@ section {
     }
     h2 {
       font-size: calc(18px + (45 - 18) * ((100vw - 320px) / (1920 - 320)));
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       font-weight: 800;
       margin-bottom: 35px;
     }
@@ -4315,7 +4315,7 @@ section {
       font-style: italic;
       margin-bottom: 25px;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h2 {
@@ -4401,7 +4401,7 @@ section {
           color: rgba(black, 0.6);
           margin-bottom: 15px;
           span {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
             font-weight: 900;
             font-size: calc(16px + (27 - 16) * ((100vw - 320px) / (1920 - 320)));
           }
@@ -4480,7 +4480,7 @@ section {
     z-index: 1;
     transition: all 0.5s ease;
     &:before {
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       background-color: $white-1;
       opacity: 1;
       padding: 10px;
@@ -4525,7 +4525,7 @@ section {
             font-weight: 800;
             margin-bottom: 10px;
             span {
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
             }
           }
         }
@@ -4678,7 +4678,7 @@ section {
 .tour-trending-form{
   .custom-tour-input{
     .form-control{
-      background-color: rgba(var(--theme-color1), 0.1) !important;
+      background-color: rgba(var(--theme-color3), 0.1) !important;
       border-radius: 35px !important;
       .datepicker-main{
         background-color: transparent !important;
@@ -4778,7 +4778,7 @@ section {
       margin-top: -3px;
       font-style: italic;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h2 {
@@ -4833,7 +4833,7 @@ section {
         &.red-info {
           margin-left: 10px;
           h6 {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
         }
       }
@@ -5113,7 +5113,7 @@ section {
           font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
           margin-bottom: 0;
           background-color: $white-1;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 800;
           display: flex;
           align-items: center;
@@ -5126,7 +5126,7 @@ section {
         }
         i {
           padding: 12px 14px;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           color: $white-1;
           box-shadow: 2.5px 4.33px 25px 0px rgba(darken(#ef3f3e, 30%), 0.4);
         }
@@ -5219,7 +5219,7 @@ section {
         display: flex;
         .package-cls {
           padding-left: 20px;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 800;
         }
       }
@@ -5321,7 +5321,7 @@ section {
             }
             .package-cls {
               padding-left: 20px;
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
               font-weight: 800;
               font-size: 12px;
             }
@@ -5344,7 +5344,7 @@ section {
           span {
             font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
             font-weight: 600;
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
             text-transform: capitalize;
           }
           .include-sec {
@@ -5392,7 +5392,7 @@ section {
               display: block;
               margin-top: 15px;
               h6 {
-                color: rgba(var(--theme-color1),1);
+                color: rgba(var(--theme-color3),1);
                 font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
                 font-weight: 800;
                 margin-bottom: 0;
@@ -5497,13 +5497,13 @@ section {
               width: 50%;
               margin-top: 10px;
               background-color: transparent;
-              color: rgba(var(--theme-color1),1);
-              border: 1px solid rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
+              border: 1px solid rgba(var(--theme-color3),1);
               box-shadow: none;
               transition: all 0.5s ease;
               &:hover {
                 color: $white-1;
-                background-color: rgba(var(--theme-color1),1);
+                background-color: rgba(var(--theme-color3),1);
                 transition: all 0.5s ease;
               }
             }
@@ -5553,13 +5553,13 @@ section {
               width: 50%;
               margin-top: 10px;
               background-color: transparent;
-              color: rgba(var(--theme-color1),1);
-              border: 1px solid rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
+              border: 1px solid rgba(var(--theme-color3),1);
               box-shadow: none;
               transition: all 0.5s ease;
               &:hover {
                 color: $white-1;
-                background-color: rgba(var(--theme-color1),1);
+                background-color: rgba(var(--theme-color3),1);
                 transition: all 0.5s ease;
               }
             }
@@ -5606,7 +5606,7 @@ section {
       }
       .label-offer {
         position: absolute;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         color: $white-1;
         font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
         text-transform: capitalize;
@@ -5664,7 +5664,7 @@ section {
         align-items: center;
         justify-content: center;
         padding: 5px 13px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         border-radius: 15px;
         text-transform: uppercase;
         font-size: 12px;
@@ -5672,7 +5672,7 @@ section {
       }
       h5 {
         font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         padding: 3px 10px;
         background-color: $white-1;
         border-radius: 20px;
@@ -5827,7 +5827,7 @@ section {
           color: $white-1;
           display: inline-block;
           padding: 5px 13px;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           border-radius: 15px;
           text-transform: uppercase;
           font-size: 12px;
@@ -5948,7 +5948,7 @@ section {
         text-transform: uppercase;
         margin-bottom: 0;
         span {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           float: right;
         }
       }
@@ -6052,7 +6052,7 @@ section {
         }
         h6 {
           font-size: 14px;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           text-transform: uppercase;
           font-weight: 700;
           margin-bottom: 0;
@@ -6113,7 +6113,7 @@ section {
         align-items: center;
         h3 {
           font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 800;
           margin-bottom: 0;
           del {
@@ -6223,11 +6223,11 @@ section {
       font-weight: 800;
       margin-bottom: 16px;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h4 {
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       font-weight: 800;
       text-transform: capitalize;
       margin-bottom: 5px;
@@ -6308,7 +6308,7 @@ section {
         position: absolute;
         top: 25px;
         left: 25px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         border-radius: 30px;
         padding: 5px 12px;
         h6 {
@@ -6352,7 +6352,7 @@ section {
         align-items: center;
         h6 {
           margin-bottom: 0;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-size: 12px;
           text-transform: capitalize;
           font-weight: 800;
@@ -6540,7 +6540,7 @@ section {
         }
       }
       h6 {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         margin-bottom: 0;
         line-height: 1;
         text-transform: capitalize;
@@ -6626,7 +6626,7 @@ section {
           box-shadow: 1px 10px 14px 1px rgba(0, 0, 0, 0.16);
         }
         .up-btn {
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
           position: absolute;
           width: 56px;
@@ -6774,7 +6774,7 @@ section {
       margin-bottom: 30px;
       margin-top: -4px;
       span {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
     h2 {
@@ -6820,7 +6820,7 @@ section {
         &.red-info {
           margin-left: 10px;
           h6 {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
         }
       }
@@ -6832,7 +6832,7 @@ section {
     left: -64%;
     .offer {
       padding: 3px 5px;
-      background-color: rgba(var(--theme-color1),1);
+      background-color: rgba(var(--theme-color3),1);
       color: $white-1;
       font-size: 10px;
       text-transform: uppercase;
@@ -6996,7 +6996,7 @@ section {
         li {
           padding: 0;
           background: none;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-size: 14px;
           font-weight: 700;
           position: relative;
@@ -7012,7 +7012,7 @@ section {
             position: absolute;
             height: 20px;
             width: 2px;
-            background-color: rgba(var(--theme-color1), 0.3);
+            background-color: rgba(var(--theme-color3), 0.3);
             top: 50%;
             transform: translateY(-50%);
             left: 45px;
@@ -7086,7 +7086,7 @@ section {
         font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
         text-transform: capitalize;
         color: $white-1;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         padding: 5px 15px;
         border-radius: 25px;
         margin-bottom: 0;
@@ -7142,7 +7142,7 @@ section {
     padding-left: calc(10px + (50 - 10) * ((100vw - 320px) / (1920 - 320)));
     padding-right: calc(10px + (50 - 10) * ((100vw - 320px) / (1920 - 320)));
     h4 {
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -7240,7 +7240,7 @@ section {
           h2 {
             font-size: calc(17px + (27 - 17) * ((100vw - 320px) / (1920 - 320)));
             white-space: nowrap;
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
             margin-bottom: 0;
             span {
               font-size: 16px;
@@ -7293,7 +7293,7 @@ section {
           position: absolute;
           width: 90px;
           height: 3px;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           content: "";
           left: 50%;
           bottom: 0;
@@ -7375,14 +7375,14 @@ section {
       left: unset;
       &:before {
         opacity: 1;
-        color: rgba(var(--theme-color1), 0.3);
+        color: rgba(var(--theme-color3), 0.3);
         content: "\f053";
         font-family: "Font Awesome 5 free";
         font-weight: 900;
       }
       &:hover {
         &:before {
-          color: rgba(var(--theme-color1), 0.7);
+          color: rgba(var(--theme-color3), 0.7);
         }
       }
     }
@@ -7392,14 +7392,14 @@ section {
       left: unset;
       &:before {
         opacity: 1;
-        color: rgba(var(--theme-color1), 0.3);
+        color: rgba(var(--theme-color3), 0.3);
         content: "\f054";
         font-family: "Font Awesome 5 free";
         font-weight: 900;
       }
       &:hover {
         &:before {
-          color: rgba(var(--theme-color1), 0.7);
+          color: rgba(var(--theme-color3), 0.7);
         }
       }
     }
@@ -7440,7 +7440,7 @@ section {
         top: 20px;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         padding: 1px 12px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         border-radius: 25px;
         color: $white-1;
         margin-bottom: 0;
@@ -7549,7 +7549,7 @@ section {
           margin: 0 auto;
           font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
           text-transform: uppercase;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 800;
         }
         h5 {
@@ -7653,15 +7653,15 @@ section {
         }
         h5 {
           font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 800;
           text-transform: capitalize;
           margin-bottom: 10px;
         }
         i {
-          background-color: rgba(var(--theme-color1), 0.05);
+          background-color: rgba(var(--theme-color3), 0.05);
           padding: 8px;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           display: inline-block;
           border-radius: 100%;
           transform: rotate(-40deg);
@@ -7674,7 +7674,7 @@ section {
           margin-bottom: 0;
         }
         &:hover {
-          background-color: rgba(var(--theme-color1), 0.03);
+          background-color: rgba(var(--theme-color3), 0.03);
           transition: all 0.5s ease;
         }
       }
@@ -8044,7 +8044,7 @@ section {
         form {
           .form-group {
             input {
-              background-color: rgba(var(--theme-color1), 0.1);
+              background-color: rgba(var(--theme-color3), 0.1);
               border-radius: 25px;
             }
           }
@@ -8166,13 +8166,13 @@ section {
                   margin-right: 10px;
                 }
                 span {
-                  color: rgba(var(--theme-color1),1);
+                  color: rgba(var(--theme-color3),1);
                   font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
                   font-weight: 800;
                 }
                 .package-cls {
                   padding-left: 20px;
-                  color: rgba(var(--theme-color1),1);
+                  color: rgba(var(--theme-color3),1);
                   font-weight: 800;
                   font-size: 12px;
                 }
@@ -8464,12 +8464,12 @@ section {
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(var(--theme-color1), 0.5);
+    background: rgba(var(--theme-color3), 0.5);
     border-radius: 3px;
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(var(--theme-color1), 0.8);
+    background: rgba(var(--theme-color3), 0.8);
   }
   iframe,
   .map-cls {
@@ -8519,7 +8519,7 @@ section {
     }
     [type="radio"]:checked + label:before {
       background-color: #ececec;
-      border-color: rgba(var(--theme-color1),1);
+      border-color: rgba(var(--theme-color3),1);
     }
   }
   .cab-search-section {
@@ -8685,7 +8685,7 @@ section {
         margin-bottom: 0;
         text-transform: capitalize;
         font-weight: 600;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
   }
@@ -8704,14 +8704,14 @@ section {
     left: unset;
     &:before {
       opacity: 1;
-      color: rgba(var(--theme-color1), 0.3);
+      color: rgba(var(--theme-color3), 0.3);
       content: "\f053";
       font-family: "Font Awesome 5 free";
       font-weight: 900;
     }
     &:hover {
       &:before {
-        color: rgba(var(--theme-color1), 0.7);
+        color: rgba(var(--theme-color3), 0.7);
       }
     }
   }
@@ -8721,14 +8721,14 @@ section {
     left: unset;
     &:before {
       opacity: 1;
-      color: rgba(var(--theme-color1), 0.3);
+      color: rgba(var(--theme-color3), 0.3);
       content: "\f054";
       font-family: "Font Awesome 5 free";
       font-weight: 900;
     }
     &:hover {
       &:before {
-        color: rgba(var(--theme-color1), 0.7);
+        color: rgba(var(--theme-color3), 0.7);
       }
     }
   }
@@ -8806,7 +8806,7 @@ section {
             }
             .package-cls {
               padding-left: 20px;
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
               font-weight: 800;
               font-size: 12px;
             }
@@ -8963,13 +8963,13 @@ section {
               width: 50%;
               margin-top: 10px;
               background-color: transparent;
-              color: rgba(var(--theme-color1),1);
-              border: 1px solid rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
+              border: 1px solid rgba(var(--theme-color3),1);
               box-shadow: none;
               transition: all 0.5s ease;
               &:hover {
                 color: $white-1;
-                background-color: rgba(var(--theme-color1),1);
+                background-color: rgba(var(--theme-color3),1);
                 transition: all 0.5s ease;
               }
             }
@@ -8993,14 +8993,14 @@ section {
     left: unset;
     &:before {
       opacity: 1;
-      color: rgba(var(--theme-color1), 0.3);
+      color: rgba(var(--theme-color3), 0.3);
       content: "\f053";
       font-family: "Font Awesome 5 free";
       font-weight: 900;
     }
     &:hover {
       &:before {
-        color: rgba(var(--theme-color1), 0.7);
+        color: rgba(var(--theme-color3), 0.7);
       }
     }
   }
@@ -9010,14 +9010,14 @@ section {
     left: unset;
     &:before {
       opacity: 1;
-      color: rgba(var(--theme-color1), 0.3);
+      color: rgba(var(--theme-color3), 0.3);
       content: "\f054";
       font-family: "Font Awesome 5 free";
       font-weight: 900;
     }
     &:hover {
       &:before {
-        color: rgba(var(--theme-color1), 0.7);
+        color: rgba(var(--theme-color3), 0.7);
       }
     }
   }
@@ -9233,7 +9233,7 @@ section {
         text-transform: capitalize;
         font-size: 18px;
         font-weight: 600;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
   }
@@ -9366,7 +9366,7 @@ section {
       > div {
         background-color: rgba(255, 255, 255, 0.6);
         h2 {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
         }
         li {
           color: #0c0c0c !important;
@@ -9671,7 +9671,7 @@ section {
             background-color: $white-1;
             &.active {
               color: $white-1;
-              background-color: rgba(var(--theme-color1),1);
+              background-color: rgba(var(--theme-color3),1);
               svg {
                 fill: white;
               }
@@ -9763,7 +9763,7 @@ section {
       }
       h6 {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         text-transform: capitalize;
         font-weight: 800;
         margin-bottom: -2px;
@@ -9818,7 +9818,7 @@ section {
       z-index: 1;
       button {
         &:before {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-size: 12px;
         }
       }
@@ -9835,7 +9835,7 @@ section {
             font-size: 24px;
             line-height: 20px;
             text-align: center;
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
             opacity: 0.1;
             z-index: -1;
           }
@@ -9869,7 +9869,7 @@ section {
     }
     h6 {
       font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       margin-bottom: 0;
       font-weight: 700;
       text-transform: capitalize;
@@ -9929,7 +9929,7 @@ section {
           margin-right: 10px;
           text-transform: capitalize;
           &.active {
-            background-color: rgba(var(--theme-color1),1);
+            background-color: rgba(var(--theme-color3),1);
             color: $white-1;
             transition: all 0.5s ease;
           }
@@ -9964,7 +9964,7 @@ section {
           li {
             width: 6px;
             height: 17px;
-            background-color: rgba(var(--theme-color1),1);
+            background-color: rgba(var(--theme-color3),1);
             margin-left: 4px;
             margin-bottom: -1px;
           }
@@ -9992,7 +9992,7 @@ section {
           li {
             background-color: $white-1;
             &.active {
-              background-color: rgba(var(--theme-color1),1);
+              background-color: rgba(var(--theme-color3),1);
             }
           }
         }
@@ -10018,7 +10018,7 @@ section {
   }
 }
 .custom-checkbox .form-check-input:checked ~ .form-check-label::before {
-  background-color: rgba(var(--theme-color1),1);
+  background-color: rgba(var(--theme-color3),1);
 }
 .left-sidebar {
   background-color: $white-1;
@@ -10050,13 +10050,13 @@ section {
       top: 50%;
       transform: translateY(-50%);
       left: 50px;
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       &:after {
         content: "";
         position: absolute;
         width: 1px;
         height: 12px;
-        background-color: rgba(var(--theme-color1), 0.5);
+        background-color: rgba(var(--theme-color3), 0.5);
         right: -10px;
         top: 2px;
       }
@@ -10193,7 +10193,7 @@ section {
               background-image: url(/assets/images/check-mark.svg);
             }
             &:before {
-              background-color: rgba(var(--theme-color1),1);
+              background-color: rgba(var(--theme-color3),1);
             }
           }
         }
@@ -10251,7 +10251,7 @@ section {
     }
     h5 {
       font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-      background-color: rgba(var(--theme-color1),1);
+      background-color: rgba(var(--theme-color3),1);
       color: $white-1;
       display: inline-block;
       text-transform: capitalize;
@@ -10466,7 +10466,7 @@ section {
         right: 7px;
         bottom: 7px;
         font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
     }
   }
@@ -10481,7 +10481,7 @@ section {
   position: relative;
   cursor: pointer;
   &:hover {
-    color: rgba(var(--theme-color1),1);
+    color: rgba(var(--theme-color3),1);
     transition: all 0.5s ease;
   }
   &.mobile-map {
@@ -10666,7 +10666,7 @@ section {
         top: 0;
         border: 1px solid $inner-bg;
         padding: 10px;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         font-weight: 700;
         max-width: 150px;
       }
@@ -10769,7 +10769,7 @@ section {
     .page-item {
       &.active {
         .page-link {
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           color: $white-1;
         }
       }
@@ -11118,7 +11118,7 @@ section {
       svg {
         width: 30px;
         height: auto;
-        fill: rgba(var(--theme-color1),1);
+        fill: rgba(var(--theme-color3),1);
       }
       .content {
         margin-left: 15px;
@@ -11139,7 +11139,7 @@ section {
         content: "";
         width: 1px;
         height: 25px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         position: absolute;
         right: 0;
         top: 50%;
@@ -11168,8 +11168,8 @@ section {
         }
         &.active {
           a {
-            color: rgba(var(--theme-color1),1);
-            border-bottom: 2px solid rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
+            border-bottom: 2px solid rgba(var(--theme-color3),1);
             transition: all 0.5s ease;
           }
         }
@@ -11596,16 +11596,16 @@ section {
             cursor: pointer;
             &.active {
               border: none;
-              border-bottom: 2px solid rgba(var(--theme-color1),1);
-              color: rgba(var(--theme-color1),1);
+              border-bottom: 2px solid rgba(var(--theme-color3),1);
+              color: rgba(var(--theme-color3),1);
             }
             .nav-link {
               border: none;
               border-bottom: 2px solid transparent;
               &.active {
                 border: none;
-                border-bottom: 2px solid rgba(var(--theme-color1),1);
-                color: rgba(var(--theme-color1),1);
+                border-bottom: 2px solid rgba(var(--theme-color3),1);
+                color: rgba(var(--theme-color3),1);
               }
             }
           }
@@ -11909,7 +11909,7 @@ section {
         transition: all 0.5s ease;
         color: rgb(255, 255, 255);
         padding: 9px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
         border-radius: 100%;
         width: 32px;
         height: 32px;
@@ -12083,7 +12083,7 @@ section {
   table {
     tr td.selected.gj-cursor-pointer {
       div {
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
       }
     }
   }
@@ -12415,7 +12415,7 @@ section {
     }
     .edit-cls {
       font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-      color: rgba(var(--theme-color1),1);
+      color: rgba(var(--theme-color3),1);
       text-transform: capitalize;
       font-weight: 600;
       margin-left: auto;
@@ -12573,7 +12573,7 @@ section {
         button {
           &:before {
             font-size: 12px;
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
         }
       }
@@ -12750,7 +12750,7 @@ section {
       font-weight: 600;
       padding: 5px 15px !important;
       &.active {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         background-color: $inner-bg;
       }
     }
@@ -13026,7 +13026,7 @@ section {
   display: none;
   z-index: 1;
   i {
-    color: rgba(var(--theme-color1),1);
+    color: rgba(var(--theme-color3),1);
   }
 }
 
@@ -13454,8 +13454,8 @@ section {
 }
 .fc{
   .fc-button{
-    background-color: rgba(var(--theme-color1),1) !important;
-    border-color: rgba(var(--theme-color1),1) !important;
+    background-color: rgba(var(--theme-color3),1) !important;
+    border-color: rgba(var(--theme-color3),1) !important;
     box-shadow: none !important;
   }
   .fc-col-header-cell-cushion,
@@ -13512,7 +13512,7 @@ section {
       }
       &.active {
         h5 {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           font-weight: 700;
         }
       }
@@ -13570,7 +13570,7 @@ section {
       }
       .fc-content {
         font-weight: 700;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
       }
       &.show {
         display: block;
@@ -13664,7 +13664,7 @@ section {
             color: gray;
           }
           i {
-            color: rgba(var(--theme-color1),1);
+            color: rgba(var(--theme-color3),1);
           }
           &:after {
             content: "";
@@ -13710,7 +13710,7 @@ section {
         margin-top: 20px;
       }
       &.active {
-        border: 1px dashed rgba(var(--theme-color1),1);
+        border: 1px dashed rgba(var(--theme-color3),1);
         transition: all 0.5s ease;
         box-shadow: 0px 1px 9px 3px rgba(228, 228, 228, 0.81);
       }
@@ -14322,7 +14322,7 @@ section {
                 font-weight: bold;
                 line-height: 1.5rem;
                 padding: 4px 0;
-                background: rgba(var(--theme-color1), 0.25);
+                background: rgba(var(--theme-color3), 0.25);
                 border-radius: 5px;
                 animation-duration: 300ms;
                 animation-fill-mode: both;
@@ -14339,7 +14339,7 @@ section {
                 }
                 &:hover {
                   cursor: pointer;
-                  box-shadow: 0 0 0px 2px rgba(var(--theme-color1), 0.7);
+                  box-shadow: 0 0 0px 2px rgba(var(--theme-color3), 0.7);
                 }
               }
             }
@@ -14426,7 +14426,7 @@ section {
                     background: rgba(#afafaf, 0.4);
                   }
                   &.available {
-                    background: rgba(var(--theme-color1), 0.15);
+                    background: rgba(var(--theme-color3), 0.15);
                   }
                 }
                 h6 {
@@ -14576,7 +14576,7 @@ section {
         font-weight: 600;
       }
       i {
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
       }
     }
@@ -14772,7 +14772,7 @@ section {
     }
   }
   &.travel {
-    background-color: rgba(var(--theme-color1), 0.05);
+    background-color: rgba(var(--theme-color3), 0.05);
     svg {
       position: absolute;
       top: 0;
@@ -14884,7 +14884,7 @@ section {
           position: relative;
           width: 50px;
           height: 50px;
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           border-radius: 50%;
           &:after {
             content: "";
@@ -14909,7 +14909,7 @@ section {
     }
   }
   code {
-    color: rgba(var(--theme-color1), 0.6);
+    color: rgba(var(--theme-color3), 0.6);
     background-color: #f7f7f7;
     padding: 3px;
     margin: 0 3px;
@@ -15088,15 +15088,15 @@ section {
         font-weight: 600;
         &.active {
           border: none;
-          border-right: 2px solid rgba(var(--theme-color1),1);
+          border-right: 2px solid rgba(var(--theme-color3),1);
           border-radius: 0;
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           transition: all 0.5s ease;
         }
         &:hover {
           border: none;
-          border-right: 2px solid rgba(var(--theme-color1),1);
-          color: rgba(var(--theme-color1),1);
+          border-right: 2px solid rgba(var(--theme-color3),1);
+          color: rgba(var(--theme-color3),1);
           transition: all 0.5s ease;
         }
       }
@@ -15275,7 +15275,7 @@ section {
           border-radius: 100%;
           box-shadow: 2px 3px 5px 5px #f3f3f3;
           svg {
-            stroke: rgba(var(--theme-color1),1);
+            stroke: rgba(var(--theme-color3),1);
             height: 18px;
             width: 18px;
           }
@@ -15319,7 +15319,7 @@ section {
         padding: 2px 16px;
         border-radius: 2px;
         text-transform: capitalize;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         cursor: pointer;
       }
     }
@@ -15340,7 +15340,7 @@ section {
               margin-left: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
               border-radius: 2px;
               text-transform: capitalize;
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
               cursor: pointer;
             }
             .left {
@@ -15384,7 +15384,7 @@ section {
               font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
             }
             &.month {
-              color: rgba(var(--theme-color1),1);
+              color: rgba(var(--theme-color3),1);
               font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
             }
           }
@@ -15860,7 +15860,7 @@ section {
         text-transform: capitalize;
         background-color: $inner-bg;
         &.active {
-          background-color: rgba(var(--theme-color1),1);
+          background-color: rgba(var(--theme-color3),1);
           color: $white-1;
         }
       }
@@ -16159,13 +16159,13 @@ section {
         top: 50%;
         transform: translateY(-50%);
         left: 14px;
-        color: rgba(var(--theme-color1),1);
+        color: rgba(var(--theme-color3),1);
         &:after {
           content: "";
           position: absolute;
           width: 1px;
           height: 12px;
-          background-color: rgba(var(--theme-color1), 0.5);
+          background-color: rgba(var(--theme-color3), 0.5);
           right: -10px;
           top: 2px;
         }
@@ -16318,7 +16318,7 @@ section {
     &:hover {
       .video {
         i {
-          color: rgba(var(--theme-color1),1);
+          color: rgba(var(--theme-color3),1);
           transition: all 0.5s ease;
         }
       }
@@ -16651,7 +16651,7 @@ footer {
   }
   &.footer-light {
     .footer {
-      background-color: rgba(var(--theme-color1), 0.15);
+      background-color: rgba(var(--theme-color3), 0.15);
       .footer-content {
         .contact-detail {
           p {
@@ -16697,13 +16697,13 @@ footer {
       }
     }
     .sub-footer {
-      background-color: rgba(var(--theme-color1), 0.3);
+      background-color: rgba(var(--theme-color3), 0.3);
     }
   }
   &.footer-bg {
     position: relative;
     background-blend-mode: overlay;
-    background-color: rgba(var(--theme-color1), 0.5);
+    background-color: rgba(var(--theme-color3), 0.5);
     .footer {
       background-color: rgba(27, 27, 27, 0.1411764705882353);
       .footer-content {
@@ -16807,7 +16807,7 @@ footer {
 .typewriter h1 {
   color: black;
   overflow: hidden;
-  border-right: 0.15em solid rgba(var(--theme-color1),1);
+  border-right: 0.15em solid rgba(var(--theme-color3),1);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
@@ -16829,7 +16829,7 @@ footer {
     border-color: transparent;
   }
   50% {
-    border-color: rgba(var(--theme-color1),1);
+    border-color: rgba(var(--theme-color3),1);
   }
 }
 
@@ -16997,13 +16997,13 @@ $c-loader-front: #cee4e7;
   .timepicker-ui-circle-hand,
   .timepicker-ui-clock-hand,
   .timepicker-ui-dot{
-    background-color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3),1);
   }
   .timepicker-ui-cancel-btn, 
   .timepicker-ui-ok-btn, 
   .timepicker-ui-cancel-btn.mobile, 
   .timepicker-ui-ok.btn-mobile{
-    color: rgba(var(--theme-color1),1);
+    color: rgba(var(--theme-color3),1);
   }
   .timepicker-ui-hour:hover, 
   .timepicker-ui-hour.active, 
@@ -17021,23 +17021,23 @@ $c-loader-front: #cee4e7;
   .timepicker-ui-am.mobile.active, 
   .timepicker-ui-pm.mobile:hover, 
   .timepicker-ui-pm.mobile.active{
-    background-color: rgba(var(--theme-color1), 0.1);
-    color: rgba(var(--theme-color1),1);
+    background-color: rgba(var(--theme-color3), 0.1);
+    color: rgba(var(--theme-color3),1);
   }
 }
 
 // datepicker
 .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
-  background-color: rgba(var(--theme-color1),1) !important;
+  background-color: rgba(var(--theme-color3),1) !important;
 }
 .react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header{
-  color: rgba(var(--theme-color1),1) !important;
+  color: rgba(var(--theme-color3),1) !important;
 }
 .react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected{
-  background-color: rgba(var(--theme-color1), 0.1) !important;
+  background-color: rgba(var(--theme-color3), 0.1) !important;
 }
 .react-datepicker__navigation--previous{
-  background-color: rgba(var(--theme-color1),1) !important;
+  background-color: rgba(var(--theme-color3),1) !important;
   border-radius: 100%;
   left: 12px !important;
   top: 12px !important;
@@ -17055,7 +17055,7 @@ $c-loader-front: #cee4e7;
   }
 }
 .react-datepicker__navigation--next{
-  background-color: rgba(var(--theme-color1),1) !important;
+  background-color: rgba(var(--theme-color3),1) !important;
   border-radius: 100%;
   right: 12px !important;
   top: 12px !important;
@@ -18436,7 +18436,7 @@ $c-loader-front: #cee4e7;
   z-index: 8;
   color: $white-1;
   text-align: center;
-  background: rgba(var(--theme-color1),1);
+  background: rgba(var(--theme-color3),1);
   border: none;
   font-size: 22px;
   padding: 6px 5px 5px 5px;
@@ -18509,7 +18509,7 @@ $c-loader-front: #cee4e7;
 
 .animation-circle-inverse {
   i {
-    background: rgba(var(--theme-color1), 0.15);
+    background: rgba(var(--theme-color3), 0.15);
     right: 0;
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11);
     position: absolute;
@@ -18538,7 +18538,7 @@ $c-loader-front: #cee4e7;
       width: 12px;
       height: 12px;
       background-color: transparent;
-      border: 2px solid rgba(var(--theme-color1),1);
+      border: 2px solid rgba(var(--theme-color3),1);
       border-radius: 100%;
       position: absolute;
       animation: myOrbit 9s linear infinite;
@@ -18555,7 +18555,7 @@ $c-loader-front: #cee4e7;
       height: 12px;
       background-color: transparent;
       position: absolute;
-      border: 2px solid rgba(var(--theme-color1),1);
+      border: 2px solid rgba(var(--theme-color3),1);
       animation: animationFramesTwo 50s infinite linear;
       &.s-2 {
         width: 15px;
@@ -18573,7 +18573,7 @@ $c-loader-front: #cee4e7;
         content: " ";
         height: 12px;
         width: 2px;
-        background-color: rgba(var(--theme-color1),1);
+        background-color: rgba(var(--theme-color3),1);
       }
       &:after {
         transform: rotate(-45deg);
@@ -18736,22 +18736,22 @@ $c-loader-front: #cee4e7;
 @keyframes ani {
   0% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 rgba(var(--theme-color1),1);
+    text-shadow: 0em 0em 0 rgba(var(--theme-color3),1);
     color: $white-1;
   }
   30% {
     transform: translate3d(0, 0, 0);
-    text-shadow: 0em 0em 0 rgba(var(--theme-color1),1);
+    text-shadow: 0em 0em 0 rgba(var(--theme-color3),1);
     color: $white-1;
   }
   70% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em rgba(var(--theme-color1),1);
+    text-shadow: -0.08em 0.08em rgba(var(--theme-color3),1);
     color: $white-1;
   }
   100% {
     transform: translate3d(0.08em, -0.08em, 0);
-    text-shadow: -0.08em 0.08em rgba(var(--theme-color1),1);
+    text-shadow: -0.08em 0.08em rgba(var(--theme-color3),1);
     color: $white-1;
   }
 }

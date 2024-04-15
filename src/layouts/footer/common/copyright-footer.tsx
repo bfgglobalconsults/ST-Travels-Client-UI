@@ -14,7 +14,7 @@ const CopyRightFooter: FC = () => {
           <div className="col-xl-6 col-md-6 col-sm-12">
             <div className="copy-right">
               <p>
-                copyright 2023 rica by <i className="fas fa-heart"></i> pixelstrap
+                copyright 2024  <i className="fas fa-heart"></i> ST Travels and Consulting
               </p>
             </div>
           </div>
