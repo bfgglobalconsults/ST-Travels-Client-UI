@@ -7,7 +7,11 @@ import Link from "next/link";
 const ServiceContent: FC = () => {
   return (
     <section className="section-b-space dark-cls">
-      <Img src="/assets/images/cab/grey-bg.jpg" alt="" className="img-fluid bg-img" />
+      <Img
+        src="/assets/images/cab/grey-bg.jpg"
+        alt=""
+        className="img-fluid bg-img"
+      />
       <div className="container overflow-hidden">
         <div className="title-1">
           <span className="title-label">new</span>
@@ -25,7 +29,13 @@ const ServiceContent: FC = () => {
                     <Rating />
                     <h6>{service.discount}</h6>
                   </div>
-                  <Link href="/pages/element-pages/service" className="btn btn-curve btn-lower color1">
+                  {/* <Link href="/pages/element-pages/service" className="btn btn-curve btn-lower color1">
+                    learn more
+                  </Link> */}
+                  <Link
+                    href=""
+                    className="btn btn-curve btn-lower color1"
+                  >
                     learn more
                   </Link>
                 </div>

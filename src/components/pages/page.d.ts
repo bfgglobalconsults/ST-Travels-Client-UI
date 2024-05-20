@@ -67,6 +67,10 @@ interface ILoginPageProps {
   title: string;
 }
 
+interface IForgotPageProps {
+  title: string;
+}
+
 interface ICardModalProps {
   modal?: boolean;
   setModal: Function;

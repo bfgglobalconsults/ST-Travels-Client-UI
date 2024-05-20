@@ -13,6 +13,7 @@ import GoodLoader from "./loader/loader-good-luck";
 import LoaderFlight from "./loader/loader-flight";
 import CustomizePage from "./customizer/page";
 import MapLoader from "./loader/skelton/map-loader";
+import { Toaster } from "react-hot-toast";
 
 interface CustomLayoutProps {
   children: ReactNode;
@@ -69,25 +70,32 @@ const CustomLayout: React.FC<CustomLayoutProps> = ({ children, title, logo, foot
       ) : (
         <Loader loaderTimeout={5000} />
       )}
-      <header className={`${
-            active === true
-              ? "position-fixed top-0 start-0"
-              : null
-          } ${title}`}>
+      <header
+        className={`${
+          active === true ? "position-fixed top-0 start-0" : null
+        } ${title}`}
+      >
         <div className="container p-2">
           <div className="row">
             <div className="col">
               <div className="menu">
                 <Logo logo={logo} />
                 <Sidebar />
-                {coupon ? <CoupenCode /> : <HeaderRight userBgClass={userBgClass} />}
+                {coupon ? (
+                  <CoupenCode />
+                ) : (
+                  <HeaderRight userBgClass={userBgClass} />
+                )}
               </div>
             </div>
           </div>
         </div>
       </header>
+      <Toaster position="top-right" />
       {children}
-      {!hideFooter && <FooterMain footerType={footer} footerPlaceCom={footerPlace} />}
+      {!hideFooter && (
+        <FooterMain footerType={footer} footerPlaceCom={footerPlace} />
+      )}
       <TapToTop />
       <CustomizePage />
     </>

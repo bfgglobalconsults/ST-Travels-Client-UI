@@ -54,7 +54,8 @@ export const New = "new";
 export const SomeGoodReason = "some good reason";
 export const DownloadOurApp = "Download our app";
 export const BookYourTravel = "book your travel";
-export const Lorem = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aperiam at, aut commodi corporis dolorum ducimus labore magnam mollitia natus porro possimus quae sit tenetur veniam veritatis voluptate voluptatem!";
+export const Lorem =
+  "we are thrilled to offer you an incredible opportunity to save big on your next purchase. For a limited time, take advantage of our exclusive discount of 20-30% off on a wide range of products and services. Whether you’re a loyal customer or trying us out for the first time, this is your chance to enjoy premium quality at unbeatable prices. Here’s how you can make the most of this fantastic offer.";
 export const AmazingHolidayPackages = "Amazing Holiday Packages";
 export const ExploreThroughContinents = "Explore through Continents";
 export const ExploreThroughThemes = "Explore through Themes";
@@ -175,6 +176,7 @@ export const PopularTags = "popular tags";
 export const PostComment = "post comment";
 export const LeaveAComment = "leave a comment";
 export const AboutUs = "About Us";
+export const VisaAssistance = "Visa Assistance";
 export const OurTeam = "Our Team";
 export const GetInTouch = "get in touch";
 export const AddNewCard = "add new card";
