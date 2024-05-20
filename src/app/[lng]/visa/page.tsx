@@ -11,7 +11,7 @@ import CustomLayout from '@/layouts/layout';
 import Link from 'next/link';
 import {FC} from 'react';
 
-const page: FC<IVisaContentProps> = ({ side }) => {
+const VisaPage: FC<IVisaContentProps> = ({ side }) => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
@@ -88,4 +88,4 @@ const page: FC<IVisaContentProps> = ({ side }) => {
   );
 };
 
-export default page;
+export default VisaPage;
