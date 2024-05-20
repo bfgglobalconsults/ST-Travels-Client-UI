@@ -11,6 +11,10 @@ import CustomLayout from '@/layouts/layout';
 import Link from 'next/link';
 import {FC} from 'react';
 
+interface IVisaContentProps {
+  side: string;
+}
+
 const VisaPage: FC<IVisaContentProps> = ({ side }) => {
   return (
     <>
