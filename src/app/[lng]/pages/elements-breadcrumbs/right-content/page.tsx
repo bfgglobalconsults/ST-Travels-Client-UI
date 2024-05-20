@@ -1,8 +1,7 @@
-// import { FC } from "react";
-// import RightSidebar from "@/app/[lng]/cab/listing/list-view/right-sidebar/page";
+import { FC } from "react";
 
-// const RightContent: FC = () => {
-//   return <RightSidebar />;
-// };
+const RightContent: FC = () => {
+  return <div>Right Sidebar</div>;
+};
 
-// export default RightContent;
+export default RightContent;
