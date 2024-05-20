@@ -11,11 +11,9 @@ import CustomLayout from '@/layouts/layout';
 import Link from 'next/link';
 import {FC} from 'react';
 
-interface IVisaContentProps {
-  side: string;
-}
 
-const VisaPage: FC<IVisaContentProps> = ({ side }) => {
+
+const VisaPage: FC<IAboutUsContentProps> = ({ side }) => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
@@ -45,7 +43,7 @@ const VisaPage: FC<IVisaContentProps> = ({ side }) => {
                       application process hassle-free and efficient for our
                       clients.
                     </p>
-                    
+
                     {/* <div className="buttons-about">
                       <Link
                         href="/pages/blog-detail/left-sidebar"
