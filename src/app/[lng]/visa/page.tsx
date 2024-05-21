@@ -12,7 +12,7 @@ import Link from 'next/link';
 import {FC} from 'react';
 
 interface VisaPageProps {
-  side: string; 
+  side: "left" | "right";
 }
 
 const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
