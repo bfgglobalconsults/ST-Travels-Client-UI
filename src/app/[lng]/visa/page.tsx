@@ -11,9 +11,11 @@ import CustomLayout from '@/layouts/layout';
 import Link from 'next/link';
 import {FC} from 'react';
 
+interface VisaPageProps {
+  side: string; 
+}
 
-
-const VisaPage: FC<IAboutUsContentProps> = ({ side }) => {
+const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
