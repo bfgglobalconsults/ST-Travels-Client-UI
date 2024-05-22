@@ -10,7 +10,7 @@ const ServicesComponent: React.FC = () => {
     <section className="section-b-space animated-section">
       <Animation />
       <div className="container">
-        <TitleComponent title={Rica} subTitle={AwesomeService} span={Service} titleClass={"title-3"} />
+        <TitleComponent title={"Our"} subTitle={AwesomeService} span={Service} titleClass={"title-3"} />
         <ServiceOne serviceData={services} />
       </div>
     </section>

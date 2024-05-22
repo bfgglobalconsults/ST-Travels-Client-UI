@@ -48,7 +48,8 @@ export const roomSuitData = [
     title: "family room 5",
     shortDescription: "family",
     shortDescriptionSpan: "room",
-    description: "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
+    description:
+      "Designed with families in mind, our Family Room offers the perfect blend of comfort, convenience, and space, ensuring a delightful stay for guests of all ages...........",
     btn: "book now",
     responsiveDesc: "see rooms",
     icon: "fas fa-key",
@@ -61,7 +62,8 @@ export const roomSuitData = [
     title: "family room 5",
     shortDescription: "family",
     shortDescriptionSpan: "room",
-    description: "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
+    description:
+      "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
     btn: "book now",
     responsiveDesc: "see rooms",
     icon: "fas fa-key",
@@ -105,38 +107,42 @@ export const specialRoomsData = [
   {
     id: 1,
     src: "/assets/images/hotel/room/1.jpg",
-    title: "Lorem Ipsum is simply dummy text.",
+    title: "Presidential Suite",
     oldPrice: 24,
     newPrice: 20,
-    description: "Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the indu standard dummy text ever since the 1500s..............",
+    description:
+      "Our Presidential Suite offers the pinnacle of sophistication and comfort. With expansive living spaces, opulent decor, and breathtaking views of City, this suite is perfect for those seeking the ultimate in luxury...............",
     package: " 5 day | 4 night",
   },
   {
     id: 2,
     src: "/assets/images/hotel/room/2.jpg",
-    title: "Lorem Ipsum is simply dummy text.",
+    title: "Honeymoon Suite",
     oldPrice: 24,
     newPrice: 20,
-    description: "Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the indu standard dummy text ever since the 1500s..............",
+    description:
+      "Celebrate your love in our beautifully designed Honeymoon Suite. Featuring a luxurious king-size bed, a private balcony with stunning views, and a spacious bathroom with a jacuzzi tub, this suite provides a serene and intimate setting for newlyweds...............",
     package: " 5 day | 4 night",
   },
   {
     id: 3,
     src: "/assets/images/hotel/room/3.jpg",
-    title: "Lorem Ipsum is simply dummy text.",
+    title: "Family Suite",
     oldPrice: 24,
     newPrice: 20,
-    description: "Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the indu standard dummy text ever since the 1500s..............",
+    description:
+      "Our Family Suite is designed to accommodate families comfortably with ample space and kid-friendly amenities. Featuring multiple bedrooms, a cozy living area, and thoughtful touches such as children's bedding and toys, this suite ensures a delightful stay for guests of all ages...............",
     package: " 5 day | 4 night",
   },
 
   {
     id: 4,
     src: "/assets/images/hotel/room/2.jpg",
-    title: "Lorem Ipsum is simply dummy text.",
+    title: "Executive Suite",
     oldPrice: 24,
     newPrice: 20,
-    description: "Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum has been the indu standard dummy text ever since the 1500s..............",
+    description:
+      "The Executive Suite is tailored for business travelers seeking comfort and efficiency. With a separate workspace, high-speed internet, and access to our business center, this suite ensures a productive stay...............",
     package: " 5 day | 4 night",
   },
 ];
@@ -146,37 +152,43 @@ export const services = [
     id: 1,
     src: "/assets/images/hotel/icon/food.png",
     title: "awesome food",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      " We believe that exceptional food is a cornerstone of an unforgettable stay. Our diverse dining options cater to every palate. ",
   },
   {
     id: 2,
     src: "/assets/images/hotel/icon/make-up.png",
     title: "beauty & health",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      "We understand the importance of taking time to relax, rejuvenate, and care for your well-being.",
   },
   {
     id: 3,
     src: "/assets/images/hotel/icon/fireplace.png",
     title: "conference room",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      "We offer state-of-the-art conference rooms designed to meet all your business and event needs",
   },
   {
     id: 4,
     src: "/assets/images/hotel/icon/flipper.png",
     title: "swimming pool",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      "We are dedicated to providing you with a comprehensive range of beauty and health services designed to enhance your well-being and relaxation. ",
   },
   {
     id: 5,
     src: "/assets/images/hotel/icon/playground.png",
     title: "play ground",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      "we believe that family vacations should be enjoyable for guests of all ages. That’s why we’ve created a vibrant and safe playground.",
   },
   {
     id: 6,
     src: "/assets/images/hotel/icon/tree.png",
     title: "beautiful garden",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum the industry's.",
+    description:
+      "Our beautiful garden is the perfect venue for private events and celebrations. Whether it’s a wedding, a family reunion, or a corporate gathering.",
   },
 ];
 

@@ -11,7 +11,8 @@ const InstaSlider: FC<IInstaSliderProps> = ({ instagramData }) => {
       <Slider {...slide6}>
         {instagramData.map((image: IInstagramProps,index) => (
           <div key={index}>
-            <Link href="/pages/portfolio/grid-2">
+            {/* <Link href="/pages/portfolio/grid-2"> */}
+            <Link href="">
               <div className="instagram-box">
                 <Img src={image.src} alt="" className="img-fluid bg-img" />
                 <div className="overlay">

@@ -6,13 +6,20 @@ import Img from "@/utils/BackgroundImageRatio";
 
 const AboutComponent: React.FC<ISearchBoxProps> = ({ classRound }) => {
   return (
-    <section className={`about-section three-image ${classRound && classRound}`}>
+    <section
+      className={`about-section three-image ${classRound && classRound}`}
+    >
       <div className="container">
-        <TitleComponent title={About} subTitle={OurHotel} span={Hotel} titleClass={"title-3"} />
+        <TitleComponent
+          title={About}
+          subTitle={OurHotel}
+          span={Hotel}
+          titleClass={"title-3"}
+        />
         <div className="row">
           <div className="col-xl-8">
             <div className="image-section">
-              {aboutData.map((image: IAboutClassicProps,index) => (
+              {aboutData.map((image: IAboutClassicProps, index) => (
                 <div className="img-box" key={index}>
                   <Img src={image.img} className="img-fluid" alt="" />
                   <div className="no-class">
@@ -31,8 +38,12 @@ const AboutComponent: React.FC<ISearchBoxProps> = ({ classRound }) => {
                 <h2>
                   redefines the luxury <span>hospitality experience</span>
                 </h2>
-                <p>Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem ..... </p>
-                <Img src="/assets/images/mix/signature.png" className="img-fluid" />
+                <p>
+                  Our hotel stands as a beacon of elegance and hospitality,
+                  providing a haven for travelers seeking a memorable stay.
+                  .....{" "}
+                </p>
+                {/* <Img src="/assets/images/mix/signature.png" className="img-fluid" /> */}
               </div>
             </div>
           </div>

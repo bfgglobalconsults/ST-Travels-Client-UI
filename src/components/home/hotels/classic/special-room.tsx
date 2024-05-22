@@ -42,7 +42,10 @@ const SpecialRoomsComponent: FC = () => {
                     </div>
                   </div>
                   <div className="special-content">
-                    <Link href="/hotel/listing/grid-view/2-grid">
+                    {/* <Link href="/hotel/listing/grid-view/2-grid">
+                      <h5>{room.title}</h5>
+                    </Link> */}
+                    <Link href="">
                       <h5>{room.title}</h5>
                     </Link>
                     <p>{room.description}</p>
