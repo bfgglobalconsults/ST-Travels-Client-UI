@@ -83,10 +83,10 @@ const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
             </div>
           </div>
         </section>
-        <VisaContent side={side} />
+        {/* <VisaContent side={side} />
         <GlobalContent side={side} />
         <ProcessContent side={side} />
-        <VisaBanner />
+        <VisaBanner /> */}
       </CustomLayout>
     </>
   );
