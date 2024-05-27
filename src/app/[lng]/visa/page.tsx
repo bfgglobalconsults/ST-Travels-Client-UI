@@ -17,7 +17,7 @@ interface VisaPageProps {
   side: "left" | "right";
 }
 
-const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
+const Page: React.FC<VisaPageProps> = ({ side }) => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
@@ -224,7 +224,6 @@ const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
       </CustomLayout>
     </>
   );
-};
+};export default Page;
 
-export default VisaPage;
 
