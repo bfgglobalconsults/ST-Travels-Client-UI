@@ -4,6 +4,8 @@ import TitleThree from '@/components/common/title/title-three';
 import LoginPage from '@/components/pages/other-pages/login/page';
 import GlobalContent from '@/components/visa/global-visa';
 import ProcessContent from '@/components/visa/process-visa';
+import TextBanner from '@/components/visa/text-banner';
+import TypeBanner from '@/components/visa/type-banner';
 import VisaContent from '@/components/visa/type-visa';
 import VisaBanner from '@/components/visa/visabanner';
 import { VisaAssistance } from '@/constant/constant';
@@ -83,9 +85,141 @@ const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
             </div>
           </div>
         </section>
-        <VisaContent side={side} />
+        {/* type visa */}
+        <section className="about-section three-image about_page animated-section section-b-space">
+          <Animation />
+          <div className="container">
+            <div className="row">
+              <div
+                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+              >
+                <div className="image-section">
+                  <div className="">
+                    <img
+                      src="/assets/images/type-visa.jpg"
+                      data-tilt
+                      data-tilt-perspective="110"
+                      data-tilt-speed="400"
+                      data-tilt-max="1.2"
+                      className="img-fluid"
+                      alt="visa-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6">
+                <div className="about-text">
+                  <div>
+                    <div className="title-3">
+                      <span className="title-label">TYPES OF VISA</span>
+                    </div>
+
+                    <h3>Types of Visas We Assist With</h3>
+                    <p>
+                      Our agency offers assistance for a wide range of visa
+                      types. We provide detailed guidance on the specific
+                      requirements and eligibility criteria for each visa
+                      category to ensure a successful application process.
+                    </p>
+                    <TypeBanner />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* global content */}
+        <section className="about-section three-image about_page animated-section section-b-space">
+          <Animation />
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-6">
+                <div className="about-text">
+                  <div>
+                    <div className="title-3">
+                      <span className="title-label">GLOBAL ASSISTANCE</span>
+                    </div>
+
+                    <h3>Global Visa Assistance Coverage</h3>
+                    <p>
+                      We extend our visa assistance services to destinations
+                      across the globe, covering popular tourist destinations,
+                      business hubs, academic institutions, and more. Our
+                      extensive network and partnerships enable us to streamline
+                      the visa processing experience, offering specialized
+                      support for regions with unique visa regulations and
+                      procedures.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+              >
+                {" "}
+                <div className="image-section">
+                  <div className="">
+                    <img
+                      src="/assets/images/global-visa.jpg"
+                      data-tilt
+                      data-tilt-perspective="110"
+                      data-tilt-speed="400"
+                      data-tilt-max="1.2"
+                      className="img-fluid"
+                      alt="visa-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* process content */}
+        <section className="about-section three-image about_page animated-section section-b-space">
+          <Animation />
+          <div className="container">
+            <div className="row">
+              <div
+                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+              >
+                <div className="image-section">
+                  <div className="">
+                    <img
+                      src="/assets/images/process-visa.jpg"
+                      data-tilt
+                      data-tilt-perspective="110"
+                      data-tilt-speed="400"
+                      data-tilt-max="1.2"
+                      className="img-fluid"
+                      alt="visa-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6">
+                <div className="about-text">
+                  <div>
+                    <div className="title-3">
+                      <span className="title-label">VISA PROCESS</span>
+                    </div>
+
+                    <h3>Streamlined Visa Application Process</h3>
+                    <p>
+                      Our visa application process is designed to be
+                      straightforward and transparent. Below is our visa
+                      application process
+                    </p>
+                    <TextBanner />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <VisaContent side={side} />
         <GlobalContent side={side} />
-        <ProcessContent side={side} />
+        <ProcessContent side={side} /> */}
+
         <VisaBanner />
       </CustomLayout>
     </>
@@ -93,3 +227,4 @@ const VisaPage: React.FC<VisaPageProps> = ({ side }) => {
 };
 
 export default VisaPage;
+
