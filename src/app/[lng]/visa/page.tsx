@@ -1,4 +1,13 @@
-// import Animation from '@/components/common/animation/animation';
+
+import React from 'react'
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
+}
+
+export default page// import Animation from '@/components/common/animation/animation';
 // import Breadcrumb from '@/components/common/breadcrumb/page';
 // import TitleThree from '@/components/common/title/title-three';
 // import LoginPage from '@/components/pages/other-pages/login/page';
