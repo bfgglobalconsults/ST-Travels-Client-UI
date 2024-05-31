@@ -12,8 +12,8 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
           </div>
           <div className="contact_content">
             <p>
-              549 Sulphur Springs Road <br />
-              Downers Grove, IL 60515
+              322 Road C Close Block 1 Flat 10 <br />
+              Festac Town, Lagos
             </p>
           </div>
         </div>
@@ -26,8 +26,7 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
           </div>
           <div className="contact_content">
             <ul>
-              <li>Support@rica.com</li>
-              <li>info@rica.com</li>
+              <li>info@sttravelsconsulting.com</li>
             </ul>
           </div>
         </div>
@@ -40,13 +39,13 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
           </div>
           <div className="contact_content">
             <ul>
-              <li>+91 123 - 456 - 7890</li>
-              <li>+86 163 - 451 - 7894</li>
+              <li>+2347065912096</li>
+              <li>+61435607034</li>
             </ul>
           </div>
         </div>
       </div>
-      <div className={colClass}>
+      {/* <div className={colClass}>
         <div className="contact_wrap">
           <div className="title_bar">
             <i className="fas fa-fax"></i>
@@ -59,7 +58,7 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

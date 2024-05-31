@@ -13,21 +13,31 @@ const Gallery: FC<IGalleryPageProps> = ({ title }) => {
   return (
     <section className={`ratio3_2 ${title ? "" : "pt-0"}`}>
       <div className="container-fluid">
-        <TitleComponent title={Our} subTitle={GalleryConst} span={GalleryConst} titleClass={"title-3"} />
+        <TitleComponent
+          title={Our}
+          subTitle={GalleryConst}
+          span={GalleryConst}
+          titleClass={"title-3"}
+        />
         <div className="row">
           <div className="col p-0">
             <div className="slide-4 no-arrow">
               <Slider {...slide4}>
-                {gallery.map((image: IGalleryProps,index) => (
+                {gallery.map((image: IGalleryProps, index) => (
                   <div key={index}>
                     <div className="gallery-box">
                       <div className="gallery-img">
                         <div className="overlay"></div>
-                        <Img src={image.src} alt="" className="img-fluid bg-img" />
+                        <Img
+                          src={image.src}
+                          alt=""
+                          className="img-fluid bg-img"
+                        />
                       </div>
                       <div className="gallery-content">
                         <h5>{image.title}</h5>
-                        <Link href="/pages/portfolio/grid-2-title" className="btn btn-solid">{image.btn}</Link>
+                        {/* <Link href="/pages/portfolio/grid-2-title" className="btn btn-solid">{image.btn}</Link> */}
+                        <Link href="" className="btn btn-solid">{image.btn}</Link>
                       </div>
                     </div>
                   </div>

@@ -5,8 +5,17 @@ import Link from "next/link";
 import Currency from "./currency";
 import Language from "./language";
 import { IHeaderRightProps } from "./header-right";
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap";
 
 const HeaderRight: React.FC<IHeaderRightProps> = ({ userBgClass }) => {
+   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+   const toggle = () => setDropdownOpen((prevState) => !prevState);
   const [settingIcon, setSettingIcon] = useState(false)
   return (
     <ul className="header-right">
@@ -16,9 +25,23 @@ const HeaderRight: React.FC<IHeaderRightProps> = ({ userBgClass }) => {
           {value.title === "language" && <Language value={value} />}
           {value.title === "user" && (
             <li className={`${userBgClass && userBgClass}`}>
-              <Link href="/pages/other-pages/user-dashboard">
+              <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+                <DropdownToggle tag="div">
+                  {" "}
+                  <i className="fas fa-user"></i>
+                </DropdownToggle>
+                <DropdownMenu>
+                  <DropdownItem header>Options</DropdownItem>
+                  <DropdownItem><Link href="/pages/other-pages/user-dashboard"> My Dashboard</Link></DropdownItem>
+                 
+                  <DropdownItem divider />
+               
+                  <DropdownItem>Logout</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+              {/* <Link href="/pages/other-pages/user-dashboard">
                 <i className="fas fa-user"></i>
-              </Link>
+              </Link> */}
             </li>
           )}
           {value.title === "setting" && (

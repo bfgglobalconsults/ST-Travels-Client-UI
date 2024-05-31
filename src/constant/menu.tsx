@@ -21,7 +21,7 @@ const MENUITEMS: IMenuItemProps[] = [
   {
     title: "Visa Assistance",
     type: "sub",
-    link: "/home/flight/modern",
+    link: "/en/visa",
     megaMenu: false,
   },
   {
@@ -33,7 +33,7 @@ const MENUITEMS: IMenuItemProps[] = [
   {
     title: "Contact Us",
     type: "sub",
-    link: "/home/flight/modern",
+    link: "/pages/other-pages/contact-us-1",
     megaMenu: false,
   },
 ];

@@ -7,7 +7,7 @@ import ContactContent from "@/components/pages/other-pages/contact-us/contact-us
 
 const Contact1: FC = () => {
   return (
-    <CustomLayout title="light_header" userBgClass="user user-light">
+    <CustomLayout title="bg-white" userBgClass="user rounded5">
       <BreadcrumbsContent />
       <ContactContent />
     </CustomLayout>

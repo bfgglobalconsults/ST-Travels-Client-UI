@@ -501,6 +501,16 @@ section,
       text-transform: capitalize;
     }
   }
+   &.btn-curvy {
+    border-radius: 30px;
+    background-color: rgba(var(--theme-color3),1);
+    color: $white-1;
+    padding: 9px 20px;
+    box-shadow: 1px 11px 20px 0px rgba(var(--theme-color3), 0.12);
+    &.btn-lower {
+      text-transform: capitalize;
+    }
+  }
   &.btn-rounded {
     border-radius: 100px;
     color: $white-1;
@@ -19253,4 +19263,44 @@ $c-loader-front: #cee4e7;
       background-color: hsl(200, 20%, 95%);
     }
   }
+}
+
+// Custom Design
+.visa-banner{
+   position: relative;
+  background-image: url('../../images/visa-banner.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Text color */
+  text-align: center;
+}
+.visa-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color with transparency */
+  z-index: 1;
+}
+.visa-banner-text{
+  position: relative;
+  z-index: 2;
+}
+
+.custom-text{
+  color: #0198D9;
+}
+.custom-bg{
+  background-color: #0198D9;
+}
+.otp{
+// padding: 10px 20px;
+width: 40px;
+height: 40px;
 }

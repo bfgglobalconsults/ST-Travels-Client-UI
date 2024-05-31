@@ -142,7 +142,7 @@ export const commentsData = [
 ];
 
 export const teamMembers = [
-  { name: "Julia Holmes", role: "CEO", image: "/assets/images/inner-pages/team/1.jpg" },
+  { name: "Igboanugo Stanley", role: "CEO", image: "/assets/images/inner-pages/team/1.jpg" },
   { name: "Lucas Smith", role: "marketing", image: "/assets/images/inner-pages/team/2.jpg" },
   { name: "Pablo Himenez", role: "customer service", image: "/assets/images/inner-pages/team/3.jpg" },
   { name: "Lucas Smith", role: "marketing", image: "/assets/images/inner-pages/team/2.jpg" },
@@ -159,19 +159,22 @@ export const serviceData = [
   {
     icon: <PigiBankSvg />,
     title: "Guaranteed savings",
-    description: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+    description:
+      "We are committed to providing you with guaranteed savings on every flight booking. We understand the importance of affordable travel, which is why we leverage our extensive network and industry expertise to secure the best deals for you. ",
     discount: "15% discount",
   },
   {
     icon: <TelephonSvg />,
     title: "24 X 7 helpline",
-    description: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+    description:
+      "Our 24/7 helpline ensures that you receive assistance whenever you need it, day or night. Whether you have questions about your booking, need to make changes to your itinerary, or require support during your travels, our dedicated customer service team is just a phone call away",
     discount: "free 1 ride",
   },
   {
     icon: <LightSvg />,
     title: "live booking on hotel",
-    description: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+    description:
+      "We offer a seamless live hotel booking experience to complement your travel plans. With real-time availability and instant confirmations, you can browse, select, and book your ideal accommodation with ease.",
     discount: "2% discount",
   },
 ];

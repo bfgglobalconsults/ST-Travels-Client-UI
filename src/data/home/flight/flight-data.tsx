@@ -283,8 +283,8 @@ export const flightBlogData = [
     date: "05",
     month: "nov",
     location: "phonics, Turkey",
-    title: "Twice profit than before you",
-    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.`,
+    title: "Discover the World: Your Ultimate Guide to Booking Flights",
+    desc: `we believe that your journey should start with the best flight experience possible. Whether you're a seasoned traveler or planning your first trip, our comprehensive guide will help you navigate the ins and outs of booking flights, ensuring a smooth and enjoyable travel experience.`,
   },
   {
     id: 2,
@@ -293,7 +293,7 @@ export const flightBlogData = [
     month: "nov",
     location: "phonics, newyork",
     title: "Twice profit than before you",
-    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.`,
+    desc: `we believe in empowering entrepreneurs and business owners to achieve unparalleled growth. In this blog, we’ll share key strategies that can help you double your profits and propel your business to new heights. With our expert tips and insights, you’ll be well on your way to surpassing your previous financial milestones.`,
   },
   {
     id: 3,
@@ -301,8 +301,8 @@ export const flightBlogData = [
     date: "05",
     month: "nov",
     location: "phonics, UK",
-    title: "Twice profit than before you",
-    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.`,
+    title: "Proven Strategies for Unprecedented Growth",
+    desc: `We specialize in helping businesses like yours grow exponentially. In this blog, we’ll share essential strategies that can help you double your profits and set your business on the path to long-term success. Implementing these tactics will not only enhance your revenue but also solidify your market presence.`,
   },
   {
     id: 4,

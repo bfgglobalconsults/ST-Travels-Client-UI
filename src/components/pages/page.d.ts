@@ -57,6 +57,10 @@ interface IAboutUsContentProps {
   side: string;
 }
 
+interface IVisaContentProps {
+  side: string;
+}
+
 interface IImageProps {
   src: string;
   title: string;
@@ -64,6 +68,10 @@ interface IImageProps {
 }
 
 interface ILoginPageProps {
+  title: string;
+}
+
+interface IForgotPageProps {
   title: string;
 }
 

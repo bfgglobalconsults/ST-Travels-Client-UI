@@ -17,7 +17,7 @@ const SliderThree: FC<ISliderThree> = ({ slideData, playButton }) => {
   return (
     <>
       <Slider {...slide1}>
-        {slideData.map((banner: IRoomSuitsProps,index) => (
+        {slideData.map((banner: IRoomSuitsProps, index) => (
           <div key={index}>
             <div className="row">
               <div className="col-lg-7 offset-lg-4 col-md-10 offset-md-1">
@@ -31,7 +31,11 @@ const SliderThree: FC<ISliderThree> = ({ slideData, playButton }) => {
                   <div className="image-box">
                     <Img src={banner.img} className="img-fluid" alt="" />
                     {playButton && (
-                      <a href="#js" className="video-icon" onClick={toggleModal}>
+                      <a
+                        href="#js"
+                        className="video-icon"
+                        onClick={toggleModal}
+                      >
                         <span />
                       </a>
                     )}
@@ -53,7 +57,10 @@ const SliderThree: FC<ISliderThree> = ({ slideData, playButton }) => {
                         </h6>
                       )}
                       <p>{banner.description}</p>
-                      <Link href="/pages/other-pages/contact-us-1" className="btn btn-solid">
+                      {/* <Link href="/pages/other-pages/contact-us-1" className="btn btn-solid">
+                        {banner.btn}
+                      </Link> */}
+                      <Link href="" className="btn btn-solid">
                         {banner.btn}
                       </Link>
                     </div>

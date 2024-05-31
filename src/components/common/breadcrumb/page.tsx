@@ -45,7 +45,7 @@ const Breadcrumb: FC<IBreadcrumbProps> = ({ title, subTitle, bannerImg, mainTitl
         </div>
       </div>
       {animation && <BirdAnimation />}
-      <div className="title-breadcrumb">Rica</div>
+      {/* <div className="title-breadcrumb">Rica</div> */}
     </section>
   );
 };
