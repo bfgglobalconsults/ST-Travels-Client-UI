@@ -1,13 +1,4 @@
 
-// import React from 'react'
-
-// const page = () => {
-//   return (
-//     <div>page</div>
-//   )
-// }
-
-// export default page;
 import Animation from '@/components/common/animation/animation';
 import Breadcrumb from '@/components/common/breadcrumb/page';
 import TitleThree from '@/components/common/title/title-three';
@@ -23,11 +14,9 @@ import CustomLayout from '@/layouts/layout';
 import Link from 'next/link';
 import {FC} from 'react';
 
-interface VisaPageProps {
-  side: "left" | "right";
-}
 
-const Page: React.FC<VisaPageProps> = ({ side }) => {
+
+const Page= () => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
@@ -76,7 +65,7 @@ const Page: React.FC<VisaPageProps> = ({ side }) => {
                 </div>
               </div>
               <div
-                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
               >
                 <div className="image-section">
                   <div className="img-box">
@@ -101,7 +90,7 @@ const Page: React.FC<VisaPageProps> = ({ side }) => {
           <div className="container">
             <div className="row">
               <div
-                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
               >
                 <div className="image-section">
                   <div className="">
@@ -164,7 +153,7 @@ const Page: React.FC<VisaPageProps> = ({ side }) => {
                 </div>
               </div>
               <div
-                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
               >
                 {" "}
                 <div className="image-section">
@@ -190,7 +179,7 @@ const Page: React.FC<VisaPageProps> = ({ side }) => {
           <div className="container">
             <div className="row">
               <div
-                className={`col-xl-6 ${side === "right" ? "order-xl-1" : ""}`}
+                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
               >
                 <div className="image-section">
                   <div className="">
