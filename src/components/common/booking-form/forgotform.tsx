@@ -22,7 +22,7 @@ const ForgotForm = () => {
     <>
       <form>
         <div className="form-group">
-          <label htmlFor="email">EmailAddress</label>
+          <label htmlFor="email">Email Address</label>
           <input
             type="email"
             name="email"

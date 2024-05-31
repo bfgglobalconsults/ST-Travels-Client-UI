@@ -15,7 +15,7 @@ const TypeBanner = () => {
                   1
                 </div>
                 <div>
-                  <p className="text-white mb-0">1 Tourist visas</p>
+                  <p className="text-white mb-0">Tourist visas</p>
                 </div>
               </div>
             </div>

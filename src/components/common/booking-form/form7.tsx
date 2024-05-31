@@ -93,7 +93,18 @@ const RegisterForm = () => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="date">Phone</label>
+        <label htmlFor="phone">Phone</label>
+        <input
+          type="text"
+          name="phone"
+          className="form-control"
+          id="phone"
+          value={user.phone}
+          onChange={handleInputChange}
+          placeholder="Enter phone number"
+          required
+        />
+
         {/* <PhoneInput
           placeholder="Enter phone number"
           value={phoneNumber}
@@ -126,14 +137,24 @@ const RegisterForm = () => {
       </div>
       <div className="form-group">
         <label htmlFor="country">Country</label>
-        <div className="input-group">
+        <input
+          type="text"
+          name="country"
+          className="form-control"
+          id="country"
+          value={user.country}
+          onChange={handleInputChange}
+          placeholder="Enter Country"
+          required
+        />
+        {/* <div className="input-group">
           <select className="form-control" id="country">
             <option selected>Choose a country...</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>
           </select>
-        </div>
+        </div> */}
       </div>
       <div className="form-group">
         <label htmlFor="password">{Password}</label>
