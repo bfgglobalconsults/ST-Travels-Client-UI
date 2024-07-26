@@ -11,19 +11,32 @@ const ContactUsComponent: React.FC = () => {
         <div className="contact-detail">
           <div className="footer-logo">
             <a href="/">
-              <Image src="/assets/images/icon/ST-TRAVELS-WHITE.png" alt="" className="img-fluid" width={139} height={53} />
+              <Image
+                src="/assets/images/icon/ST-TRAVELS-WHITE.png"
+                alt=""
+                className="img-fluid"
+                width={139}
+                height={53}
+              />
             </a>
           </div>
           <p>We take care of your travel needs</p>
           <ul className="contact-list">
             <li>
-              <i className="fas fa-map-marker-alt"></i> Australia.
+              <i className="fas fa-map-marker-alt"></i> Australia: Sydney
             </li>
             <li>
               <i className="fas fa-phone-alt"></i> +61435607034
             </li>
             <li>
-              <i className="fas fa-envelope"></i> info@sttravelsandconsulting.com
+              <i className="fas fa-map-marker-alt"></i> Nigeria: 322 road C
+              close Block 1 flat 10 festac town Lagos
+            </li>
+            <li>
+              <i className="fas fa-phone-alt"></i> +2347065912096
+            </li>
+            <li>
+              <i className="fas fa-envelope"></i> info@sttravelsconsulting.com
             </li>
           </ul>
         </div>

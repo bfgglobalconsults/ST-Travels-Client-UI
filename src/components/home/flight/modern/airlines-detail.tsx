@@ -8,10 +8,18 @@ import Link from 'next/link';
 const AirlinesDetail: FC = () => {
   return (
     <section className="pt-0 detail-section zig-zag-effect">
-      <BackgroundDiv titleClass="cloud section-b-space section-t-space" img={"/assets/images/flights/cloud.png"} divImg="/assets/images/flights/cloud.png" imgWidth={1905} imgHeight={352} displayClass="none">
+      {/* <BackgroundDiv titleClass="cloud section-b-space section-t-space" img={"/assets/images/flights/cloud.png"} divImg="/assets/images/flights/cloud.png" imgWidth={1905} imgHeight={352} displayClass="none"> */}
+      <BackgroundDiv
+        titleClass="cloud section-b-space section-t-space"
+        img={"/assets/images/flights/flight-bg.jpg"}
+        divImg="/assets/images/flights/flight-bg.jpg"
+        imgWidth={1905}
+        imgHeight={352}
+        displayClass="none"
+      >
         <div className="container">
           <div className="row">
-            {airDetailData.map((data: IAirDetailProps,index) => (
+            {airDetailData.map((data: IAirDetailProps, index) => (
               <div className="col-md-4" key={index}>
                 <div className="detail-box">
                   <div className="upper-part">
@@ -19,7 +27,12 @@ const AirlinesDetail: FC = () => {
                     <h2>{data.offer}</h2>
                     <h5>enjoy extra baggage allowance</h5>
                   </div>
-                  <Link href="/pages/other-pages/contact-us-1"><Button btnClass="btn btn-rounded btn-sm color1" name={ReadMore} /></Link>
+                  <Link href="/pages/other-pages/contact-us-1">
+                    <Button
+                      btnClass="btn btn-rounded btn-sm color1"
+                      name={ReadMore}
+                    />
+                  </Link>
                 </div>
               </div>
             ))}

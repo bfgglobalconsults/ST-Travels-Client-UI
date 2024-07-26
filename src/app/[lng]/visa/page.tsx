@@ -68,7 +68,7 @@ const Page= () => {
                 className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
               >
                 <div className="image-section">
-                  <div className="img-box">
+                  <div className="">
                     <img
                       src="/assets/images/visa-img.jpg"
                       data-tilt

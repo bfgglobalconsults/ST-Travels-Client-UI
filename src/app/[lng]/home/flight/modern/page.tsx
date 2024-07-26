@@ -10,17 +10,20 @@ import AirlineTickets from "@/components/home/flight/modern/airline-tickets";
 import TopDestination from "@/components/home/flight/modern/top-destination";
 import Blog from "@/components/home/flight/modern/blog";
 import SubscribeComp from "@/components/home/flight/modern/subscribe";
+import { useSelector } from "react-redux";
 
 const Modern: FC = () => {
+  	// const user = useSelector((state:any) => state.user.user.data);
+
   return (
     <CustomLayout title="bg-white" footerPlace={true} userBgClass="user rounded5">
       <HomeBanner />
       <Destination />
       <AirlinesDetail />
       <FlightRoute />
-      <FullBanner />
+      {/* <FullBanner />
       <AirlineTickets />
-      <TopDestination />
+      <TopDestination /> */}
       <Blog />
       <SubscribeComp />
     </CustomLayout>

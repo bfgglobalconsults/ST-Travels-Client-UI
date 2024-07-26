@@ -12,8 +12,18 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
           </div>
           <div className="contact_content">
             <p>
+              <b>Nigeria:</b>
+            </p>
+            <p>
               322 Road C Close Block 1 Flat 10 <br />
               Festac Town, Lagos
+            </p>
+            <p>
+              <b>Australia:</b>
+            </p>
+            <p>
+              Sydney 
+              , Australia
             </p>
           </div>
         </div>

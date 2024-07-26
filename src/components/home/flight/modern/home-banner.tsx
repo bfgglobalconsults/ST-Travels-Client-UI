@@ -17,7 +17,7 @@ const HomeBanner: FC = () => {
                 <h2>{GreatJourneyBegins}</h2>
                 <h3>with a small step</h3>
                 <FlightThree />
-                <Link href="/flight/booking/booking-now"><Button btnClass="btn btn-rounded color1" name={BookNow} /></Link>
+                <Link href="/flight/booking/booking-now"><Button btnClass="btn btn-rounded border-white color1" name={BookNow} /></Link>
               </div>
             </div>
           </div>
