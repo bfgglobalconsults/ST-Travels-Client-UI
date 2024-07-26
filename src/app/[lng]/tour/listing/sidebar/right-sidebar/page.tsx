@@ -45,3 +45,14 @@
 // };
 
 // export default RightSidebar;
+"use client";
+ import { FC } from "react";
+const RightSidebar: FC = () => {
+
+return (
+  <>
+  <div>Right Sidebar</div>
+  </>
+  );
+};
+export default RightSidebar;
