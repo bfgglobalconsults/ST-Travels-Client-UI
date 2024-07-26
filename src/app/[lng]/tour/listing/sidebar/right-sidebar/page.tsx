@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect } from "react";
+import { FC, Suspense, useEffect } from "react";
 // import "@/public/assets/scss/color1.scss";
 import Breadcrumb from "@/components/common/breadcrumb/page";
 import CustomLayout from "@/layouts/layout";
@@ -26,7 +26,11 @@ const RightSidebar: FC = () => {
           <div className="col-xl-10 offset-xl-1">
             <div className="search-panel" id="searchBar">
               <div className="search-section">
+                    <Suspense>
+
                 <SearchBox />
+                    </Suspense>
+
               </div>
             </div>
           </div>
