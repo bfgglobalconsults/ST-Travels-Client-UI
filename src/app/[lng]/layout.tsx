@@ -4,6 +4,8 @@ import "@/public/assets/scss/globals.scss";
 import { languages } from "../i18n/settings";
 import { Toaster } from "react-hot-toast";
 import ReactQueryProvider from "@/react-query/ReactQueryProvider";
+import { Suspense } from "react";
+import Loading from "@/components/loader/page";
 
 
 export const metadata = {
@@ -61,8 +63,10 @@ const RootLayout = ({
         <Providers>
           <ReactQueryProvider>
             <>
-              <Toaster position="top-right" />
-              {children}
+              <Suspense fallback={<Loading />}>
+                <Toaster position="top-right" />
+                {children}
+              </Suspense>
             </>
           </ReactQueryProvider>
         </Providers>
