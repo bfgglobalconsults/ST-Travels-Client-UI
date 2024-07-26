@@ -7,7 +7,7 @@ const SocialMedia: React.FC = () => {
         </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/sttravelsconsulting" target="_blank">
           <i className="fab fa-instagram"></i>
         </a>
       </li>

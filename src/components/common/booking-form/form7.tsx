@@ -4,25 +4,28 @@ import { FormEvent } from "react";
 import { ChangeEvent } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import { EmailAddress, FullName, Password } from "@/constant/constant";
+import { EmailAddress, FullName, LastName, Password } from "@/constant/constant";
 import Button from "../btn";
 import Link from "next/link";
 import { toast } from "react-hot-toast";
 import PhoneInput from "react-phone-number-input";
 import parsePhoneNumberFromString from "react-phone-number-input";
+import httpService from "@/services/httpService";
 
 const RegisterForm = () => {
   const router = useRouter();
   const [user, setUser] = React.useState({
-    name: "",
+    firstName: "",
+    lastName:"",
     email: "",
     password: "",
     confirmpassword: "",
     date: "",
+    address: "",
+    city: "",
     country: "",
     gender: "",
     phone: "",
-    address: "",
   });
 
   const [buttonDisabled, setButtonDisabled] = React.useState(true);
@@ -37,28 +40,56 @@ const RegisterForm = () => {
 
   React.useEffect(() => {
     const isValidUser =
-      user.name.trim() && user.email.trim() && user.password.trim();
+      user.firstName.trim() &&
+      user.lastName.trim() &&
+      user.email.trim() &&
+      user.password.trim();
     setButtonDisabled(!isValidUser);
   }, [user]);
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setUser((prevUser) => ({ ...prevUser, [name]: value }));
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (
+    e: FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
+    setLoading(true);
+    const data = {
+      email: user.email,
+      password: user.password,
+      firstName: user.firstName,
+      lastName: user.lastName,
+      country: user.country,
+      phone: user.phone,
+      gender: user.gender,
+      dob: user.date,
+      apartment: user.address,
+      city: user.city,
+    };
+    const url = `/auth/signup`;
     try {
-      setLoading(true);
-      const response = await axios.post("/api/users/signup", user);
-      console.log("Signup success", response.data);
-      router.push("/en/pages/other-pages/login");
-      toast.success("Sign up successful");
+      const res = await httpService.post(url, data);
+      const response = res.data;
+      toast.success(`${response.message}`, {
+        duration: 7000,
+        position: "top-right",
+      });
+      router.push("/en/verify");
+
     } catch (error: any) {
-      console.log("Sign up failed", error.message);
-      toast.error(
-        error.response?.data?.error || "Sign up failed. Please try again."
-      );
+      setLoading(false);
+      toast.error(`${error?.response?.data?.message}`, {
+        duration: 7000,
+        position: "top-right",
+      });
+      console.error(error);
     } finally {
       setLoading(false);
     }
@@ -66,19 +97,39 @@ const RegisterForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="name">{FullName}</label>
-        <input
-          type="text"
-          name="name"
-          className="form-control"
-          id="name"
-          value={user.name}
-          onChange={handleInputChange}
-          placeholder="Enter your name"
-          required
-        />
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="form-group">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              className="form-control"
+              id="name"
+              value={user.firstName}
+              onChange={handleInputChange}
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+        </div>
+        <div className="col-xl-6">
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              className="form-control"
+              id="name"
+              value={user.lastName}
+              onChange={handleInputChange}
+              placeholder="Enter your last name"
+              required
+            />
+          </div>
+        </div>
       </div>
+
       <div className="form-group">
         <label htmlFor="email">{EmailAddress}</label>
         <input
@@ -120,19 +171,57 @@ const RegisterForm = () => {
           id="date"
           value={user.date}
           onChange={handleInputChange}
-          placeholder="Enter email address"
+          placeholder="Date of Birth"
           required
         />
       </div>
       <div className="form-group">
         <label htmlFor="gender">Gender</label>
         <div className="input-group">
-          <select className="form-control" id="gender">
+          <select
+            className="form-control"
+            id="gender"
+            name="gender"
+            value={user.gender}
+            onChange={handleInputChange}
+          >
             <option selected>Choose a gender...</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="others">Others</option>
           </select>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-xl-6">
+          <div className="form-group">
+            <label htmlFor="name">Address</label>
+            <input
+              type="text"
+              name="address"
+              className="form-control"
+              id="name"
+              value={user.address}
+              onChange={handleInputChange}
+              placeholder="Enter your Address"
+              required
+            />
+          </div>
+        </div>
+        <div className="col-xl-6">
+          <div className="form-group">
+            <label htmlFor="city">City</label>
+            <input
+              type="text"
+              name="city"
+              className="form-control"
+              id="name"
+              value={user.city}
+              onChange={handleInputChange}
+              placeholder="Enter your City"
+              required
+            />
+          </div>
         </div>
       </div>
       <div className="form-group">
@@ -169,19 +258,19 @@ const RegisterForm = () => {
           required
         />
       </div>
-      <div className="form-group">
+      {/* <div className="form-group">
         <label htmlFor="confirmPassword">Confirm Password</label>
         <input
           type="password"
           className="form-control"
           id="confirmPassword"
-          name="password"
+          name="confirmPassword"
           value={user.confirmpassword}
           onChange={handleInputChange}
           placeholder="Password"
           required
         />
-      </div>
+      </div> */}
       <div className="button-bottom">
         {/* <Link href="/en/pages/other-pages/register"> */}
         <button

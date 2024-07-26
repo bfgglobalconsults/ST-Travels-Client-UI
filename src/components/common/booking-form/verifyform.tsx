@@ -1,29 +1,48 @@
+import httpService from "@/services/httpService";
 import React from "react";
 import { FormEvent } from "react";
 import { ChangeEvent } from "react";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 import OtpInput from "react-otp-input";
 
 
 const VerifyForm = () => {
+          const router = useRouter(); 
       const [otp, setOtp] = React.useState("");
+      const [loading, setLoading] = React.useState(false);
 
-  const [user, setUser] = React.useState({
-    email: "",
-  });
-  const [buttonDisabled, setButtonDisabled] = React.useState(true);
-  const [loading, setLoading] = React.useState(false);
-  React.useEffect(() => {
-    const isValidUser = user.email.trim();
-    setButtonDisabled(!isValidUser);
-  }, [user]);
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setUser((prevUser) => ({ ...prevUser, [name]: value }));
-  };
+   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+     e.preventDefault();
+     setLoading(true);
+     const data = {
+        token: otp
+     };
+     const url = `/auth/verify/email?otp=${otp}`;
+     try {
+       const res = await httpService.post(url, data);
+       const response = res.data;
+       toast.success(`${response.message}`, {
+         duration: 10000,
+         position: "top-right",
+       });
+       router.push("/login");
+
+     } catch (error: any) {
+       setLoading(false);
+       toast.error(`${error?.response?.data?.message}`, {
+         duration: 10000,
+         position: "top-right",
+       });
+       console.error(error);
+     } finally {
+       setLoading(false);
+     }
+   };
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-group text-center">
           <label htmlFor="email">Enter OTP</label>
           <OtpInput
@@ -47,7 +66,6 @@ const VerifyForm = () => {
           <button
             className={`btn w-100 btn btn-solid color3`}
             type="submit"
-            disabled={buttonDisabled}
           >
             {loading ? "loading..." : "Submit"}
           </button>

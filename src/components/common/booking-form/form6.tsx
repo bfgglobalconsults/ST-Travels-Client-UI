@@ -9,9 +9,12 @@ import { EmailAddress, FullName, Password } from "@/constant/constant";
 import Button from "../btn";
 import Link from "next/link";
 import { toast } from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { setAccessToken, setUsers, setUserTokens } from "@/redux-toolkit/reducers/user-reducer";
 
 
-const LoginForm: FC = () => {
+const LoginForm = () => {
+  const dispatch = useDispatch();
    const router = useRouter();
    const [user, setUser] = React.useState({
      email: "",
@@ -38,9 +41,19 @@ const LoginForm: FC = () => {
         setLoading(true);
         const response = await axios.post("/api/users/login", user);
         console.log("Login success", response.data);
+        if (response.data.status === "success") {
+				setLoading(false);
+				dispatch(setUsers(response.data));
+				dispatch(
+					setUserTokens({
+						accessToken: response.data.access_token,
+						refreshToken: response.data.refresh_token,
+					}),
+				);
+				dispatch(setAccessToken(response.data.access_token));
         router.push("/en/home/flight/modern");
         toast.success("Login successful");
-      } catch (error: any) {
+      }} catch (error: any) {
         console.log("Login failed", error.message);
         toast.error(
           error.response?.data?.error || "Login failed. Please try again."

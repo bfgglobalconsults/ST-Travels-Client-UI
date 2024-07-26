@@ -22,7 +22,7 @@ const VerifyPage: FC<IForgotPageProps> = ({ title }) => {
           <div className="offset-lg-3 col-lg-6 offset-sm-2 col-sm-8 col-12">
             <div className="account-sign-in">
               <div className="title mt-4">
-                <h3 className="">{title}</h3>
+                <h3 className="text-center">{title}</h3>
               </div>
               {/* <SocialContent title={title} /> */}
               {/* {title === "sign up" ? <RegisterForm /> : <LoginForm />} */}

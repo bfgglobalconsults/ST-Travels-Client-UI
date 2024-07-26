@@ -180,9 +180,9 @@ export const serviceData = [
 ];
 
 export const imageData = [
-  { src: "/assets/images/inner-pages/about/1.jpg", title: "Venezuela", subTitle: "water fall" },
-  { src: "/assets/images/inner-pages/about/2.jpg", title: "Shillong", subTitle: "paragliding" },
-  { src: "/assets/images/inner-pages/about/3.jpg", title: "Berlin", subTitle: "River Front" },
+  { src: "/assets/images/inner-pages/about/venezuela.jpg", title: "Venezuela", subTitle: "water fall" },
+  { src: "/assets/images/inner-pages/about/shillong.jpg", title: "Shillong", subTitle: "paragliding" },
+  { src: "/assets/images/inner-pages/about/berlin.jpg", title: "Berlin", subTitle: "River Front" },
 ];
 
 export const tabs = [

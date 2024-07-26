@@ -48,25 +48,28 @@ export const cityData = [
 export const destinationData = [
   {
     id: 1,
-    img: "/assets/images/flights/destination/1.jpg",
+    // img: "/assets/images/flights/destination/1.jpg",
+    img: "/assets/images/flights/destination/paris.png",
     country: "france country",
     place: "paris",
     from: 851,
   },
   {
     id: 2,
-    img: "/assets/images/flights/destination/2.jpg",
+    // img: "/assets/images/flights/destination/2.jpg",
+    img: "/assets/images/flights/destination/london.png",
     country: "united kingdom",
     place: "london",
     from: 369,
   },
   {
     id: 3,
-    img: "/assets/images/flights/destination/3.jpg",
+    img: "/assets/images/flights/destination/zurich.png",
     country: "switzerland",
     place: "zurich",
     from: 256,
   },
+
   {
     id: 4,
     img: "/assets/images/flights/destination/2.jpg",
@@ -77,8 +80,9 @@ export const destinationData = [
   {
     id: 5,
     img: "/assets/images/flights/destination/3.jpg",
-    country: "switzerland",
-    place: "zurich",
+    // img: "/assets/images/flights/destination/zurich.png",
+    country: "germany",
+    place: "berlin",
     from: 256,
   },
 ];
@@ -104,25 +108,33 @@ export const airDetailData = [
 export const topDealData = [
   {
     id: 1,
-    image: "/assets/images/flights/destination/4.jpg",
+    // image: "/assets/images/flights/destination/4.jpg",
+    image: "/assets/images/flights/destination/flight-1.jpg",
     title: "london to moscow",
     discount: "-30%",
   },
   {
     id: 2,
-    image: "/assets/images/flights/destination/5.jpg",
-    title: "milan to stockholm",
-    discount: "limited time",
+    // image: "/assets/images/flights/destination/5.jpg",
+    image: "/assets/images/flights/destination/flight-2.jpg",
+    title: "milan to berlin",
+    discount: "early bird offer",
+    // title: "milan to stockholm",
+    // discount: "limited time",
   },
   {
     id: 3,
-    image: "/assets/images/flights/destination/6.jpg",
-    title: "marid to prague",
+    // image: "/assets/images/flights/destination/6.jpg",
+    image: "/assets/images/flights/destination/flight-3.jpg",
+    title: "marseille to madrid",
+    // discount: "early bird offer",
+    // title: "marid to prague",
     discount: "-30%",
   },
   {
     id: 4,
-    image: "/assets/images/flights/destination/7.jpg",
+    // image: "/assets/images/flights/destination/7.jpg",
+    image: "/assets/images/flights/destination/flight-4.jpg",
     title: "humburg to paris",
     discount: "sunday",
   },
@@ -279,7 +291,8 @@ export const topDestinationData = [
 export const flightBlogData = [
   {
     id: 1,
-    img: "/assets/images/flights/blog/1.jpg",
+    // img: "/assets/images/flights/blog/1.jpg",
+    img: "/assets/images/flights/blog/blog-1.jpg",
     date: "05",
     month: "nov",
     location: "phonics, Turkey",
@@ -288,7 +301,8 @@ export const flightBlogData = [
   },
   {
     id: 2,
-    img: "/assets/images/flights/blog/2.jpg",
+    // img: "/assets/images/flights/blog/2.jpg",
+    img: "/assets/images/flights/blog/blog-2.jpg",
     date: "05",
     month: "nov",
     location: "phonics, newyork",
@@ -297,7 +311,8 @@ export const flightBlogData = [
   },
   {
     id: 3,
-    img: "/assets/images/flights/blog/3.jpg",
+    // img: "/assets/images/flights/blog/3.jpg",
+    img: "/assets/images/flights/blog/blog-3.jpg",
     date: "05",
     month: "nov",
     location: "phonics, UK",
