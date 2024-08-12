@@ -20,8 +20,8 @@ const MinimalFlightForm: FC = () => {
     <>
       <form onSubmit={(event: React.FormEvent<HTMLFormElement>)=>event.preventDefault()}>
         <LocationOption isRoundTrip={isRoundTrip} onOptionChange={handleOptionChange} />
-        <SelectCity value="From" cityData={cityData} />
-        <SelectCity value="To" cityData={cityData} />
+        {/* <SelectCity value="From" cityData={cityData} /> */}
+        {/* <SelectCity value="To" cityData={cityData} /> */}
         <div className="form-group row mb-0 flight-form-input">
           <div className="col">
             <div className="form-control">
@@ -36,7 +36,7 @@ const MinimalFlightForm: FC = () => {
           </div>
           )}
           <div className="col">
-            <SelectTraveler />
+            {/* <SelectTraveler /> */}
           </div>
         </div>
       </form>
