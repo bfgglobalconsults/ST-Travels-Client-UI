@@ -7,8 +7,17 @@ import Booking from "@/components/hotels/booking/booking-page/booking-main-page"
 
 const BookingPage: FC = () => {
   return (
-    <CustomLayout title="light_header" userBgClass="user user-light">
-      <Breadcrumb title="Home" subTitle="holiday" mainTitle="booking" bannerImg={"/assets/images/tour/spain4.jpg"} />
+    <CustomLayout
+      title="bg-white"
+      footerPlace={true}
+      userBgClass="user rounded5"
+    >
+      <Breadcrumb
+        title="Home"
+        subTitle="holiday"
+        mainTitle="booking"
+        bannerImg={"/assets/images/tour/tour-banner.jpg"}
+      />
       <Booking />
     </CustomLayout>
   );

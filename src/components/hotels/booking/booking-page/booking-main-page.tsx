@@ -10,7 +10,7 @@ const Booking: FC = () => {
       <div className="container">
         <div className="row">
           <TravelInfo />
-          <Summary />
+          {/* <Summary /> */}
         </div>
       </div>
     </section>

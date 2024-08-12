@@ -1,7 +1,14 @@
 import { TravellerDetails } from "@/constant/constant"
+import { RootState } from "@/redux-toolkit/store";
 import { FC } from "react"
+import { useSelector } from "react-redux";
 
 const TravelDetail: FC = () => {
+      const flightData = useSelector((state: RootState) => state.flight);
+      const { travelers, flightClass } = useSelector((state: RootState) => state.booking);
+console.log('redux info', flightData);
+console.log('flight class', flightClass);
+console.log('traveler class', travelers);
     return (
         <div className="review_box">
             <div className="title-top">

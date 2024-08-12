@@ -19304,3 +19304,121 @@ $c-loader-front: #cee4e7;
 width: 40px;
 height: 40px;
 }
+
+// custom headless  ui modal
+.dialog-container {
+  position: relative;
+  z-index: 10;
+}
+
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.dialog-wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.dialog-content {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+}
+
+.dialog-panel {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  
+}
+
+.dialog-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dialog-body {
+  margin-top: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-span-2 {
+  grid-column: span 2;
+}
+
+.input-label {
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.submit-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border: none;
+  background: #e45f11;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+
+.submit-button:hover {
+  background: black;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-span-2 {
+    grid-column: span 1;
+  }
+
+  .dialog-panel {
+   max-height: 90vh; 
+  overflow-y: auto;
+  }
+}
+

@@ -11,8 +11,10 @@ import currencyReducer from "./reducers/currency";
 import hotelReducer from "./hotel-api";
 import tourReducer from "./tour-api";
 import flightReducer from "./flight-api";
+import flightData from "./reducers/flight-data";
 import cabReducer from "./cab-api";
 import restaurantReducer from "./restaurant-api";
+import bookingSlice from "./reducers/bookingSlice";
 
 export const store = configureStore({
   reducer: {
@@ -27,8 +29,10 @@ export const store = configureStore({
     hotel: hotelReducer,
     tour: tourReducer,
     flight: flightReducer,
+    flightData,
     cab: cabReducer,
     restaurant: restaurantReducer,
+    booking: bookingSlice
   },
   devTools: true,
 });
