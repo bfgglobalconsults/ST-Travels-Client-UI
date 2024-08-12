@@ -53,7 +53,7 @@ const applySelection = () => {
         />
         <FlightClass
           flightClass={flightClass}
-          setFlightClass={setFlightClassState}
+          setFlightClassState={setFlightClassState}
         />
         <hr />
         <button onClick={applySelection}>Apply</button>

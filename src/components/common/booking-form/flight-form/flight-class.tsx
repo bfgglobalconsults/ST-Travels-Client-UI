@@ -4,8 +4,8 @@ import { Business, Economy, Premium } from "@/constant/constant";
 
 const FlightClass: FC<{
   flightClass: string;
-  setFlightClass: (className: string) => void;
-}> = ({ flightClass, setFlightClass }) => {
+  setFlightClassState: (className: string) => void;
+}> = ({ flightClass, setFlightClassState }) => {
   return (
     <div>
       <label>Flight Class</label>
@@ -13,7 +13,7 @@ const FlightClass: FC<{
 
       <select
         value={flightClass}
-        onChange={(e) => setFlightClass(e.target.value)}
+        onChange={(e) => setFlightClassState(e.target.value)}
       >
         <option value="Economy">Economy</option>
         <option value="Business">Business</option>

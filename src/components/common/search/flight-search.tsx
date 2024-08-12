@@ -9,7 +9,7 @@ import FlightClass from "../booking-form/flight-form/flight-class";
 const FlightSearch: FC = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [startDate1, setStartDate1] = useState(new Date());
-    const [flightClass, setFlightClass] = useState("Economy");
+    const [flightClass, setFlightClassState] = useState("Economy");
 
   return (
     <div className="search-panel">
@@ -58,7 +58,7 @@ const FlightSearch: FC = () => {
                 <QtyBox />
                 <FlightClass
                   flightClass={flightClass}
-                  setFlightClass={setFlightClass}
+                  setFlightClassState={setFlightClassState}
                 />
                 <div className="bottom-part">
                   <Button btnClass="btn" name={Apply} />
