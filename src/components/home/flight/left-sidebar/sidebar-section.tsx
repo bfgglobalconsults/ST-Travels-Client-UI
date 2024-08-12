@@ -26,11 +26,11 @@ const SidebarSection: FC = () => {
             <form className="row" onSubmit={(event: React.FormEvent<HTMLFormElement>)=>event.preventDefault()}>
               <div className="col-xl-12 col-md-6 form-group">
               <label>From</label>
-                <SelectCity value="From" cityData={cityData} />
+                {/* <SelectCity value="From" cityData={cityData} /> */}
               </div>
               <div className="col-xl-12 col-md-6 form-group">
                 <label>To</label>
-                <SelectCity value="From" cityData={cityData} />
+                {/* <SelectCity value="From" cityData={cityData} /> */}
               </div>
               <div className="col-xl-12 col-md-6">
                 <div className="form-group">
@@ -52,7 +52,6 @@ const SidebarSection: FC = () => {
               )}
               <div className="col-xl-12 col-md-6 form-group">
                 <label>Traveller & Class</label>
-                <SelectTraveler />
               </div>
               <div className="col-12">
                 <Link href="/flight/listing/left-sidebar" className="btn btn-solid w-100 color1 float-end">search</Link>
