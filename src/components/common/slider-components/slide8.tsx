@@ -8,7 +8,7 @@ import Link from 'next/link';
 const Slide8: FC<ISlider8Props> = ({ data }) => {
   const { symbol, currencyValue } = useSelector((state: RootState) => state.currency);
   return (
-    <Link href="/home/tour/trending" key={data.id}>
+    <Link href="/tour/booking/booking-page" key={data.id}>
       <div className="category-box">
         <div className="img-category">
           <div className="side-effect"></div>

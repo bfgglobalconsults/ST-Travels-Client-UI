@@ -3,6 +3,7 @@ import Img from "@/utils/BackgroundImageRatio"
 import { FC } from "react"
 
 const FlightDetail: FC = () => {
+    
     return (
 
         <div className="review_box">

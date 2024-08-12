@@ -15,35 +15,183 @@ export const cityData = [
   },
   {
     id: 3,
-    place: "london",
+    place: "london, uk",
     airport: "Heathrow",
     button: "LHR",
   },
   {
     id: 4,
     place: "singapore, singapore",
-    airport: "changi Airport",
-    button: "par",
+    airport: "Changi Airport",
+    button: "SIN",
   },
   {
     id: 5,
     place: "vancouver, canada",
-    airport: "vancouver International Airport",
-    button: "par",
+    airport: "Vancouver International Airport",
+    button: "YVR",
   },
   {
     id: 6,
     place: "sydney, australia",
-    airport: "rose bay SPB",
-    button: "rse",
+    airport: "Kingsford Smith Airport",
+    button: "SYD",
   },
   {
     id: 7,
     place: "kuala lumpur, malaysia",
-    airport: "sentral",
-    button: "xkl",
+    airport: "Kuala Lumpur International Airport",
+    button: "KUL",
+  },
+  {
+    id: 8,
+    place: "new york, usa",
+    airport: "John F. Kennedy International Airport",
+    button: "JFK",
+  },
+  {
+    id: 9,
+    place: "doha, qatar",
+    airport: "Hamad International Airport",
+    button: "DOH",
+  },
+  {
+    id: 10,
+    place: "malé, maldives",
+    airport: "Velana International Airport",
+    button: "MLE",
+  },
+  {
+    id: 11,
+    place: "cairo, egypt",
+    airport: "Cairo International Airport",
+    button: "CAI",
+  },
+  {
+    id: 12,
+    place: "tel aviv, israel",
+    airport: "Ben Gurion Airport",
+    button: "TLV",
+  },
+  {
+    id: 13,
+    place: "bangkok, thailand",
+    airport: "Suvarnabhumi Airport",
+    button: "BKK",
+  },
+  {
+    id: 14,
+    place: "denpasar, bali",
+    airport: "Ngurah Rai International Airport",
+    button: "DPS",
+  },
+  {
+    id: 15,
+    place: "istanbul, turkey",
+    airport: "Istanbul Airport",
+    button: "IST",
+  },
+  {
+    id: 16,
+    place: "victoria, seychelles",
+    airport: "Seychelles International Airport",
+    button: "SEZ",
+  },
+  {
+    id: 17,
+    place: "beirut, lebanon",
+    airport: "Beirut-Rafic Hariri International Airport",
+    button: "BEY",
+  },
+  {
+    id: 18,
+    place: "nairobi, kenya",
+    airport: "Jomo Kenyatta International Airport",
+    button: "NBO",
+  },
+  {
+    id: 19,
+    place: "johannesburg, south africa",
+    airport: "O.R. Tambo International Airport",
+    button: "JNB",
+  },
+  {
+    id: 20,
+    place: "manila, philippines",
+    airport: "Ninoy Aquino International Airport",
+    button: "MNL",
+  },
+  {
+    id: 21,
+    place: "mexico city, mexico",
+    airport: "Benito Juárez International Airport",
+    button: "MEX",
+  },
+  {
+    id: 22,
+    place: "toronto, canada",
+    airport: "Toronto Pearson International Airport",
+    button: "YYZ",
+  },
+  {
+    id: 23,
+    place: "ho chi minh city, vietnam",
+    airport: "Tan Son Nhat International Airport",
+    button: "SGN",
+  },
+  {
+    id: 24,
+    place: "dar es salaam, tanzania",
+    airport: "Julius Nyerere International Airport",
+    button: "DAR",
   },
 ];
+
+
+// export const cityData = [
+//   {
+//     id: 1,
+//     place: "paris, france",
+//     airport: "Charles de Gaulle Airport",
+//     button: "par",
+//   },
+//   {
+//     id: 2,
+//     place: "Dubai, UAE",
+//     airport: "Dubai International Airport",
+//     button: "DXB",
+//   },
+//   {
+//     id: 3,
+//     place: "london",
+//     airport: "Heathrow",
+//     button: "LHR",
+//   },
+//   {
+//     id: 4,
+//     place: "singapore, singapore",
+//     airport: "changi Airport",
+//     button: "par",
+//   },
+//   {
+//     id: 5,
+//     place: "vancouver, canada",
+//     airport: "vancouver International Airport",
+//     button: "par",
+//   },
+//   {
+//     id: 6,
+//     place: "sydney, australia",
+//     airport: "rose bay SPB",
+//     button: "rse",
+//   },
+//   {
+//     id: 7,
+//     place: "kuala lumpur, malaysia",
+//     airport: "sentral",
+//     button: "xkl",
+//   },
+// ];
 
 export const destinationData = [
   {
@@ -335,7 +483,7 @@ export const subscribeData = [
     id: 1,
     svg: <ServiceBoxSvg />,
     title: "call us",
-    contact: "+91 123-456-7890",
+    contact: "+61435607034",
   },
   {
     id: 2,
