@@ -42,7 +42,7 @@ const BodyContent: FC = () => {
             <div className="suggestion_box">
               <div className="form-group">
                 <label>Destination</label>
-                <SelectCity value="To" cityData={cityData} />
+                {/* <SelectCity value="To" cityData={cityData} /> */}
               </div>
             </div>
           </div>

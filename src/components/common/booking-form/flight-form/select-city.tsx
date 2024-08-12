@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FC, useState } from "react";
 
 interface City {
+  id: number;
   place: string;
   airport: string;
   button: string;
