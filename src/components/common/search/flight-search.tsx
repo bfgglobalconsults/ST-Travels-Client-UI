@@ -9,6 +9,8 @@ import FlightClass from "../booking-form/flight-form/flight-class";
 const FlightSearch: FC = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [startDate1, setStartDate1] = useState(new Date());
+    const [flightClass, setFlightClass] = useState("Economy");
+
   return (
     <div className="search-panel">
       <div className="search-section">
@@ -16,11 +18,22 @@ const FlightSearch: FC = () => {
           <div className="left-part">
             <div className="search-body">
               <h6>from</h6>
-              <input type="text" className="form-control open-select" id="exampleInputEmail1" value="dubai(DXB)" placeholder="from" />
+              <input
+                type="text"
+                className="form-control open-select"
+                id="exampleInputEmail1"
+                value="dubai(DXB)"
+                placeholder="from"
+              />
             </div>
             <div className="search-body">
               <h6>to</h6>
-              <input type="text" className="form-control open-select" value="paris(PAR)" placeholder="to" />
+              <input
+                type="text"
+                className="form-control open-select"
+                value="paris(PAR)"
+                placeholder="to"
+              />
             </div>
             <div className="search-body">
               <h6>departure</h6>
@@ -28,16 +41,25 @@ const FlightSearch: FC = () => {
             </div>
             <div className="search-body">
               <h6>return</h6>
-              <DatePickerComponent setStart={setStartDate1} start={startDate1} />
+              <DatePickerComponent
+                setStart={setStartDate1}
+                start={startDate1}
+              />
             </div>
             <div className="search-body">
               <h6>traveler</h6>
-              <input type="text" className="form-control  open-select" value="1 traveler" placeholder="to" />
+              <input
+                type="text"
+                className="form-control  open-select"
+                value="1 traveler"
+                placeholder="to"
+              />
               <div className="selector-box-flight">
                 <QtyBox />
-                <FlightClass flightClass={""} setFlightClass={function (className: string): void {
-                  throw new Error("Function not implemented.");
-                } } />
+                <FlightClass
+                  flightClass={flightClass}
+                  setFlightClass={setFlightClass}
+                />
                 <div className="bottom-part">
                   <Button btnClass="btn" name={Apply} />
                 </div>
