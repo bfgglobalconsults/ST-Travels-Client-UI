@@ -35,7 +35,9 @@ const FlightSearch: FC = () => {
               <input type="text" className="form-control  open-select" value="1 traveler" placeholder="to" />
               <div className="selector-box-flight">
                 <QtyBox />
-                <FlightClass />
+                <FlightClass flightClass={""} setFlightClass={function (className: string): void {
+                  throw new Error("Function not implemented.");
+                } } />
                 <div className="bottom-part">
                   <Button btnClass="btn" name={Apply} />
                 </div>
