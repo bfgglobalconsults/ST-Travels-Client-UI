@@ -14,8 +14,8 @@ const BookingNowComponent: FC = () => {
         <div className="row">
           <div className="col-lg-8">
             <div className="review-section">
-              <FlightDetail />
-              <InformationPage type="flight" />
+              {/* <FlightDetail /> */}
+              {/* <InformationPage type="flight" /> */}
               <TravelDetail />
               <TravelInsurance />
             </div>
@@ -23,17 +23,17 @@ const BookingNowComponent: FC = () => {
           <div className="col-lg-4 res-margin">
             <div className="sticky-cls-top">
               <div className="review-section">
-                <Summary />
-                <Coupon />
+                {/* <Summary /> */}
+                {/* <Coupon /> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="continue-btn">
+        {/* <div className="continue-btn">
           <button className="btn btn-solid" type="submit">
             {ContinueBooking}
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

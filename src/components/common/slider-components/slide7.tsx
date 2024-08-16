@@ -12,19 +12,25 @@ const SliderSeven: FC<ISlideSevenProps> = ({ slideData }) => {
   const { symbol, currencyValue } = useSelector((state: RootState) => state.currency);
   return (
     <Slider {...slide2} className="slide-2 arrow-classic">
-      {slideData.map((data: IPackageProps,index) => (
+      {slideData.map((data: IPackageProps, index) => (
         <div key={index}>
           <div className="category-wrap">
             <div className="category-img">
-              <Link href="/home/tour/trending">
-                <Image src={data.img} alt="" className="img-fluid  " width={230} height={230} />
+              <Link href="/tour/booking/booking-page">
+                <Image
+                  src={data.img}
+                  alt=""
+                  className="img-fluid  "
+                  width={230}
+                  height={230}
+                />
               </Link>
               <div className="side-effect"></div>
             </div>
             <div className="category-content">
               <div>
                 <div className="top">
-                  <Link href="/home/tour/trending">
+                  <Link href="/tour/booking/booking-page">
                     <h3>{data.title}</h3>
                   </Link>
                   <h6>{data.badge}</h6>

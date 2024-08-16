@@ -32,6 +32,7 @@ const handleSearch = () => {
   };
   dispatch(setFlightData(flightData));
   onSearch();
+  console.log('flight is submitted', flightData);
 };
 
   return (

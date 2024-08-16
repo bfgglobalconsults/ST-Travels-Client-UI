@@ -38,7 +38,7 @@ const Destination: FC = () => {
                       Book Economy Class Return Until 29 Apr 19 Lorem Ipsum is
                       simply dummy text of the printing industry.
                     </h6>
-                    <Link href="/pages/blog-pages/left-sidebar">
+                    <Link href="/flight/booking/booking-now">
                       <Button
                         btnClass="btn btn-rounded color2 fs-6"
                         name={`from ${symbol}${(
