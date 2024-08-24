@@ -10,7 +10,7 @@ const Banner: FC = () => {
     <section className="home_section slide-1 p-0">
       <Slider {...slide1}>
         <div>
-          <BannerImgComponent bannerImg="/assets/images/tour/spain4.jpg" bannerCountry="Spain" />
+          <BannerImgComponent bannerImg="/assets/images/tour/spain4.jpg"  />
         </div>
         <div>
           <div className="home home-60">
