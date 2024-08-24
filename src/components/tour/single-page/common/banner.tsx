@@ -4,7 +4,7 @@ import { FC } from "react";
 
 
 
-const BannerImgComponent: FC<IBannerImgprops> = ({ bannerImg, animation }) => {
+const BannerImgComponent: FC<IBannerImgprops> = ({ bannerImg, bannerCountry, animation }) => {
     return (
         <div className="home home-60">
             <Img src={bannerImg} className="img-fluid bg-img" alt="" />
@@ -13,7 +13,7 @@ const BannerImgComponent: FC<IBannerImgprops> = ({ bannerImg, animation }) => {
                     <div className="col-md-8 offset-md-2">
                         <div className="home-content pt-0 mix-layout mrg-cls">
                             <div>
-                                {/* <h1>{bannerCountry}</h1> */}
+                                <h1>{bannerCountry}</h1>
                                 {/* <ul className="package-detail">
                                     <li><i className="far fa-calendar-alt"></i>7 days</li>
                                     <li><i className="fas fa-plane"></i>11 dec, 2023</li>

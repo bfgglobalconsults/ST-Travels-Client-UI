@@ -9,7 +9,7 @@ interface ITabsDataProps {
 
 interface IBannerImgprops {
   bannerImg: string;
-  // bannerCountry: string;
+  bannerCountry?: string;
   animation?: boolean;
 }
 
