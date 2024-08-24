@@ -625,6 +625,7 @@ export const packageData = [
     disc: 250,
     classIcon: true,
     couponCode: "EDR45",
+    link: "/",
   },
   {
     id: 2,
@@ -636,6 +637,7 @@ export const packageData = [
     disc: 200,
     classIcon: true,
     couponCode: "EDR45",
+    link: "/",
   },
   {
     id: 3,
@@ -647,6 +649,7 @@ export const packageData = [
     price: 240,
     disc: 200,
     couponCode: "EDR45",
+    link: "/",
   },
 ];
 

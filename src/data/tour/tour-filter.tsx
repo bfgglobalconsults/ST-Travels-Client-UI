@@ -68,28 +68,28 @@ export const tourTabsData = [
     id: "1",
     title: "high-light",
   },
+  // {
+  //   id: "2",
+  //   title: "itinerary",
+  // },
   {
     id: "2",
-    title: "itinerary",
-  },
-  {
-    id: "3",
     title: "gallery",
   },
+  // {
+  //   id: "4",
+  //   title: "accommodations",
+  // },
   {
-    id: "4",
-    title: "accommodations",
-  },
-  {
-    id: "5",
+    id: "3",
     title: "location",
   },
-  {
-    id: "6",
-    title: "review",
-  },
-  {
-    id: "7",
-    title: "policies",
-  },
+  // {
+  //   id: "6",
+  //   title: "review",
+  // },
+  // {
+  //   id: "7",
+  //   title: "policies",
+  // },
 ];

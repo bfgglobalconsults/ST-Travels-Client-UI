@@ -35,15 +35,20 @@ const Destination: FC = () => {
                     <h5>{data.country}</h5>
                     <h2>{data.place}</h2>
                     <h6>
-                      Book Economy Class Return Until 29 Apr 19 Lorem Ipsum is
-                      simply dummy text of the printing industry.
+                      Booking a flight has never been easier. Whether you're
+                      planning a business trip or a vacation, you can find and
+                      compare flights online in just a few clicks
                     </h6>
                     <Link href="/flight/booking/booking-now">
-                      <Button
+                      {/* <Button
                         btnClass="btn btn-rounded color2 fs-6"
                         name={`from ${symbol}${(
                           currencyValue * data.from
                         ).toFixed(0)}*`}
+                      /> */}
+                      <Button
+                        btnClass="btn btn-rounded color2 fs-6"
+                        name="Book Now"
                       />
                     </Link>
                   </div>

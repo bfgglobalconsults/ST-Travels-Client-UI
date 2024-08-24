@@ -11,6 +11,7 @@ import TopDestination from "@/components/home/flight/modern/top-destination";
 import Blog from "@/components/home/flight/modern/blog";
 import SubscribeComp from "@/components/home/flight/modern/subscribe";
 import { useSelector } from "react-redux";
+import TourHomePage from "@/components/home/tour/modern/home-page";
 
 const Modern: FC = () => {
   	// const user = useSelector((state:any) => state.user.user.data);
@@ -21,6 +22,7 @@ const Modern: FC = () => {
       <Destination />
       <AirlinesDetail />
       <FlightRoute />
+      <TourHomePage />
       {/* <FullBanner />
       <AirlineTickets />
       <TopDestination /> */}

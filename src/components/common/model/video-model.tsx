@@ -8,12 +8,22 @@ interface IVideoPorps {
 }
 const VideoModal: FC<IVideoPorps> = ({ modal, toggle }) => {
   return (
-    <Modal modalClassName="video-modal" centered size="lg" fade isOpen={modal} toggle={toggle}>
+    <Modal
+      modalClassName="video-modal"
+      centered
+      size="lg"
+      fade
+      isOpen={modal}
+      toggle={toggle}
+    >
       <ModalBody>
         <button onClick={toggle} type="button" className="btn-close">
           <span>×</span>
         </button>
-        <iframe src="https://www.youtube.com/embed/ezuKIzXJuz8" allowFullScreen></iframe>
+        <iframe
+          src="https://www.youtube.com/embed/hgoXWQejBCQ?si=AtbkVrxQo9D9n2Nh"
+          allowFullScreen
+        ></iframe>
       </ModalBody>
     </Modal>
   );

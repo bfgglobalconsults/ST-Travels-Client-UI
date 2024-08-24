@@ -15,7 +15,7 @@ const TopPlace: React.FC = () => {
             {topPlaceData.map((data: ITopPlaceProps,index) => (
               <div className="col-4" key={index}>
                 <div className="place rounded5">
-                  <Link href="/pages/portfolio/grid-2-title">
+                  <Link href="/">
                     <Image src={data.image} className="img-fluid " alt="" width={95.16} height={95.16} />
                     <div className="overlay">
                       <h6>{data.place}</h6>
