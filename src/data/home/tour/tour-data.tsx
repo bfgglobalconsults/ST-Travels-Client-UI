@@ -63,6 +63,7 @@ export const newOffersData = [
     desc: "Experience the Magic of Bali with Our Exclusive Tour Package!",
     offers: "5 days | 4 nights",
     person: "1 person",
+    link: "/en/tours/bali",
   },
   {
     id: 2,
@@ -74,18 +75,21 @@ export const newOffersData = [
     desc: "Discover the Wonders of Dubai with Our Exclusive Tour Package!",
     offers: "4 nights",
     person: "1 person",
+    link: "/en/tours/dubai",
   },
   {
     id: 3,
-    img: "/assets/images/tour/tour/bangkok-img.jpg",
+    img: "/assets/images/tour/tour/turkey-img.jpg",
     badge: "offer",
-    price: 1550,
-    discount: 1350,
-    title: "Bangkok Tour Package",
-    desc: "Experience the Vibrant Heart of Thailand with Our Exclusive Bangkok Tour Package!",
-    offers: "5 days ",
+    price: 2009,
+    discount: 1599,
+    title: "Turkey Tour Packages",
+    desc: "Explore the Heart of Turkey with Our Exclusive Nairobi Tour Package!",
+    offers: "5 nights",
     person: "1 person",
+    link: "/en/tours/turkey",
   },
+
   {
     id: 4,
     img: "/assets/images/tour/tour/nairobi-img.jpg",
@@ -96,6 +100,32 @@ export const newOffersData = [
     desc: "Explore the Heart of Africa with Our Exclusive Nairobi Tour Package!",
     offers: "5 nights",
     person: "1 person",
+    link: "/en/tours/nairobi",
+  },
+
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/bangkok-img.jpg",
+    badge: "offer",
+    price: 1550,
+    discount: 1350,
+    title: "Bangkok Tour Package",
+    desc: "Experience the Vibrant Heart of Thailand with Our Exclusive Bangkok Tour Package!",
+    offers: "5 days ",
+    person: "1 person",
+    link: "/en/tours/bangkok",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/vietnam-img.jpg",
+    badge: "offer",
+    price: 2099,
+    discount: 1099,
+    title: "Vietnam Tour Packages",
+    desc: "Explore the Heart of Asia with Our Exclusive Nairobi Tour Package!",
+    offers: "5 nights",
+    person: "1 person",
+    link: "/en/tours/vietnam",
   },
 ];
 
@@ -109,6 +139,7 @@ export const packageData = [
     price: 2599,
     disc: 2299,
     couponCode: "EDR45",
+    link: "tours/bangkok"
   },
   {
     id: 2,
@@ -119,6 +150,7 @@ export const packageData = [
     price: 1240,
     disc: 1099,
     couponCode: "EDR45",
+    link: "tours/dubai"
   },
   {
     id: 3,
@@ -130,6 +162,7 @@ export const packageData = [
     price: 1209,
     disc: 999,
     couponCode: "EDR45",
+    link: "tours/nairobi"
   },
   {
     id: 4,
@@ -140,6 +173,7 @@ export const packageData = [
     price: 940,
     disc: 800,
     couponCode: "EDR45",
+    link: "tours/bali"
   },
 ];
 

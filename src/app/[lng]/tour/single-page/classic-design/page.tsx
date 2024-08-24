@@ -8,7 +8,7 @@ const ClassicDesign: FC = () => {
   return (
     <CustomLayout logo={"dark"} title="light_header" userBgClass="user user-light rounded5" loader="pre">
       <section className="home_section p-0">
-        <BannerImgComponent bannerImg="/assets/images/inner-pages/breadcrumb1.jpg" animation={true} />
+        <BannerImgComponent bannerImg="/assets/images/inner-pages/breadcrumb1.jpg" animation={true} bannerCountry={""} />
       </section>
       <MainPage />
     </CustomLayout>

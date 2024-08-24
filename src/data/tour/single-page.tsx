@@ -1,3 +1,137 @@
+export const vietnamInclusionData = [
+  {
+    id: 1,
+    name: "Airport Transfers",
+  },
+  {
+    id: 2,
+    name: "Golden Bridge Tour (Lunch Included)",
+  },
+  {
+    id: 3,
+    name: "Daily Breakfast",
+  },
+  {
+    id: 4,
+    name: "5 Nights Hotel Reservation",
+  },
+  {
+    id: 5,
+    name: "Ha Long Bay Cruise Tour",
+  },
+  {
+    id: 6,
+    name: "Complimentary Champagne on Arrival",
+  },
+];
+
+export const dubaiInclusionData = [
+  {
+    id: 1,
+    name: "Airport Transfers",
+  },
+  {
+    id: 2,
+    name: "City Tour",
+  },
+  {
+    id: 3,
+    name: "4 Nights Stay With Breakfast",
+  },
+  {
+    id: 4,
+    name: "Hotel Reservations",
+  },
+  {
+    id: 5,
+    name: "Safari Dessert",
+  },
+  {
+    id: 6,
+    name: "Bedouin Camp",
+  },
+];
+
+export const nairobiInclusionData = [
+  {
+    id: 1,
+    name: "Accomodation",
+  },
+  {
+    id: 2,
+    name: "Airport Transfers",
+  },
+  {
+    id: 3,
+    name: "Breakfast Included",
+  },
+  {
+    id: 4,
+    name: "5 Nights Hotel Reservations",
+  },
+  {
+    id: 5,
+    name: "Safari Tour",
+  },
+  {
+    id: 6,
+    name: "Visa Fee Included",
+  },
+];
+
+export const turkeyInclusionData = [
+  {
+    id: 1,
+    name: "Accomodation",
+  },
+  {
+    id: 2,
+    name: "balloon flight",
+  },
+  {
+    id: 3,
+    name: "5 days in cappacodia turkey",
+  },
+  {
+    id: 4,
+    name: "Hotel Reservations",
+  },
+  {
+    id: 5,
+    name: "Private Tour Guide",
+  },
+  {
+    id: 6,
+    name: "Sunset Atv quad bike tour",
+  },
+];
+
+export const baliInclusionData = [
+  {
+    id: 1,
+    name: "Airport Transfers",
+  },
+  {
+    id: 2,
+    name: "Daily Breakfast",
+  },
+  {
+    id: 3,
+    name: "4 Nights Accomodation",
+  },
+  {
+    id: 4,
+    name: "White Water Rafting",
+  },
+  {
+    id: 5,
+    name: "Private Half-Day Tour",
+  },
+  {
+    id: 6,
+    name: "Atv Quad Bike",
+  },
+];
 export const inclusionData = [
   {
     id: 1,
@@ -64,6 +198,140 @@ export const aboutSec = [
     title: `foodies, prepare to be enthused`,
     desc: `From tasty tapas to superb seafood and traditional roasts,food in Spain is all about making the most of the best local produce.Whether you're on a city break in Barcelona or Madrid, or you've plumped for a countryside or coastal retreat, Spanish food is full of flavour and character.`,
     class: "bottom-space",
+  },
+];
+
+export const vietnamGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/vietnam-gallery1.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/vietnam-gallery2.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/vietnam-gallery3.jpeg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/vietnam-gallery4.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/vietnam-gallery5.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/vietnam-gallery6.jpg",
+  },
+];
+
+export const baliGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/bali-gallery1.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/bali-gallery2.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/bali-gallery3.jpg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/bali-gallery4.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/bali-gallery5.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/bali-gallery16.jpg",
+  },
+];
+
+export const nairobiGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/nairobi-gallery.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/nairobi-gallery2.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/nairobi-gallery3.jpg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/nairobi-gallery4.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/nairobi-gallery5.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/nairobi-gallery6.jpg",
+  },
+];
+export const turkeyGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/turkish-gallery1.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/turkish-gallery2.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/turkey-gallery3.jpg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/turkey-gallery4.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/turkey-gallery5.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/turkey-gallery6.jpg",
+  },
+];
+
+export const dubaiGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/dubai-gallery1.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/dubai-gallery2.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/dubai-gallery3.jpg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/dubai-gallery4.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/dubai-gallery5.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/dubai-gallery6.jpg",
   },
 ];
 
@@ -158,6 +426,110 @@ export const bannerData = [
     title: "splendid spain",
   },
 ];
+export const vietnamPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/golden-bridge.jpg",
+    placeName: "Golden Hand Bridge",
+    empire: "bridge",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/viet-image.jpg",
+    placeName: "Ha Long Bay",
+    empire: "beach",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/ha-giang.jpg",
+    placeName: "Ha Giang",
+    empire: "beach",
+  },
+];
+
+export const baliPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/bali-beach.jpg",
+    placeName: "Bali Beach",
+    empire: "beach",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/penida-bali.jpg",
+    placeName: "Penida Beach",
+    empire: "beach",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/rock-bali.jpg",
+    placeName: "Bali Temple",
+    empire: "temple",
+  },
+];
+
+export const nairobiPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/nairobi-image3.jpg",
+    placeName: "Giraffe Center",
+    empire: "reserve",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/nairobi-img7.jpg",
+    placeName: "National Park",
+    empire: "park",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/nairobi-main-img.jpg",
+    placeName: "Karura Forest",
+    empire: "wild",
+  },
+];
+
+export const turkeyPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/turkey-image4.jpg",
+    placeName: "Turkey balloon cappadocia",
+    empire: "ride",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/turkey-image5.jpeg",
+    placeName: "konyaalti beach",
+    empire: "desert",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/turkey-image7.jpg",
+    placeName: "Antalya",
+    empire: "beach",
+  },
+];
+
+export const dubaiPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/burj-khalifa1.jpg",
+    placeName: "burj khalifa",
+    empire: "building",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/safari-dubai1.jpg",
+    placeName: "safari desert",
+    empire: "desert",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/burj-al-arab1.jpg",
+    placeName: "burj al-arab",
+    empire: "building",
+  },
+];
 
 export const placeDetailData = [
   {
@@ -202,7 +574,10 @@ export const highlightItems1 = [
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "breakfast" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "lunch" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "dinner" },
-  { iconSrc: "/assets/images/icon/tour/bed.png", text: "night stay in seville" },
+  {
+    iconSrc: "/assets/images/icon/tour/bed.png",
+    text: "night stay in seville",
+  },
 ];
 
 export const highlightItems2 = [
@@ -221,28 +596,40 @@ export const highlightItems4 = [
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "breakfast" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "lunch" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "dinner" },
-  { iconSrc: "/assets/images/icon/tour/bed.png", text: "night stay in seville" },
+  {
+    iconSrc: "/assets/images/icon/tour/bed.png",
+    text: "night stay in seville",
+  },
 ];
 
 export const highlightItems5 = [
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "breakfast" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "lunch" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "dinner" },
-  { iconSrc: "/assets/images/icon/tour/bed.png", text: "night stay in Valencia" },
+  {
+    iconSrc: "/assets/images/icon/tour/bed.png",
+    text: "night stay in Valencia",
+  },
 ];
 
 export const highlightItems6 = [
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "breakfast" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "lunch" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "dinner" },
-  { iconSrc: "/assets/images/icon/tour/bed.png", text: "night stay in Barcelona" },
+  {
+    iconSrc: "/assets/images/icon/tour/bed.png",
+    text: "night stay in Barcelona",
+  },
 ];
 
 export const highlightItems7 = [
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "breakfast" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "lunch" },
   { iconSrc: "/assets/images/icon/tour/fork.png", text: "dinner" },
-  { iconSrc: "/assets/images/icon/tour/bed.png", text: "night stay in Barcelona" },
+  {
+    iconSrc: "/assets/images/icon/tour/bed.png",
+    text: "night stay in Barcelona",
+  },
 ];
 
 export const highlightItems8 = [

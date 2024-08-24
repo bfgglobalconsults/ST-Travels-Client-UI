@@ -25,7 +25,7 @@ const FlightRoute: FC = () => {
               <div className="routes-box">
                 <Link href="/flight/booking/booking-now" className="routes-img">
                   <Img src={data.image} alt="" className="img-fluid bg-img" />
-                  <div className="price-round">
+                  {/* <div className="price-round">
                     <div>
                       <h6>
                         <del>
@@ -38,7 +38,7 @@ const FlightRoute: FC = () => {
                         {(currencyValue * 42).toFixed(0)}
                       </h3>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="discount">
                     <h6>{data.discount}</h6>
                   </div>

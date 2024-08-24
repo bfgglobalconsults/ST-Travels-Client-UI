@@ -27,24 +27,24 @@ const TabContentComponent: FC<ITabContentComponentProps> = ({ data }) => {
         <TabPane tabId="1">
           <Highlight />
         </TabPane>
-        <TabPane tabId="2" className="default-accordion">
+        {/* <TabPane tabId="2" className="default-accordion">
           <Itinerary />
-        </TabPane>
-        <TabPane tabId="3">
+        </TabPane> */}
+        <TabPane tabId="2">
           <Gallery galleryData={galleryData} />
         </TabPane>
-        <TabPane tabId="4">
+        {/* <TabPane tabId="4">
           <Accommodations data={data} />
-        </TabPane>
-        <TabPane tabId="5">
+        </TabPane> */}
+        <TabPane tabId="3">
           <Location />
         </TabPane>
-        <TabPane tabId="6">
+        {/* <TabPane tabId="6">
           <Review />
         </TabPane>
         <TabPane tabId="7">
           <Policy />
-        </TabPane>
+        </TabPane> */}
       </TabContent>
     </div>
   );

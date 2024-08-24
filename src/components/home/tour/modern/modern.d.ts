@@ -13,6 +13,7 @@ interface INewOfferProps {
   desc: string;
   offers: string;
   person: string;
+  link: string;
 }
 
 interface IPackageProps {
@@ -25,6 +26,7 @@ interface IPackageProps {
   disc: number;
   couponCode: string;
   class?: undefined;
+  link: string;
 }
 
 interface IServiceProps {
