@@ -14,22 +14,23 @@ const Links: React.FC = () => {
               <li>
                 <Link href="/">home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">our vehical</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/">latest video</Link>
               </li>
               <li>
-                <Link href="/">services</Link>
+                <Link href="/en/pages/element-pages/service">services</Link>
               </li>
               <li>
                 <Link href="/">booking deal</Link>
               </li>
               <li>
-                <Link href="/">emergency call</Link>
+                <Link href="/en/pages/other-pages/contact-us-1">
+                  emergency call
+                </Link>
               </li>
-         
             </ul>
           </div>
         </div>

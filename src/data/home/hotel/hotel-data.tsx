@@ -426,22 +426,22 @@ export const startData = [
   {
     svg: <Capa2 />,
     title: "4500 + exclusive hotels",
-    desc: "4500 + exclusive hotels are included in rica hotel.",
+    desc: "4500 + exclusive hotels are included.",
   },
   {
     svg: <HappyClient />,
-    title: "3,00,000 happy client",
-    desc: "rica cab has more than 3 lakhs happy customer",
+    title: "3,000,000 happy client",
+    desc: "we have satisfied lots of happy customer",
   },
   {
     svg: <Location />,
     title: "4500 + exclusive hotels",
-    desc: "rica cab has more than 45k location at different countries",
+    desc: "we partner with more than 45k location at different countries",
   },
   {
     svg: <Booking />,
     title: "1.5m bookings",
-    desc: "rica hotels has more than 1.5 hotel bookings.",
+    desc: "our hotels has more than 1.5 hotel bookings.",
   },
 ];
 

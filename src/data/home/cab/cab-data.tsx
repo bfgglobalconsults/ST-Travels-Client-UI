@@ -68,23 +68,23 @@ export const serviceCabData = [
   {
     id: 1,
     svg: <CabSvg1 />,
-    title: "airport pick-drop",
-    desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
-    price: "15% discount",
+    title: "reliable flights",
+    desc: "At ST Travels, we prioritize partnering with airlines known for their punctuality, safety, and excellent customer service...",
+    price: "",
   },
   {
     id: 2,
     svg: <CabSvg2 />,
     title: "airport pick-drop",
-    desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
-    price: "15% discount",
+    desc: "Our airport pick-drop service is designed to eliminate the hassle of navigating transportation options after a long flight...",
+    price: "",
   },
   {
     id: 3,
     svg: <CabSvg3 />,
-    title: "airport pick-drop",
-    desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
-    price: "15% discount",
+    title: "Secured Payments",
+    desc: "We offer secured payment options that protect your personal and financial information throughout the transaction process...",
+    price: "",
   },
 ];
 
