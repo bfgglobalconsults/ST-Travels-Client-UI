@@ -55,7 +55,7 @@ export const SomeGoodReason = "some good reason";
 export const DownloadOurApp = "Download our app";
 export const BookYourTravel = "book your travel";
 export const Lorem =
-  "we are thrilled to offer you an incredible opportunity to save big on your next purchase. For a limited time, take advantage of our exclusive discount of 20-30% off on a wide range of products and services. Whether you’re a loyal customer or trying us out for the first time, this is your chance to enjoy premium quality at unbeatable prices. Here’s how you can make the most of this fantastic offer.";
+  "Choose ST Travels for a seamless and personalized travel experience. We offer an extensive network of partners, expert guidance, affordable packages, and a strong focus on safety and reliability. With 24/7 support, you can enjoy a hassle-free journey while we handle the details.";
 export const AmazingHolidayPackages = "Amazing Holiday Packages";
 export const ExploreThroughContinents = "Explore through Continents";
 export const ExploreThroughThemes = "Explore through Themes";

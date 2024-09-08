@@ -21,10 +21,7 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
             <p>
               <b>Australia:</b>
             </p>
-            <p>
-              Sydney 
-              , Australia
-            </p>
+            <p>Sydney , Australia</p>
           </div>
         </div>
       </div>
@@ -49,7 +46,7 @@ const AddressContent: FC<IAddressProps> = ({ colClass }) => {
           </div>
           <div className="contact_content">
             <ul>
-              <li>+2347065912096</li>
+              <li>+2347075944082</li>
               <li>+61435607034</li>
             </ul>
           </div>
