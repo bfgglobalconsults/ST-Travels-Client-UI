@@ -16,8 +16,8 @@ const FlightRoute: FC = () => {
         <TitleThree
           classTitle={"title-2"}
           subTitle="top flight routes..."
-          span="within usa"
-          desc="Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been standard......."
+          span="around the world"
+          desc="see various destinations we cover all around the world......."
         />
         <div className="row">
           {topDealData.map((data: ITopProps, index) => (

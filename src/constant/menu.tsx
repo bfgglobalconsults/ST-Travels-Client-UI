@@ -9,7 +9,6 @@ const MENUITEMS: IMenuItemProps[] = [
     title: "hotel",
     type: "sub",
     link: "/home/hotels/classic",
-
     megaMenu: false,
   },
   {
@@ -19,11 +18,17 @@ const MENUITEMS: IMenuItemProps[] = [
     megaMenu: false,
   },
   {
-    title: "Visa Assistance",
+    title: "Visa",
     type: "sub",
     link: "/en/visa",
     megaMenu: false,
   },
+  // {
+  //   title: "Outsourcing",
+  //   type: "sub",
+  //   link: "/pages/other-pages/contact-us-1",
+  //   megaMenu: false,
+  // },
   {
     title: "About Us",
     type: "sub",

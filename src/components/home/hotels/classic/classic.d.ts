@@ -65,4 +65,5 @@ interface IServiceClassicProps {
   src: string;
   title: string;
   description: string;
+  link?: string;
 }
