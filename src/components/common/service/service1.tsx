@@ -16,7 +16,7 @@ const ServiceOne: FC<IServiceOneProps> = ({ serviceData }) => {
               </div>
               <h5>{service.title}</h5>
               <p>{service.description}</p>
-              <Link href={service.link}>
+              <Link href={service.link || "/"}>
                 <Button
                   btnClass="my-3 btn btn-curve btn-lower color1"
                   name="View"
