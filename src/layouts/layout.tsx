@@ -14,6 +14,7 @@ import LoaderFlight from "./loader/loader-flight";
 import CustomizePage from "./customizer/page";
 import MapLoader from "./loader/skelton/map-loader";
 import { Toaster } from "react-hot-toast";
+import Messenger from "@/components/messenger/Messenger";
 
 interface CustomLayoutProps {
   children: ReactNode;
@@ -91,11 +92,13 @@ const CustomLayout: React.FC<CustomLayoutProps> = ({ children, title, logo, foot
           </div>
         </div>
       </header>
+
       <Toaster position="top-right" />
       {children}
       {!hideFooter && (
         <FooterMain footerType={footer} footerPlaceCom={footerPlace} />
       )}
+      <Messenger />
       <TapToTop />
       <CustomizePage />
     </>

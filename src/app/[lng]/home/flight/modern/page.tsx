@@ -12,6 +12,7 @@ import Blog from "@/components/home/flight/modern/blog";
 import SubscribeComp from "@/components/home/flight/modern/subscribe";
 import { useSelector } from "react-redux";
 import TourHomePage from "@/components/home/tour/modern/home-page";
+import OutsourceComponent from "@/components/home/hotels/classic/outsource";
 
 const Modern: FC = () => {
   	// const user = useSelector((state:any) => state.user.user.data);
@@ -23,6 +24,7 @@ const Modern: FC = () => {
       <AirlinesDetail />
       <FlightRoute />
       <TourHomePage />
+      <OutsourceComponent />
       {/* <FullBanner />
       <AirlineTickets />
       <TopDestination /> */}

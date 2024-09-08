@@ -769,7 +769,7 @@
   .service_section {
     > div {
       &:nth-last-child(-n + 3) {
-        margin-top: 50px;
+        margin-top: 0px;
       }
     }
   }
@@ -1176,7 +1176,7 @@
   .service_section {
     > div {
       &:nth-last-child(-n + 3) {
-        margin-top: 30px;
+        margin-top: 0px;
       }
     }
     .service-wrap {
@@ -2611,7 +2611,7 @@
   .service_section {
     > div {
       &:nth-last-child(-n + 4) {
-        margin-top: 20px;
+        margin-top: 0px;
       }
     }
   }

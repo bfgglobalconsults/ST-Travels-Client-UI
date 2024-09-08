@@ -15,7 +15,7 @@ const AboutUs2: FC = () => {
       <AboutUsContent side={"right"} />
       <ServiceContent />
       <Reviews />
-      <OurTeamContent />
+      {/* <OurTeamContent /> */}
       <Blog />
     </CustomLayout>
   );

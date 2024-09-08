@@ -147,6 +147,49 @@ export const specialRoomsData = [
   },
 ];
 
+export const outsource = [
+  {
+    id: 1,
+    src: "/assets/images/hotel/icon/it-consultant.png",
+    title: "IT & Development",
+    description:
+      "IT & Development outsourcing encompasses a broad range of services, including software development, IT support, infrastructure management, and system integration.",
+    link: "/en/outsource/it",
+  },
+  {
+    id: 2,
+    src: "/assets/images/hotel/icon/marketing.png",
+    title: "Marketing & Sales",
+    description:
+      "Marketing & Sales outsourcing covers a wide array of services, including digital marketing, lead generation, customer acquisition, branding, and sales strategy development.",
+    link: "/en/outsource/sales",
+  },
+  {
+    id: 3,
+    src: "/assets/images/hotel/icon/accountant.png",
+    title: "Accounting & Finance",
+    description:
+      "Accounting & Finance outsourcing includes services such as bookkeeping, payroll processing, financial reporting, tax preparation, and financial planning. ",
+    link: "/en/outsource/finance",
+  },
+  {
+    id: 4,
+    src: "/assets/images/hotel/icon/trade.png",
+    title: "Trade & E-Commerce",
+    description:
+      "Trade & E-Commerce outsourcing covers a range of services, including product sourcing, inventory management, order fulfillment, customer service, and digital marketing.",
+    link: "/en/outsource/trade",
+  },
+  {
+    id: 5,
+    src: "/assets/images/hotel/icon/support.png",
+    title: "Back Office Support",
+    description:
+      "Back Office Support outsourcing includes essential services such as data entry, administrative tasks, document management, HR functions, and IT support.",
+    link: "/en/outsource/support",
+  },
+];
+
 export const services = [
   {
     id: 1,

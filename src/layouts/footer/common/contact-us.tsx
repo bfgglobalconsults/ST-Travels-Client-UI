@@ -33,7 +33,7 @@ const ContactUsComponent: React.FC = () => {
               close Block 1 flat 10 festac town Lagos
             </li>
             <li>
-              <i className="fas fa-phone-alt"></i> +2347065912096
+              <i className="fas fa-phone-alt"></i> +2347075944082
             </li>
             <li>
               <i className="fas fa-envelope"></i> info@sttravelsconsulting.com

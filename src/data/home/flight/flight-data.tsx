@@ -213,8 +213,8 @@ export const destinationData = [
   {
     id: 3,
     img: "/assets/images/flights/destination/zurich.png",
-    country: "switzerland",
-    place: "zurich",
+    country: "turkey",
+    place: "ankara",
     from: 256,
   },
 
@@ -238,7 +238,7 @@ export const destinationData = [
 export const airDetailData = [
   {
     id: 1,
-    title: "rica airlines",
+    title: "airlines",
     offer: "student offer",
   },
   {
@@ -248,7 +248,7 @@ export const airDetailData = [
   },
   {
     id: 3,
-    title: "rica airlines",
+    title: "airlines",
     offer: "New offer",
   },
 ];
@@ -258,14 +258,14 @@ export const topDealData = [
     id: 1,
     // image: "/assets/images/flights/destination/4.jpg",
     image: "/assets/images/flights/destination/flight-1.jpg",
-    title: "london to moscow",
+    title: "london to dubai",
     discount: "-30%",
   },
   {
     id: 2,
     // image: "/assets/images/flights/destination/5.jpg",
     image: "/assets/images/flights/destination/flight-2.jpg",
-    title: "milan to berlin",
+    title: "australia to turkey",
     discount: "early bird offer",
     // title: "milan to stockholm",
     // discount: "limited time",
@@ -274,7 +274,7 @@ export const topDealData = [
     id: 3,
     // image: "/assets/images/flights/destination/6.jpg",
     image: "/assets/images/flights/destination/flight-3.jpg",
-    title: "marseille to madrid",
+    title: "paris to london",
     // discount: "early bird offer",
     // title: "marid to prague",
     discount: "-30%",
@@ -283,7 +283,7 @@ export const topDealData = [
     id: 4,
     // image: "/assets/images/flights/destination/7.jpg",
     image: "/assets/images/flights/destination/flight-4.jpg",
-    title: "humburg to paris",
+    title: "berlin to australia",
     discount: "sunday",
   },
 ];
