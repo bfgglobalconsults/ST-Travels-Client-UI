@@ -6,8 +6,12 @@ import Breadcrumb from "@/components/common/breadcrumb/page";
 
 const Faq: FC = () => {
   return (
-    <CustomLayout title="inner-page" userBgClass="user user-light">
-      <Breadcrumb title={"home"} subTitle={"faq"} bannerImg={"/assets/images/inner-bg.jpg"} />
+    <CustomLayout title="bg-white" userBgClass="user rounded5">
+      <Breadcrumb
+        title={"home"}
+        subTitle={"faq"}
+        bannerImg={"/assets/images/inner-bg.jpg"}
+      />
       <FaqContent />
     </CustomLayout>
   );

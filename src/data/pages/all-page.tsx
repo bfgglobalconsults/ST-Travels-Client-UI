@@ -187,17 +187,12 @@ export const imageData = [
 
 export const tabs = [
   { id: "general", label: "general" },
-  { id: "about", label: "about" },
   { id: "pricing", label: "pricing" },
   { id: "booking", label: "booking" },
-  { id: "payment", label: "payment" },
   { id: "cancellation", label: "cancellation & refunds" },
   { id: "visa", label: "visa & insurance" },
-  { id: "forex", label: "Foreign Exchange (FOREX)" },
-  { id: "hotels", label: "hotels" },
-  { id: "account", label: "my account" },
-  { id: "support", label: "support" },
-  { id: "contact", label: "contact" },
+  { id: "flights", label: "flights" },
+
 ];
 
 export const userTabs = [
@@ -207,6 +202,16 @@ export const userTabs = [
   { id: "cards", label: "cards & payment" },
   { id: "bookmark", label: "bookmark" },
   { id: "security", label: "security" },
+];
+
+export const termsTabs = [
+  { id: "convention", label: "convention" },
+  { id: "refunds", label: "refunds" },
+  { id: "packages", label: "packages" },
+  { id: "fees", label: "fees" },
+  { id: "travels", label: "travels & information" },
+  { id: "reservations", label: "reservations" },
+  { id: "privacy", label: "privacy policy" },
 ];
 
 export const counters = [

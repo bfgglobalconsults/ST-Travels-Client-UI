@@ -17,15 +17,15 @@ const Links: React.FC = () => {
               {/* <li>
                 <Link href="/">our vehical</Link>
               </li> */}
-              <li>
+              {/* <li>
                 <Link href="/">latest video</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/en/pages/element-pages/service">services</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">booking deal</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/en/pages/other-pages/contact-us-1">
                   emergency call

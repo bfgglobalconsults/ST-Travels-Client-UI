@@ -24,14 +24,16 @@ const AboutComponent: React.FC = () => {
                 <Link href="/pages/other-pages/register">register</Link>
               </li>
               <li>
-                <Link href="/pages/other-pages/user-dashboard">terms & co.</Link>
+                <Link href="/pages/other-pages/terms-and-condition">
+                  terms & co.
+                </Link>
               </li>
               <li>
-                <Link href="/pages/other-pages/user-dashboard">privacy</Link>
+                <Link href="/pages/other-pages/terms-and-condition">
+                  privacy
+                </Link>
               </li>
-              <li>
-                <Link href="/">support</Link>
-              </li>
+              
             </ul>
           </div>
         </div>
