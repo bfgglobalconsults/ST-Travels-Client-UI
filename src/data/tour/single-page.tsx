@@ -132,6 +132,33 @@ export const baliInclusionData = [
     name: "Atv Quad Bike",
   },
 ];
+export const bangkokInclusionData = [
+  {
+    id: 1,
+    name: "5 Days in Bangkok",
+  },
+  {
+    id: 2,
+    name: "Daily Breakfast",
+  },
+  {
+    id: 3,
+    name: "Royal Grand Palace Tour",
+  },
+  {
+    id: 4,
+    name: "Airport and hotel pickup",
+  },
+  {
+    id: 5,
+    name: "Temple visit",
+  },
+  {
+    id: 6,
+    name: "Tour guide",
+  },
+];
+
 export const inclusionData = [
   {
     id: 1,
@@ -252,6 +279,33 @@ export const baliGalleryData = [
   {
     id: 6,
     img: "/assets/images/tour/tour/bali-gallery16.jpg",
+  },
+];
+
+export const bangkokGalleryData = [
+  {
+    id: 1,
+    img: "/assets/images/tour/tour/grand-palace.jpg",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/tour/lumpini.jpg",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/tour/safari-world.jpg",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/tour/national-museum.jpg",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/tour/night-market.jpg",
+  },
+  {
+    id: 6,
+    img: "/assets/images/tour/tour/sea-life.jpg",
   },
 ];
 
@@ -447,6 +501,26 @@ export const vietnamPlaceDetailData = [
   },
 ];
 
+export const bangkokPlaceDetailData = [
+  {
+    id: 1,
+    img: "/assets/images/inner-pages/about/lumphini-park.jpg",
+    placeName: "Lumphini Park",
+    empire: "city park",
+  },
+  {
+    id: 2,
+    img: "/assets/images/inner-pages/about/seaworld.jpg",
+    placeName: "Bangkok Ocean World",
+    empire: "aquarium",
+  },
+  {
+    id: 3,
+    img: "/assets/images/inner-pages/about/museum.jpg",
+    placeName: "National Musuem Bangkok",
+    empire: "musuem",
+  },
+];
 export const baliPlaceDetailData = [
   {
     id: 1,
