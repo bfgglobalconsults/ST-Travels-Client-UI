@@ -274,7 +274,7 @@ export const topDealData = [
     id: 3,
     // image: "/assets/images/flights/destination/6.jpg",
     image: "/assets/images/flights/destination/flight-3.jpg",
-    title: "paris to london",
+    title: "paris to bangkok",
     // discount: "early bird offer",
     // title: "marid to prague",
     discount: "-30%",
@@ -283,7 +283,7 @@ export const topDealData = [
     id: 4,
     // image: "/assets/images/flights/destination/7.jpg",
     image: "/assets/images/flights/destination/flight-4.jpg",
-    title: "berlin to australia",
+    title: "australia to bali",
     discount: "sunday",
   },
 ];
