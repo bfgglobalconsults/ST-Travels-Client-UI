@@ -30,9 +30,7 @@ const SliderFive: FC<ISliderFiveProps> = ({ slideData, round, iconColor }) => {
               {/* <Link href="/pages/element-pages/blog">
                 <h5>{data.title}</h5>
               </Link> */}
-              <Link href="">
                 <h5>{data.title}</h5>
-              </Link>
               <p>{data.desc}</p>
             </div>
           </div>

@@ -13,6 +13,7 @@ import Video from "@/components/home/hotels/classic/video";
 import CustomLayout from "@/layouts/layout";
 import ServicesComponent from "@/components/home/hotels/classic/services";
 import SearchHotel from "@/components/home/hotels/classic/SearchHotel";
+import Blog from "@/components/home/flight/modern/blog";
 
 const Classic: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const Classic: React.FC = () => {
         <ServicesComponent />
         <SubscribeComponent />
         <Reviews />
+        <Blog />
         <Instagram />
       </CustomLayout>
     </>

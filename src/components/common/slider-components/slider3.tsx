@@ -42,13 +42,13 @@ const SliderThree: FC<ISliderThree> = ({ slideData, playButton }) => {
                   </div>
                   <div className="content">
                     <div className="detail">
-                      <h4>
+                      {/* <h4>
                         <span>
                           {symbol}
                           {(currencyValue * banner.price).toFixed(2)}
                         </span>{" "}
                         {banner.per}
-                      </h4>
+                      </h4> */}
                       <h2>{banner.title}</h2>
                       {banner.shortDescription && (
                         <h6>
@@ -60,9 +60,9 @@ const SliderThree: FC<ISliderThree> = ({ slideData, playButton }) => {
                       {/* <Link href="/pages/other-pages/contact-us-1" className="btn btn-solid">
                         {banner.btn}
                       </Link> */}
-                      <Link href="" className="btn btn-solid">
+                      {/* <Link href="" className="btn btn-solid">
                         {banner.btn}
-                      </Link>
+                      </Link> */}
                     </div>
                     <div className="barcode-design">
                       <Img

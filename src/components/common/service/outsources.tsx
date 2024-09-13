@@ -3,8 +3,7 @@ import { FC } from "react";
 import Button from "@/components/common/btn";
 import Link from "next/link";
 
-
-const ServiceOne: FC<IServiceOneProps> = ({ serviceData }) => {
+const Outsources: FC<IServiceOneProps> = ({ serviceData }) => {
   return (
     <div className="service_section row">
       {serviceData.map((service: IServiceClassicProps, index) => (
@@ -16,12 +15,12 @@ const ServiceOne: FC<IServiceOneProps> = ({ serviceData }) => {
               </div>
               <h5>{service.title}</h5>
               <p>{service.description}</p>
-              {/* <Link href={service.link || "/"}>
+              <Link href={service.link || "/"}>
                 <Button
                   btnClass="my-3 btn btn-curve btn-lower color1"
                   name="View"
                 />
-              </Link> */}
+              </Link>
             </div>
           </div>
         </div>
@@ -30,4 +29,4 @@ const ServiceOne: FC<IServiceOneProps> = ({ serviceData }) => {
   );
 };
 
-export default ServiceOne;
+export default Outsources;

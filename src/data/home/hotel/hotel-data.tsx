@@ -45,7 +45,7 @@ export const roomSuitData = [
     img: "/assets/images/hotel/video-image.jpg",
     price: 450,
     per: "/ per night",
-    title: "family room 5",
+    title: "family room",
     shortDescription: "family",
     shortDescriptionSpan: "room",
     description:
@@ -59,11 +59,11 @@ export const roomSuitData = [
     img: "/assets/images/hotel/video-image1.jpg",
     price: 450,
     per: "/ per night",
-    title: "family room 5",
+    title: "family room ",
     shortDescription: "family",
     shortDescriptionSpan: "room",
     description:
-      "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
+      "Warm and inviting space designed for shared moments and togetherness. It’s a versatile area where family members can gather to relax, play, and create lasting memories. Whether it’s for watching movies, playing games, or simply enjoying each other's company, a family room serves as the heart of the home, fostering connection and comfort.",
     btn: "book now",
     responsiveDesc: "see rooms",
     icon: "fas fa-key",
@@ -239,24 +239,24 @@ export const reviews = [
   {
     id: 1,
     // src: "/assets/images/avtar/1.jpg",
-    src: "/assets/images/avtar/lara-denal.jpg",
-    name: "lara denal",
+    src: "/assets/images/avtar/festus.png",
+    name: "festus bello",
     description:
-      "When you innovate, you make mistakes.It is best to admit them quickly, & get on with improving your other innovations.",
+      " I would definitely choose ST Travels and Consulting for my future travel needs and recommend them to anyone looking for a seamless travel experience.",
   },
   {
     id: 2,
-    src: "/assets/images/avtar/2.jpg",
-    name: "denal lara",
+    src: "/assets/images/avtar/secretary.png",
+    name: "miss aina",
     description:
-      "When you innovate, you make mistakes.It is best to admit them quickly, & get on with improving your other innovations.",
+      "I had an exceptional experience with ST Travels and Consulting. From the moment I reached out, their team was incredibly professional and attentive. They went above and beyond to ensure every detail of my trip was perfectly planned, making my travel stress-free and enjoyable.",
   },
   {
     id: 3,
-    src: "/assets/images/avtar/3.jpg",
-    name: "denal lara",
+    src: "/assets/images/avtar/ifeoma.png",
+    name: "ifeoma ezeamama",
     description:
-      "When you innovate, you make mistakes.It is best to admit them quickly, & get on with improving your other innovations.",
+      "The personalized service and attention to detail truly set them apart. I highly recommend ST Travels and Consulting for anyone looking for top-notch travel services and a memorable journey.",
   },
 ];
 

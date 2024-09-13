@@ -18,18 +18,24 @@ const SpecialRoomsComponent: FC = () => {
     <section className="section-b-space special-section ratio2_3 animated-section">
       <Animation />
       <div className="container">
-        <TitleComponent title={Our} subTitle={SpecialRooms} span={Special} titleClass={"title-3"} />
+        <TitleComponent
+          title={Our}
+          subTitle={SpecialRooms}
+          span={Special}
+          titleClass={"title-3"}
+        />
 
         <div className="slide-3">
           <Slider {...slide3}>
-            {specialRoomsData.map((room: ISpecialRoomsProps,index) => (
+            {specialRoomsData.map((room: ISpecialRoomsProps, index) => (
               <div key={index}>
                 <div className="special-box p-0">
                   <div className="special-img">
-                    <Link href="/hotel/listing/grid-view/2-grid">
+                    {/* <Link href="/hotel/listing/grid-view/2-grid">
                       <Img src={room.src} className="img-fluid bg-img" alt="" />
-                    </Link>
-                    <div className="label">
+                    </Link> */}
+                      <Img src={room.src} className="img-fluid bg-img" alt="" />
+                    {/* <div className="label">
                       <i className="fas fa-percent"></i>
                       <h3>
                         <del>
@@ -39,7 +45,7 @@ const SpecialRoomsComponent: FC = () => {
                         {symbol}
                         {(currencyValue * room.newPrice).toFixed(0)}
                       </h3>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="special-content">
                     {/* <Link href="/hotel/listing/grid-view/2-grid">
@@ -49,10 +55,10 @@ const SpecialRoomsComponent: FC = () => {
                       <h5>{room.title}</h5>
                     </Link>
                     <p>{room.description}</p>
-                    <div className="bottom-part">
+                    {/* <div className="bottom-part">
                       <Rating />
                       <div className="package-cls">{room.package}</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
