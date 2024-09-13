@@ -35,9 +35,9 @@ const Gallery: FC<IGalleryPageProps> = ({ title }) => {
                         />
                       </div>
                       <div className="gallery-content">
-                        <h5>{image.title}</h5>
+                        {/* <h5>{image.title}</h5> */}
                         {/* <Link href="/pages/portfolio/grid-2-title" className="btn btn-solid">{image.btn}</Link> */}
-                        <Link href="" className="btn btn-solid">{image.btn}</Link>
+                        {/* <Link href="" className="btn btn-solid">{image.btn}</Link> */}
                       </div>
                     </div>
                   </div>

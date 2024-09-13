@@ -12,14 +12,13 @@ const InstaSlider: FC<IInstaSliderProps> = ({ instagramData }) => {
         {instagramData.map((image: IInstagramProps,index) => (
           <div key={index}>
             {/* <Link href="/pages/portfolio/grid-2"> */}
-            <Link href="">
               <div className="instagram-box">
                 <Img src={image.src} alt="" className="img-fluid bg-img" />
                 <div className="overlay">
                   <i className="fab fa-instagram"></i>
                 </div>
               </div>
-            </Link>
+            
           </div>
         ))}
       </Slider>

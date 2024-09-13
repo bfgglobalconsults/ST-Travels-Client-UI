@@ -4,6 +4,7 @@ import TitleComponent from "@/components/common/title/title";
 import { outsource, services } from "@/data/home/hotel/hotel-data";
 import ServiceOne from "@/components/common/service/service1";
 import Animation from "@/components/common/animation/animation";
+import Outsources from "@/components/common/service/outsources";
 
 
 const OutsourceComponent: React.FC = () => {
@@ -17,7 +18,7 @@ const OutsourceComponent: React.FC = () => {
           span={Service}
           titleClass={"title-3"}
         />
-        <ServiceOne serviceData={outsource} />
+        <Outsources serviceData={outsource} />
       </div>
     </section>
   );
