@@ -12,11 +12,17 @@ const TopPlace: React.FC = () => {
       <div className="footer-content">
         <div className="footer-place">
           <div className="row">
-            {topPlaceData.map((data: ITopPlaceProps,index) => (
+            {topPlaceData.map((data: ITopPlaceProps, index) => (
               <div className="col-4" key={index}>
                 <div className="place rounded5">
-                  <Link href="/">
-                    <Image src={data.image} className="img-fluid " alt="" width={95.16} height={95.16} />
+                  <Link href="/flight/booking/booking-now">
+                    <Image
+                      src={data.image}
+                      className="img-fluid "
+                      alt=""
+                      width={95.16}
+                      height={95.16}
+                    />
                     <div className="overlay">
                       <h6>{data.place}</h6>
                     </div>

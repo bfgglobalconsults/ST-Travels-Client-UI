@@ -27,12 +27,12 @@ const AirlinesDetail: FC = () => {
                     <h2>{data.offer}</h2>
                     <h5>enjoy extra baggage allowance</h5>
                   </div>
-                  <Link href="/pages/other-pages/contact-us-1">
+                  {/* <Link href="/pages/other-pages/contact-us-1">
                     <Button
                       btnClass="btn btn-rounded btn-sm color1"
                       name={ReadMore}
                     />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}

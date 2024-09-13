@@ -11,11 +11,16 @@ import SpecialOffer from "@/components/home/tour/modern/special-offer";
 import Testimonial from "@/components/home/tour/modern/testimonial";
 import Video from "@/components/home/tour/modern/video";
 import CustomLayout from "@/layouts/layout";
+import Blog from "@/components/home/flight/modern/blog";
 // import "@/public/assets/scss/color1.scss";
 
 const Modern: FC = () => {
   return (
-    <CustomLayout title="bg-white" userBgClass="user rounded5" footerPlace={true}>
+    <CustomLayout
+      title="bg-white"
+      userBgClass="user rounded5"
+      footerPlace={true}
+    >
       <HomeBanner />
       <BookingTable />
       <NewOffers />
@@ -24,7 +29,8 @@ const Modern: FC = () => {
       <FullBanner />
       <Testimonial />
       <Gallery />
-      <ServiceComponent />
+      {/* <ServiceComponent /> */}
+      <Blog />
       {/* <SpecialOffer /> */}
       <SubscribeOne />
     </CustomLayout>

@@ -47,9 +47,14 @@ const AboutUsContent: FC<IAboutUsContentProps> = ({ side }) => {
                   principle of making travel experiences exceptional and
                   hassle-free. We are dedicated to providing personalized
                   services that cater to the diverse needs and preferences of
-                  our clients. Are you dreaming of embarking on unforgettable
-                  journeys that create lifelong memories, or simply on official
-                  travels!!!
+                  our clients. We also offer outsourcing services to streamline the operational needs of
+                  other travel agencies. Our expert team handles everything from
+                  customer support, itinerary planning, booking management, and
+                  ticketing to visa assistance. By outsourcing to us, travel
+                  agencies can focus on core business functions while ensuring
+                  their clients receive seamless and top-tier services. Let us
+                  manage the details so you can focus on delivering
+                  unforgettable travel experiences.
                 </p>
                 {/* <img
                   src="/assets/images/mix/signature.png"
