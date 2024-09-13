@@ -11,11 +11,13 @@ const Convention = () => {
             <p>
               International Carriage is governed by the Convention, where
               applicable, or under applicable laws where the Convention does not
-              apply. Where your travel is wholly within Australia with no
-              international sectors, it is subject to the provisions of the
-              Civil Aviation (Carriers’ Liability) Act 1959 as amended (or any
-              replacement legislation), the Australian Consumer Law or in the
-              case of intra-State travel, complementary State legislation.
+              apply. Where your travel is wholly within Australia or Nigeria
+              with no international sectors, it is subject to the provisions of
+              the Civil Aviation (Carriers’ Liability) Act 1959 as amended (or
+              any replacement legislation) in Australia, or applicable aviation
+              laws and regulations in Nigeria. For Australian travel, the
+              provisions of the Australian Consumer Law or, in the case of
+              intra-State travel, complementary State legislation also apply.
             </p>
             <p>
               Our Services facilitate the booking and reservation of
@@ -32,10 +34,10 @@ const Convention = () => {
               suppliers.
             </p>
             <p>
-              All content, trademarks, and intellectual property rights on
-              our website and services are owned by ST Travels and Consulting.
-              You may not use, reproduce, or distribute any content from our
-              website without our prior written consent.
+              All content, trademarks, and intellectual property rights on our
+              website and services are owned by ST Travels and Consulting. You
+              may not use, reproduce, or distribute any content from our website
+              without our prior written consent.
             </p>
           </div>
         </div>

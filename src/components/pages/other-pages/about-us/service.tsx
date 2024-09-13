@@ -32,12 +32,12 @@ const ServiceContent: FC = () => {
                   {/* <Link href="/pages/element-pages/service" className="btn btn-curve btn-lower color1">
                     learn more
                   </Link> */}
-                  <Link
+                  {/* <Link
                     href=""
                     className="btn btn-curve btn-lower color1"
                   >
                     learn more
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

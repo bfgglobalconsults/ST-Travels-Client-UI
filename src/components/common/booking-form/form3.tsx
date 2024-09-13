@@ -13,7 +13,7 @@ interface FlightThreeProps {
 }
 
 const FlightThree: FC<FlightThreeProps> = ({ onSearch }) => {
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const [startDate, setStartDate] = useState(new Date());
   const [startDate1, setStartDate1] = useState(new Date());
@@ -22,18 +22,18 @@ const FlightThree: FC<FlightThreeProps> = ({ onSearch }) => {
   const [toCity, setToCity] = useState("");
   const [travelers, setTravelers] = useState(1);
 
-const handleSearch = () => {
-  const flightData = {
-    fromCity,
-    toCity,
-    startDate: startDate.toISOString(),
-    returnDate: isRoundTrip ? startDate1.toISOString() : null,
-    travelers,
+  const handleSearch = () => {
+    const flightData = {
+      fromCity,
+      toCity,
+      startDate: startDate.toISOString(),
+      returnDate: isRoundTrip ? startDate1.toISOString() : null,
+      travelers,
+    };
+    dispatch(setFlightData(flightData));
+    onSearch();
+    console.log("flight is submitted", flightData);
   };
-  dispatch(setFlightData(flightData));
-  onSearch();
-  console.log('flight is submitted', flightData);
-};
 
   return (
     <>

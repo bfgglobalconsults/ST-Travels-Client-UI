@@ -7,7 +7,7 @@ const Updates: React.FC = () => {
   return (
     <div className="col-xl-3 col-md-6">
       <div className="footer-title">
-        <h5>{NewTopics}</h5>
+        <h5>Our Blogs</h5>
       </div>
       <div className="footer-content">
         <div className="footer-blog">

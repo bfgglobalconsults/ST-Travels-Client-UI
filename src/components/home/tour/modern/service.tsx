@@ -11,7 +11,7 @@ const ServiceComponent: FC = () => {
       <div className="container">
         <TitleThree
           title={New}
-          subTitle={SomeGoodReason}
+          subTitle="Why Choose Us"
           desc="Trips, experiences, and places. All in one service."
           classTitle="title-1 title-5"
         />
@@ -33,14 +33,14 @@ const ServiceComponent: FC = () => {
                     grand adventure, our dedicated team is here to tailor your
                     travel itinerary.
                   </p>
-                  <div className="service-btn">
+                  {/* <div className="service-btn">
                     <Link href="/">
                       <Button
                         btnClass="btn btn-rounded btn-sm color1"
                         name={ReadMore}
                       />
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -9,6 +9,23 @@ const Fees = () => {
         <div className="dashboard-detail">
           <div className="delete-section">
             <ul className="terms-list">
+              <li>Refund processing fee from $100.00 per ticket</li>
+              <li>Ticket Re-Issue Fee $50.00 per ticket</li>
+              <li>Ticket Validation Fee $50.00 per ticket</li>
+              <li>Credit card payment fee 2% of the total invoice</li>
+              <li>
+                Tickets where journey originates outside of Australia $35 per
+                ticket
+              </li>
+              <li>Ticket change fee from $50.00 per ticket</li>
+              <li>
+                Any other fee charged, or cost incurred in arranging your
+                requested services
+              </li>
+              <li>
+                Extraordinary Circumstances Service Fees as determined by the
+                Travel Providers and Admin/Service Fee charged by us
+              </li>
               <li>
                 The amount of the refund will depend on factors such as the
                 timing of the refund request, the type of travel service booked,
@@ -34,7 +51,6 @@ const Fees = () => {
                 arrangements for refund payment may be made at the discretion of
                 ST Travels and Consulting.
               </li>
-
               <li>
                 Extraordinary Circumstances Service Fees as determined by the
                 Travel Providers and Admin/Service Fee charged by us
@@ -52,18 +68,18 @@ const Fees = () => {
                 stricter refund policies imposed by the travel supplier.
               </li>
               <li>
-                ST Travels and Consulting acts as an agent for various Travel Suppliers. All bookings
-                are subject to the terms, conditions and limitations of
-                liability imposed by third party Travel Suppliers some of which
-                may limit or exclude liability in respect of certain matters,
-                including death, personal injury, delay, or loss or damage to
-                baggage. Whilst STTC is not liable or responsible in any way for
-                the conduct or omissions of third parties, STTC is to be
-                regarded as having the benefit of all such terms, conditions,
-                and limitations of liability. To the extent of any inconsistency
-                between these terms and conditions, and the terms and conditions
-                of any Travel Supplier, the terms of the applicable Travel
-                Supplier shall prevail.
+                ST Travels and Consulting acts as an agent for various Travel
+                Suppliers. All bookings are subject to the terms, conditions and
+                limitations of liability imposed by third party Travel Suppliers
+                some of which may limit or exclude liability in respect of
+                certain matters, including death, personal injury, delay, or
+                loss or damage to baggage. Whilst STTC is not liable or
+                responsible in any way for the conduct or omissions of third
+                parties, STTC is to be regarded as having the benefit of all
+                such terms, conditions, and limitations of liability. To the
+                extent of any inconsistency between these terms and conditions,
+                and the terms and conditions of any Travel Supplier, the terms
+                of the applicable Travel Supplier shall prevail.
               </li>
               <li>
                 The Travel price only includes items that are expressly stated
@@ -101,10 +117,10 @@ const Fees = () => {
                 STTC invoices.
               </li>
               <li>
-                STTC reserves the right to take legal action against the customer
-                not paying by the due date. All legal costs and incidentals
-                incurred by STT to recover its debts shall be borne by the
-                respective customer in default.
+                STTC reserves the right to take legal action against the
+                customer not paying by the due date. All legal costs and
+                incidentals incurred by STT to recover its debts shall be borne
+                by the respective customer in default.
               </li>
 
               <li>
@@ -148,8 +164,11 @@ const Fees = () => {
               </li>
 
               <li>
-                The Australian laws will apply in the event of any dispute
-                arising between STT and the customer.
+                In the event of any dispute arising between ST Travels and
+                Consulting (STTC) and the customer, Australian laws will apply
+                for services provided within Australia. For services provided
+                within Nigeria, the applicable Nigerian laws will govern the
+                resolution of disputes.
               </li>
 
               <li>
@@ -169,7 +188,7 @@ const Fees = () => {
               <li>
                 The Customer acknowledges that the Customer passport must be
                 valid for a period of at least six (6) months from the date of
-                return to Australia.
+                return.
               </li>
 
               <li>

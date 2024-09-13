@@ -23,6 +23,10 @@ export const vietnamInclusionData = [
     id: 6,
     name: "Complimentary Champagne on Arrival",
   },
+  {
+    id: 7,
+    name: "$1099 per person",
+  }
 ];
 
 export const dubaiInclusionData = [
@@ -49,6 +53,10 @@ export const dubaiInclusionData = [
   {
     id: 6,
     name: "Bedouin Camp",
+  },
+  {
+    id: 7,
+    name: "$1099 per person",
   },
 ];
 
@@ -77,6 +85,10 @@ export const nairobiInclusionData = [
     id: 6,
     name: "Visa Fee Included",
   },
+  {
+    id: 7,
+    name: "$999 per person",
+  },
 ];
 
 export const turkeyInclusionData = [
@@ -103,6 +115,10 @@ export const turkeyInclusionData = [
   {
     id: 6,
     name: "Sunset Atv quad bike tour",
+  },
+  {
+    id: 7,
+    name: "$1599 per person",
   },
 ];
 
@@ -131,6 +147,10 @@ export const baliInclusionData = [
     id: 6,
     name: "Atv Quad Bike",
   },
+  {
+    id:7,
+    name: "$800 per person"
+  }
 ];
 export const bangkokInclusionData = [
   {
@@ -156,6 +176,10 @@ export const bangkokInclusionData = [
   {
     id: 6,
     name: "Tour guide",
+  },
+  {
+    id: 7,
+    name: "$1350 per person",
   },
 ];
 

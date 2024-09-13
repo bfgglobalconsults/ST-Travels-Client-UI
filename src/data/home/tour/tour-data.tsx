@@ -180,15 +180,15 @@ export const packageData = [
 export const testimonialData = [
   {
     id: 1,
-    img: "/assets/images/avtar/1.jpg",
+    img: "/assets/images/avtar/festus.png",
     desc: "The guide was extremely knowledgeable and passionate about the history and culture of the area. We visited some breathtaking spots that we never would have found on our own. The attention to detail and personalized touches made the tour truly unforgettable. ",
-    name: "mark rufallo",
+    name: "festus bello",
   },
   {
     id: 2,
-    img: "/assets/images/avtar/2.jpg",
+    img: "/assets/images/avtar/secretary.png",
     desc: "Our guide was fantastic with our children, keeping them engaged and entertained throughout the trip. The itinerary was thoughtfully planned with plenty of breaks and activities that were fun for the whole family. ",
-    name: "Jerry enderess",
+    name: "aina oyefesobi",
   },
 ];
 
