@@ -15,6 +15,7 @@ import BookingJourney from "@/components/tour/single-page/common/sidebar/booking
 import Booking from "@/components/hotels/booking/booking-page/booking-main-page";
 import VietnamPlaceDetail from "./vietnam-detail";
 import VietnamTabContentComponent from "./vietnam-tab-content";
+import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 // import BaliPlaceDetail from "./bali-detail";
 // import BaliTabContentComponent from "./bali-tab-content";
 // import DubaiTabContentComponent from "./dubai-tab-content";
@@ -39,6 +40,9 @@ const VietnamMainPage: FC = () => {
           </div>
           <div className="col-12 booking-bottom-section">
             <div className="row">
+              <div>
+                <PayPalCheckout baseAmount={1099} />
+              </div>
               <div className="col-md-12">
                 <Booking />
               </div>

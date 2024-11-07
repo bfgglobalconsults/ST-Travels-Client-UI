@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+
 import { Providers } from "@/redux-toolkit/provider";
 // import { wrapper } from "@/redux-toolkit/store";
 import "@/public/assets/scss/globals.scss";
@@ -5,8 +7,14 @@ import { languages } from "../i18n/settings";
 import { Toaster } from "react-hot-toast";
 import ReactQueryProvider from "@/react-query/ReactQueryProvider";
 import { Suspense } from "react";
+// import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import Loading from "@/components/loader/page";
 
+const initialOptions = {
+  clientId: process.env.NEXT_PAYPAL_CLIENT_ID ?? "",
+  currency: "USD",
+  intent: "capture",
+};
 
 export const metadata = {
   title: "ST Travels",
@@ -14,7 +22,7 @@ export const metadata = {
 };
 
 export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
+  return languages.map((lng) => ({ lng }));
 }
 const RootLayout = ({
   children,
@@ -65,7 +73,7 @@ const RootLayout = ({
             <>
               <Suspense fallback={<Loading />}>
                 <Toaster position="top-right" />
-                {children}
+                  {children}
               </Suspense>
             </>
           </ReactQueryProvider>
@@ -77,3 +85,4 @@ const RootLayout = ({
 
 export default RootLayout;
 // export default wrapper.withRedux(RootLayout);
+

@@ -17,6 +17,8 @@
     "@fullcalendar/interaction": "^6.1.8",
     "@fullcalendar/react": "^6.1.8",
     "@headlessui/react": "^2.1.2",
+    "@paypal/paypal-js": "^8.1.2",
+    "@paypal/react-paypal-js": "^8.7.0",
     "@pixi/react": "^7.1.0",
     "@popperjs/core": "^2.11.7",
     "@reduxjs/toolkit": "^1.9.7",
