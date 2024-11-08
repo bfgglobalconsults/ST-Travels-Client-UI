@@ -15,6 +15,7 @@ import Booking from "@/components/hotels/booking/booking-page/booking-main-page"
 // import TurkeyTabContentComponent from "./turkey-tab-content";
 import NairobiTabContentComponent from "./nairobi-tab-content";
 import NairobiPlaceDetail from "./nairobi-detail";
+import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 // import DubaiTabContentComponent from "./dubai-tab-content";
 
 const NairobiMainPage: FC = () => {
@@ -37,6 +38,9 @@ const NairobiMainPage: FC = () => {
           </div>
           <div className="col-12 booking-bottom-section">
             <div className="row">
+              <div>
+                <PayPalCheckout baseAmount={999} />
+              </div>
               <div className="col-md-12">
                 <Booking />
               </div>

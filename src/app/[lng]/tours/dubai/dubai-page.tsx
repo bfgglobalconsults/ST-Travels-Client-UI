@@ -14,6 +14,7 @@ import TabContentComponent from "@/components/tour/single-page/common/tab-conten
 import BookingJourney from "@/components/tour/single-page/common/sidebar/booking-journey";
 import Booking from "@/components/hotels/booking/booking-page/booking-main-page";
 import DubaiTabContentComponent from "./dubai-tab-content";
+import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 
 const DubaiMainPage: FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -35,13 +36,14 @@ const DubaiMainPage: FC = () => {
           </div>
           <div className="col-12 booking-bottom-section">
             <div className="row">
+              <div>
+                <PayPalCheckout baseAmount={1099} />
+              </div>
               <div className="col-md-12">
                 <Booking />
               </div>
-              
             </div>
           </div>
-        
         </div>
       </div>
     </section>

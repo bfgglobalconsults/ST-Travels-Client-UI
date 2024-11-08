@@ -15,6 +15,7 @@ import BookingJourney from "@/components/tour/single-page/common/sidebar/booking
 import Booking from "@/components/hotels/booking/booking-page/booking-main-page";
 import BaliPlaceDetail from "./bali-detail";
 import BaliTabContentComponent from "./bali-tab-content";
+import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 // import DubaiTabContentComponent from "./dubai-tab-content";
 
 const BaliMainPage: FC = () => {
@@ -37,6 +38,9 @@ const BaliMainPage: FC = () => {
           </div>
           <div className="col-12 booking-bottom-section">
             <div className="row">
+              <div className="">
+                <PayPalCheckout baseAmount={800}  />
+              </div>
               <div className="col-md-12">
                 <Booking />
               </div>
