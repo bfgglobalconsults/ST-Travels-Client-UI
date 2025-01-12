@@ -2,7 +2,28 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-    async rewrites() {
+
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: `
+              default-src 'self';
+              script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.paypal.com https://*.paypalobjects.com blob:;
+              style-src 'self' 'unsafe-inline';
+              frame-src https://*.paypal.com;
+              img-src 'self' data: https://*.paypal.com https://*.paypalobjects.com;
+            `.replace(/\s{2,}/g, " ").trim(),
+          },
+        ],
+      },
+    ];
+  },
+
+  async rewrites() {
     return [
       {
         source: "/api/todos",
@@ -10,6 +31,7 @@ const nextConfig = {
       },
     ];
   },
+
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
