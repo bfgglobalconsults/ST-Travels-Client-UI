@@ -1,4 +1,5 @@
 "use client";
+import dynamic from "next/dynamic";
 import { FC, useEffect } from "react";
 // import TabContentComponent from "../common/tab-content";
 import { AppDispatch, RootState } from "@/redux-toolkit/store";
@@ -16,6 +17,13 @@ import Booking from "@/components/hotels/booking/booking-page/booking-main-page"
 import BaliPlaceDetail from "./bali-detail";
 import BaliTabContentComponent from "./bali-tab-content";
 import PayPalCheckout from "@/components/paypal/PayPalCheckout";
+// const PayPalCheckout = dynamic(
+//   () => import("@/components/paypal/PayPalCheckout"),
+//   {
+//     ssr: false,
+//   }
+// );
+
 // import DubaiTabContentComponent from "./dubai-tab-content";
 
 const BaliMainPage: FC = () => {
