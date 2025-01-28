@@ -34,6 +34,7 @@ const RootLayout = ({
   return (
     <html lang={lng}>
       <head>
+       
         <link
           href="https://fonts.googleapis.com/css?family=Vampiro+One&display=swap"
           rel="stylesheet"
