@@ -61,6 +61,7 @@
     "react-datetime-picker": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-double-range-slider": "^3.0.1",
+    "react-google-recaptcha": "^3.1.0",
     "react-hot-toast": "^2.4.1",
     "react-i18next": "^13.0.1",
     "react-leaflet": "^4.2.1",
@@ -87,6 +88,7 @@
     "@svgr/webpack": "^8.0.1",
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.6",
+    "@types/react-google-recaptcha": "^2.1.9",
     "@types/react-slick": "^0.23.10"
   }
 }
