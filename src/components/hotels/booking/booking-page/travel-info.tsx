@@ -3,19 +3,22 @@
 import { Apply, ContactInfo, EmailAddress, FirstName, LastName, PayNow, SpecialRequest, TravellerInformation } from "@/constant/constant";
 import { RootState } from "@/redux-toolkit/store";
 import { useRouter } from "next/navigation";
-import { FC, useEffect, useState } from "react";
+import { FC, useRef, useEffect, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { useForm, ValidationError } from "@formspree/react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import toast from "react-hot-toast";
 
 const TravelInfo: FC = () => {
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
   const { push } = useRouter();
   const { i18LangStatus } = useSelector((state: RootState) => state.language);
   const payBtn = () => {
     push(`${i18LangStatus}/hotel/booking/checkout`);
   };
-  
+    const [isVerified, setIsVerified] = useState(false);
+
 const [formData, setFormData] = useState({
   firstName: "",
   lastName: "",
@@ -45,6 +48,32 @@ const [formData, setFormData] = useState({
       setIsSubmitting(false);
     });
   };
+
+  async function handleCaptchaSubmission(token: string | null) {
+    try {
+      if (token) {
+        await fetch("/api", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ token }),
+        });
+        setIsVerified(true);
+      }
+    } catch (e) {
+      setIsVerified(false);
+    }
+  }
+
+  const handleChange = (token: string | null) => {
+    handleCaptchaSubmission(token);
+  };
+
+  function handleExpired() {
+    setIsVerified(false);
+  }
 
   useEffect(() => {
     if (state.succeeded && !isSubmitting) {
@@ -174,11 +203,17 @@ const [formData, setFormData] = useState({
               </div>
             </div>
           </div>
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+            ref={recaptchaRef}
+            onChange={handleChange}
+            onExpired={handleExpired}
+          />
           <div className="submit-btn">
             <button
               type="submit"
               className="btn btn-lower btn-curvy my-4"
-              disabled={isSubmitting}
+              disabled={!isVerified}
             >
               Submit
             </button>

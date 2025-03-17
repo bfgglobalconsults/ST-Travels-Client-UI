@@ -1,5 +1,6 @@
 "use client"
-import {FC, useState, useEffect} from 'react';
+import React, { useRef, useState, useEffect } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import {
   Dialog,
   Transition,
@@ -10,6 +11,8 @@ import { toast } from "react-hot-toast";
 
 
 const VisaBanner = () => {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+    const [isVerified, setIsVerified] = useState(false);
    let [isOpen, setIsOpen] = useState(false);
      const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -30,6 +33,32 @@ const VisaBanner = () => {
         setIsSubmitting(false);
       });
     };
+
+     async function handleCaptchaSubmission(token: string | null) {
+       try {
+         if (token) {
+           await fetch("/api", {
+             method: "POST",
+             headers: {
+               Accept: "application/json",
+               "Content-Type": "application/json",
+             },
+             body: JSON.stringify({ token }),
+           });
+           setIsVerified(true);
+         }
+       } catch (e) {
+         setIsVerified(false);
+       }
+     }
+
+     const handleChange = (token: string | null) => {
+       handleCaptchaSubmission(token);
+     };
+
+     function handleExpired() {
+       setIsVerified(false);
+     }
 
     useEffect(() => {
       if (state.succeeded && !isSubmitting) {
@@ -192,10 +221,18 @@ const VisaBanner = () => {
                           </div>
                         </div>
                         <div className="dialog-footer">
+                          <ReCAPTCHA
+                            sitekey={
+                              process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""
+                            }
+                            ref={recaptchaRef}
+                            onChange={handleChange}
+                            onExpired={handleExpired}
+                          />
                           <button
                             type="submit"
                             className="btn btn-lower btn-curvy my-4"
-                            disabled={isSubmitting}
+                            disabled={!isVerified}
                           >
                             Submit
                           </button>
