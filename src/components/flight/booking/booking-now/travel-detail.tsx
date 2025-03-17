@@ -5,7 +5,8 @@ import { TravellerDetails } from "@/constant/constant"
 import { cityData } from "@/data/home/flight/flight-data";
 import { setFlightClass, setFromCity, setReturnDate, setStartDate, setToCity, setTravelers } from "@/redux-toolkit/reducers/flight-data";
 import { RootState } from "@/redux-toolkit/store";
-import { FC, useEffect, useState } from "react"
+import { FC, useRef, useEffect, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "react-hot-toast";
@@ -13,6 +14,8 @@ import { useRouter } from "next/navigation";
 
 
 const TravelDetail: FC = () => {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isVerified, setIsVerified] = useState(false);
       const router = useRouter();
 
         const dispatch = useDispatch();
@@ -73,6 +76,32 @@ const formatDate = (date: Date | string) => {
              setIsSubmitting(false);
            });
          };
+
+         async function handleCaptchaSubmission(token: string | null) {
+           try {
+             if (token) {
+               await fetch("/api/recaptcha", {
+                 method: "POST",
+                 headers: {
+                   Accept: "application/json",
+                   "Content-Type": "application/json",
+                 },
+                 body: JSON.stringify({ token }),
+               });
+               setIsVerified(true);
+             }
+           } catch (e) {
+             setIsVerified(false);
+           }
+         }
+
+         const handleChange = (token: string | null) => {
+           handleCaptchaSubmission(token);
+         };
+
+         function handleExpired() {
+           setIsVerified(false);
+         }
 
          useEffect(() => {
            if (state.succeeded && !isSubmitting) {
@@ -216,11 +245,17 @@ const formatDate = (date: Date | string) => {
                     </select>
                   </div>
                 </div>
+                <ReCAPTCHA
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                  ref={recaptchaRef}
+                  onChange={handleChange}
+                  onExpired={handleExpired}
+                />
                 <div className="submit-btn">
                   <button
                     type="submit"
                     className="btn btn-lower btn-curvy my-4"
-                    disabled={isSubmitting}
+                    disabled={!isVerified}
                   >
                     Submit
                   </button>

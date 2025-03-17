@@ -12,7 +12,7 @@ const nextConfig = {
           key: "Content-Security-Policy",
           value: `
             default-src 'self';
-            script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.paypal.com https://*.paypalobjects.com blob:;
+            script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.paypal.com https://*.paypalobjects.com https://www.google.com https://www.gstatic.com  blob:;
             style-src 'self' 'unsafe-inline';
             frame-src 'self' https://*.paypal.com https://*.google.com;
             img-src 'self' data: https://*.paypal.com https://*.paypalobjects.com;
@@ -20,6 +20,7 @@ const nextConfig = {
           `.replace(/\s{2,}/g, " ").trim(),
         },
       ],
+
     },
   ];
 },
