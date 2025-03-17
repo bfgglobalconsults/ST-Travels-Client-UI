@@ -65,7 +65,7 @@ const Page= () => {
                 </div>
               </div>
               <div
-                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
+                className="col-xl-6 order-xl-1"
               >
                 <div className="image-section">
                   <div className="">
@@ -90,7 +90,7 @@ const Page= () => {
           <div className="container">
             <div className="row">
               <div
-                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
+                className="col-xl-6 order-xl-1" 
               >
                 <div className="image-section">
                   <div className="">
@@ -153,7 +153,7 @@ const Page= () => {
                 </div>
               </div>
               <div
-                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
+                className="col-xl-6 order-xl-1" 
               >
                 {" "}
                 <div className="image-section">
@@ -179,7 +179,7 @@ const Page= () => {
           <div className="container">
             <div className="row">
               <div
-                className={`col-xl-6 ${"right" ? "order-xl-1" : ""}`}
+                className="col-xl-6 order-xl-1"
               >
                 <div className="image-section">
                   <div className="">
