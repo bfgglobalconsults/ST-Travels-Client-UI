@@ -13,7 +13,7 @@ const BookingPage: FC<BookingPageProps> = ({amount}) => {
   return (
     <CustomLayout title="inner-page" userBgClass="user user-light">
       <Breadcrumb title="Home" subTitle="hotels" mainTitle="Booking" bannerImg={"/assets/images/inner-pages/bg-bread.jpg"} />
-      <Booking amount={amount} />
+      <Booking amount={amount ?? 0} />
     </CustomLayout>
   );
 };
