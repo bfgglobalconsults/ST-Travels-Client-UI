@@ -5,11 +5,15 @@ import Breadcrumb from "@/components/common/breadcrumb/page";
 import CustomLayout from "@/layouts/layout";
 import Booking from "@/components/hotels/booking/booking-page/booking-main-page";
 
-const BookingPage: FC = () => {
+interface BookingPageProps {
+  amount: number;
+}
+
+const BookingPage: FC<BookingPageProps> = ({amount}) => {
   return (
     <CustomLayout title="inner-page" userBgClass="user user-light">
       <Breadcrumb title="Home" subTitle="hotels" mainTitle="Booking" bannerImg={"/assets/images/inner-pages/bg-bread.jpg"} />
-      <Booking />
+      <Booking amount={amount} />
     </CustomLayout>
   );
 };
