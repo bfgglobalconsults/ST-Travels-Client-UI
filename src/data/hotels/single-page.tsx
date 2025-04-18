@@ -3,22 +3,22 @@ import { SunCloudSvg, SunSvg, CloudSvg, RainSvg } from "@/data/svg/weather";
 export const imagesection1 = [
   {
     id: 1,
-    img: "/assets/images/hotel/room/11.jpg",
+    img: "/assets/images/hotel/room/11.jpeg",
     title: "view all images",
   },
   {
     id: 2,
-    img: "/assets/images/hotel/room/10.jpg",
+    img: "/assets/images/hotel/room/10.jpeg",
     title: "view all images",
   },
   {
     id: 3,
-    img: "/assets/images/hotel/room/9.jpg",
+    img: "/assets/images/hotel/room/9.jpeg",
     title: "view all images",
   },
   {
     id: 4,
-    img: "/assets/images/hotel/room/12.jpg",
+    img: "/assets/images/hotel/room/12.jpeg",
     title: "view all images",
   },
 ];
@@ -26,27 +26,27 @@ export const imagesection1 = [
 export const imagesection2 = [
   {
     id: 1,
-    img: "/assets/images/hotel/room/4.jpg",
+    img: "/assets/images/hotel/room/4.jpeg",
     title: "room images",
   },
   {
     id: 2,
-    img: "/assets/images/hotel/room/5.jpg",
+    img: "/assets/images/hotel/room/5.jpeg",
     title: "room images",
   },
   {
     id: 3,
-    img: "/assets/images/hotel/room/6.jpg",
+    img: "/assets/images/hotel/room/6.jpeg",
     title: "room images",
   },
   {
     id: 4,
-    img: "/assets/images/hotel/room/7.jpg",
+    img: "/assets/images/hotel/room/7.jpeg",
     title: "room images",
   },
   {
     id: 5,
-    img: "/assets/images/hotel/room/8.jpg",
+    img: "/assets/images/hotel/room/8.jpeg",
     title: "room images",
   },
 ];
@@ -54,17 +54,17 @@ export const imagesection2 = [
 export const imagesection3 = [
   {
     id: 1,
-    img: "/assets/images/hotel/room/13.jpg",
+    img: "/assets/images/hotel/room/13.jpeg",
     title: "poll images",
   },
   {
     id: 2,
-    img: "/assets/images/hotel/room/14.jpg",
+    img: "/assets/images/hotel/room/14.jpeg",
     title: "poll images",
   },
   {
     id: 3,
-    img: "/assets/images/hotel/room/15.jpg",
+    img: "/assets/images/hotel/room/15.jpeg",
     title: "poll images",
   },
 ];
@@ -86,12 +86,9 @@ export const tabsTitleData = [
     id: "4",
     title: "location",
   },
+  
   {
     id: "5",
-    title: "reviews",
-  },
-  {
-    id: "6",
     title: "policies",
   },
 ];
@@ -99,8 +96,8 @@ export const tabsTitleData = [
 export const roomData = [
   {
     id: 1,
-    title: "Deluxe Room",
-    img: "/assets/images/hotel/room/4.jpg",
+    title: "Basic Room",
+    img: "/assets/images/hotel/room/4.jpeg",
     amenities: [
       {
         iconImg: "/assets/images/icon/tour/bed.png",
@@ -130,13 +127,13 @@ export const roomData = [
         name: "non refundable",
       },
     ],
-    discount: 1250,
-    price: 1000,
+    discount:85,
+    price: 65,
   },
   {
     id: 2,
-    title: "Suite Room",
-    img: "/assets/images/hotel/room/5.jpg",
+    title: "Premium Room",
+    img: "/assets/images/hotel/room/5.jpeg",
     amenities: [
       {
         iconImg: "/assets/images/icon/tour/bed.png",
@@ -166,13 +163,13 @@ export const roomData = [
         name: "free cancellation",
       },
     ],
-    discount: 1350,
-    price: 1100,
+    discount: 105,
+    price: 90,
   },
   {
     id: 3,
-    title: "Royal Room",
-    img: "/assets/images/hotel/room/6.jpg",
+    title: "Elite Room",
+    img: "/assets/images/hotel/room/15.jpeg",
     amenities: [
       {
         iconImg: "/assets/images/icon/tour/bed.png",
@@ -206,8 +203,8 @@ export const roomData = [
         name: "Dinner & lunch",
       },
     ],
-    discount: 1950,
-    price: 1800,
+    discount: 130,
+    price: 115,
   },
 ];
 
@@ -223,9 +220,7 @@ export const facilityData = [
       {
         name: "Room Service",
       },
-      {
-        name: "Elevator Lift",
-      },
+     
       {
         name: "Laundry Service",
       },
@@ -299,14 +294,12 @@ export const facilityData = [
     title: "activities",
     img: "/assets/images/icon/hotel/barbell.png",
     children: [
-      {
-        name: "gym",
-      },
+     
       {
         name: "game zone",
       },
       {
-        name: "swimming pool",
+        name: "outdoor bar",
       },
     ],
   },

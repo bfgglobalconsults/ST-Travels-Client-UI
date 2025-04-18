@@ -7,7 +7,11 @@ import CustomLayout from "@/layouts/layout";
 
 const InfoTab: FC = () => {
   return (
-    <CustomLayout logo={"dark"} title="light_header" userBgClass="user user-light rounded5" loader="pre">
+    <CustomLayout
+      title="bg-white"
+      footerPlace={true}
+      userBgClass="user rounded5"
+    >
       <Banner />
       <SinglePageSection side={"right"} tab={true} detail={true} />
     </CustomLayout>

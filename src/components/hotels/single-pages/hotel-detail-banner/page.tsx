@@ -9,7 +9,7 @@ const HotelBannerDetail: FC = () => {
     <div className="hotel-name">
       <div className="left-part">
         <div className="top">
-          <h2>{SeaViewHotel}</h2>
+          <h2>Luxury Apartment</h2>
           <Rating />
           <div className="share-buttons">
             <a href="#" className="btn btn-solid">
@@ -20,17 +20,24 @@ const HotelBannerDetail: FC = () => {
             </a>
           </div>
         </div>
-        <p>Mina Road, Bur Dubai, Dubai, United Arab Emirates</p>
+        <p>Idu, Abuja</p>
         <div className="facility-detail">
-          <span>free wifi</span>
-          <span>free breakfast</span>
+          <span>unlimited wifi</span>
+          <span>security</span>
+          <span>complimentary breakfast</span>
+          <span>24/7 electricity</span>
         </div>
       </div>
       <div className="right-part">
         <h2 className="price">
-          $250 <span>/ per night</span>
+          $115 <span>/ per night</span>
         </h2>
-        <Link href="/hotel/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name="book this now" /></Link>
+        <Link href="/hotel/booking/booking-page">
+          <Button
+            btnClass="btn btn-rounded btn-sm color1"
+            name="book this now"
+          />
+        </Link>
       </div>
     </div>
   );

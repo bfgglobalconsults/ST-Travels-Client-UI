@@ -29,7 +29,7 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ detail, side, tab, thu
             <div className="sticky-cls">
               <BookInfo />
               <ContactInfo />
-              <WeatherInfo />
+              {/* <WeatherInfo /> */}
             </div>
           </div>
           <div className="col-xl-9 col-lg-8">
@@ -42,7 +42,7 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ detail, side, tab, thu
             ) : (
               <Description />
             )}
-            <SpecialImage />
+            {/* <SpecialImage /> */}
           </div>
         </div>
       </div>

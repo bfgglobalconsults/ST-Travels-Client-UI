@@ -44,10 +44,8 @@ const TabDescription: FC<ITabDescriptionProps> = ({ tabsData, class1 }) => {
           <TabPane tabId="4">
             <Location tab={false} />
           </TabPane>
+        
           <TabPane tabId="5">
-            <Reviews tab={false} />
-          </TabPane>
-          <TabPane tabId="6">
             <Policies tab={false} />
           </TabPane>
         </TabContent>
