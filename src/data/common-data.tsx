@@ -12,16 +12,36 @@ export const currencyData: Record<string, CurrencyData> = {
   EUR: {
     name: "euro",
     symbol: "€",
-    currencyValue: 0.85,
+    currencyValue: 0.88,
   },
   INR: {
     name: "inr",
     symbol: "₹",
-    currencyValue: 79.9,
+    currencyValue: 85.40,
   },
   AUD: {
     name: "aud",
     symbol: "$",
-    currencyValue: 79.9,
+    currencyValue: 1.57,
   },
+  GBP: {
+    name: "pound",
+    symbol: "£",
+    currencyValue: 0.76,
+  },
+  JPY: {
+    name: "yen",
+    symbol: "¥",
+    currencyValue: 144.50,
+  },
+  CAD: {
+    name: "canadian dollar",
+    symbol: "$",
+    currencyValue: 1.36,
+  },
+    NGN: {
+      name: "nigerian naira",
+      symbol: "₦",
+      currencyValue: 1603.58 ,
+    }
 };

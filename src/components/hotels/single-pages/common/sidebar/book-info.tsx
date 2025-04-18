@@ -15,26 +15,56 @@ const BookInfo: FC = () => {
     <div className="single-sidebar">
       <div className="selection-section">
         <div className="overlay-map">
-          <img src="/assets/images/map-image.svg" className="img-fluid" alt="" />
+          <img
+            src="/assets/images/map-image.svg"
+            className="img-fluid"
+            alt=""
+          />
           <iframe src={mapId} style={{ border: "0" }}></iframe>
           <h6>{Viewonmap}</h6>
         </div>
         <div className="price-part">
           <div className="left-part">
-            <a href="#">{DeluxeRate}</a>
-            <span className="mt-2">
-              <i className="fas fa-check"></i> Room only
-            </span>
+            <a href="#">Basic Rate</a>
+
             <span>
               <i className="fas fa-check"></i> non refundable
             </span>
           </div>
           <div className="right-part">
             <span>per night</span>
-            <p className="mt-0">
-              <del>$251</del>
-            </p>
-            <h6>$230</h6>
+
+            <h6>$65</h6>
+          </div>
+        </div>
+        <hr/>
+        <div className="price-part">
+          <div className="left-part">
+            <a href="#">Premium Rate</a>
+
+            <span>
+              <i className="fas fa-check"></i> non refundable
+            </span>
+          </div>
+          <div className="right-part">
+            <span>per night</span>
+
+            <h6>$90</h6>
+          </div>
+        </div>
+        <hr/>
+        <div className="price-part">
+          <div className="left-part">
+            <a href="#">Elite Rate</a>
+
+            <span>
+              <i className="fas fa-check"></i> non refundable
+            </span>
+          </div>
+          <div className="right-part">
+            <span>per night</span>
+
+            <h6>$115</h6>
           </div>
         </div>
         <div className="book-btn-section single-page-classic">
@@ -45,7 +75,12 @@ const BookInfo: FC = () => {
             <DatePickerComponent start={startDate1} setStart={setStartDate1} />
           </div>
           <div className="rooms-section">
-            <input type="text" className="form-control open-select" placeholder="rooms & guests" onClick={() => setShow(!show)} />
+            <input
+              type="text"
+              className="form-control open-select"
+              placeholder="rooms & guests"
+              onClick={() => setShow(!show)}
+            />
             <div className={`selector-box ${show ? "show" : ""}`}>
               <QtyBox />
               <div className="bottom-part">
@@ -61,15 +96,19 @@ const BookInfo: FC = () => {
           </div>
           <div className="selector">
             <select>
-              <option value="" disabled >
+              <option value="" disabled>
                 Room Type
               </option>
-              <option value="saab">Deluxe Room</option>
-              <option value="audi">Suite</option>
-              <option value="opel">Royal room</option>
+              <option value="saab">Basic Rate</option>
+              <option value="audi">Premium Rate</option>
+              <option value="opel">Elite Rate</option>
             </select>
           </div>
-          <Link href="/hotel/booking/booking-page"><button className="btn btn-rounded btn-sm color1">{BookThisNow}</button></Link>
+          <Link href="/hotel/booking/booking-page">
+            <button className="btn btn-rounded btn-sm color1">
+              {BookThisNow}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

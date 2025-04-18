@@ -7,14 +7,14 @@ const ContactInfo: FC = () => {
       <h6 className="contact-title">contact info</h6>
       <p className="address">
         {" "}
-        <i className="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <i className="fas fa-map-marker-alt"></i> Mbora, Idu, Abuja
       </p>
       <p>
-        <i className="fas fa-phone-alt"></i> 123 254 121
+        <i className="fas fa-phone-alt"></i> +234 903 550 1254
       </p>
       <a href="#">
         <p>
-          <i className="fas fa-envelope"></i> Contact@seaview.com
+          <i className="fas fa-envelope"></i> eliteescapeluxuryhomes@gmail.com
         </p>
       </a>
       <div className="social-box">
@@ -29,8 +29,8 @@ const ContactInfo: FC = () => {
         </ul>
       </div>
       <div className="bottom_sec">
-        <h6>check-in : 2:00 PM</h6>
-        <h6>check-out : 12:00 PM</h6>
+        <h6>check-in : 7:00 AM</h6>
+        <h6>check-out : 9:00 AM</h6>
       </div>
     </div>
   );
