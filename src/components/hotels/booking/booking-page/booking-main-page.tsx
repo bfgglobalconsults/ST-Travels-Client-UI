@@ -3,13 +3,17 @@ import { FC } from "react";
 import TravelInfo from "./travel-info";
 import Summary from "@/components/common/booking-page/booking-summary";
 
-const Booking: FC = () => {
+interface BookingProps {
+  amount: number;
+}
+
+const Booking: FC<BookingProps> = ({amount}) => {
   return (
     <section className="section-b-space bg-inner animated-section">
       <RestaurantAnimation />
       <div className="container">
         <div className="row">
-          <TravelInfo />
+          <TravelInfo amount={amount} />
           {/* <Summary /> */}
         </div>
       </div>

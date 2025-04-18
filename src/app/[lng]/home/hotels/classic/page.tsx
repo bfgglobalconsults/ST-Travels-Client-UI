@@ -14,18 +14,20 @@ import CustomLayout from "@/layouts/layout";
 import ServicesComponent from "@/components/home/hotels/classic/services";
 import SearchHotel from "@/components/home/hotels/classic/SearchHotel";
 import Blog from "@/components/home/flight/modern/blog";
+import TopDealsComponent from "@/components/home/hotels/minimal/top-deals";
 
 const Classic: React.FC = () => {
   return (
     <>
       <CustomLayout title="bg-white" userBgClass="user rounded5">
         <HomeBanner />
-        <SearchHotel/>
+        {/* <SearchHotel/> */}
         <AboutComponent />
         <RoomSuits />
         <Gallery />
         <SpecialRoomsComponent />
         <Video />
+        <TopDealsComponent />
         <ServicesComponent />
         <SubscribeComponent />
         <Reviews />

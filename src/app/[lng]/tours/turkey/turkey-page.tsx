@@ -39,10 +39,10 @@ const TurkeyMainPage: FC = () => {
           <div className="col-12 booking-bottom-section">
             <div className="row">
               <div>
-                <PayPalCheckout baseAmount={1599} />
+                {/* <PayPalCheckout baseAmount={1599} /> */}
               </div>
               <div className="col-md-12">
-                <Booking />
+                <Booking amount={1599} />
               </div>
             </div>
           </div>

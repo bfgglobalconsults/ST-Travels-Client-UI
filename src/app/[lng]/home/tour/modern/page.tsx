@@ -22,7 +22,7 @@ const Modern: FC = () => {
       footerPlace={true}
     >
       <HomeBanner />
-      <BookingTable />
+      {/* <BookingTable /> */}
       <NewOffers />
       <Video />
       <Package />

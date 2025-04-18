@@ -39,10 +39,10 @@ const NairobiMainPage: FC = () => {
           <div className="col-12 booking-bottom-section">
             <div className="row">
               <div>
-                <PayPalCheckout baseAmount={30} />
+                {/* <PayPalCheckout baseAmount={30} /> */}
               </div>
               <div className="col-md-12">
-                <Booking />
+                <Booking amount={999} />
               </div>
             </div>
           </div>

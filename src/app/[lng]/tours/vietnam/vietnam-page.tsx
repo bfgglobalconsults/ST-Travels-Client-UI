@@ -41,10 +41,10 @@ const VietnamMainPage: FC = () => {
           <div className="col-12 booking-bottom-section">
             <div className="row">
               <div>
-                <PayPalCheckout baseAmount={1099} />
+                {/* <PayPalCheckout baseAmount={1099} /> */}
               </div>
               <div className="col-md-12">
-                <Booking />
+                <Booking amount={1099} />
               </div>
             </div>
           </div>

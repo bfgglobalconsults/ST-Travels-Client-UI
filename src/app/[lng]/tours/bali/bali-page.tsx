@@ -48,10 +48,10 @@ const BaliMainPage: FC = () => {
             <div className="row">
               <div className="">
                 {/* 800 */}
-                <PayPalCheckout baseAmount={20}  />
+                {/* <PayPalCheckout baseAmount={800}  /> */}
               </div>
               <div className="col-md-12">
-                <Booking />
+                <Booking amount={800} />
               </div>
              
             </div>
