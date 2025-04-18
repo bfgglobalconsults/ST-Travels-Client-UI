@@ -47,7 +47,8 @@ const BaliMainPage: FC = () => {
           <div className="col-12 booking-bottom-section">
             <div className="row">
               <div className="">
-                <PayPalCheckout baseAmount={800}  />
+                {/* 800 */}
+                <PayPalCheckout baseAmount={20}  />
               </div>
               <div className="col-md-12">
                 <Booking />

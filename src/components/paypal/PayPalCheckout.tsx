@@ -203,22 +203,26 @@ const PayPalCheckout = ({ baseAmount }: PayPalCheckoutProps) => {
   }, [totalAmount, payPalClientId, quantity]); // Include quantity in the dependency array
 
   return (
-    <div className="checkout">
-      <label>
-        Quantity:
-        <input
-          type="number"
-          min="1"
-          value={quantity}
-          onChange={(e) => {
-            const value = parseInt(e.target.value);
-            setQuantity(value > 0 ? value : 1); // Ensure quantity is always at least 1
-          }}
-        />
-      </label>
-      <p>Total: ${totalAmount}</p>
-      {isScriptLoaded ? <div ref={paypalRef} /> : <p>Loading PayPal...</p>}
-    </div>
+    <>
+      <div className="checkout">
+        <div className="display-7 fw-bold mb-4">Secure Payment</div>
+        <label className="d-flex flex-column gap-2">
+          <span className="fs-5 fw-medium">Select Quantity:</span>
+          <input
+            className="w-25" // Added Bootstrap width utility class
+            type="number"
+            min="1"
+            value={quantity}
+            onChange={(e) => {
+              const value = parseInt(e.target.value);
+              setQuantity(value > 0 ? value : 1); // Ensure quantity is always at least 1
+            }}
+          />
+        </label>
+        <p>Total: ${totalAmount}</p>
+        {isScriptLoaded ? <div ref={paypalRef} /> : <p>Loading PayPal...</p>}
+      </div>
+    </>
   );
 };
 
