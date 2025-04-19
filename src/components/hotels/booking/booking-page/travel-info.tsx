@@ -222,9 +222,9 @@ const [formData, setFormData] = useState({
             <button
               type="submit"
               className="btn btn-lower btn-curvy my-4"
-              disabled={!isVerified}
+              disabled={!isVerified || isSubmitting}
             >
-              Submit
+              {isSubmitting ? "Loading..." : "Submit"}
             </button>
           </div>
         </form>

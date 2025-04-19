@@ -206,6 +206,9 @@ const PayPalCheckout = ({ baseAmount }: PayPalCheckoutProps) => {
     <>
       <div className="checkout">
         <div className="display-7 fw-bold mb-4">Secure Payment</div>
+        <p className="text-muted mb-4">
+          Please select the quantity of items you'd like to purchase, then proceed with PayPal checkout for secure payment processing. Your total will be calculated automatically based on your selection.
+        </p>
         <label className="d-flex flex-column gap-2">
           <span className="fs-5 fw-medium">Select Quantity:</span>
           <input
