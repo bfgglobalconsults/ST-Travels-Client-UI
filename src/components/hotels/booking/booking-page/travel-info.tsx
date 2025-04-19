@@ -12,10 +12,10 @@ import toast from "react-hot-toast";
 import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 
 interface TravelInfoProps {
-  amount: number;
+  amount?: number;
 }
 
-const TravelInfo: FC<TravelInfoProps> = ({amount}) => {
+const TravelInfo: FC<TravelInfoProps> = ({amount = 0}) => {
     const recaptchaRef = useRef<ReCAPTCHA>(null);
   const { push } = useRouter();
   const { i18LangStatus } = useSelector((state: RootState) => state.language);

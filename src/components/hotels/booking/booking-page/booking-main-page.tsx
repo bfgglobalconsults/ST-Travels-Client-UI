@@ -4,10 +4,10 @@ import TravelInfo from "./travel-info";
 import Summary from "@/components/common/booking-page/booking-summary";
 
 interface BookingProps {
-  amount: number;
+  amount?: number;
 }
 
-const Booking: FC<BookingProps> = ({amount}) => {
+const Booking: FC<BookingProps> = ({amount = 0}) => {
   return (
     <section className="section-b-space bg-inner animated-section">
       <RestaurantAnimation />
