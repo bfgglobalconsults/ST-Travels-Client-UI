@@ -1,6 +1,8 @@
 interface IButtonProps {
   btnClass: string | undefined;
   name: string | undefined;
+  onClick?: () => void;
+  type?: string;
 }
 
 const Button: React.FC<IButtonProps> = ({ btnClass, name }) => {
