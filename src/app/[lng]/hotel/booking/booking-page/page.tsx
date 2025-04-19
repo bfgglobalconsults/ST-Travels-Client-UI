@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/common/breadcrumb/page";
 import CustomLayout from "@/layouts/layout";
 import Booking from "@/components/hotels/booking/booking-page/booking-main-page";
 
+
+
 const BookingPage: FC = () => {
   return (
     <CustomLayout title="inner-page" userBgClass="user user-light">

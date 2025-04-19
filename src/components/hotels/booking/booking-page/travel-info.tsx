@@ -9,8 +9,13 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import toast from "react-hot-toast";
+import PayPalCheckout from "@/components/paypal/PayPalCheckout";
 
-const TravelInfo: FC = () => {
+interface TravelInfoProps {
+  amount?: number;
+}
+
+const TravelInfo: FC<TravelInfoProps> = ({amount = 0}) => {
     const recaptchaRef = useRef<ReCAPTCHA>(null);
   const { push } = useRouter();
   const { i18LangStatus } = useSelector((state: RootState) => state.language);
@@ -18,6 +23,7 @@ const TravelInfo: FC = () => {
     push(`${i18LangStatus}/hotel/booking/checkout`);
   };
     const [isVerified, setIsVerified] = useState(false);
+      const [showPayPal, setShowPayPal] = useState(false);
 
 const [formData, setFormData] = useState({
   firstName: "",
@@ -83,13 +89,15 @@ const [formData, setFormData] = useState({
       });
       setFormData({
         firstName: "",
-        lastName: "",
+      lastName: "",
         email: "",
         mobileNo: "",
         destination: "",
         specialRequest: "",
         promoCode: "",
       });
+            setShowPayPal(true);  
+
     } else if (state.errors && !isSubmitting) {
       const errorMessage = Array.isArray(state.errors)
         ? state.errors.map((error) => error.message).join(", ")
@@ -103,6 +111,7 @@ const [formData, setFormData] = useState({
   }, [state.succeeded, state.errors, isSubmitting]);
   return (
     <div className="col-lg-7">
+      {!showPayPal ? (
       <div className="guest-detail">
         <h2>{TravellerInformation}</h2>
         <form onSubmit={onSubmit}>
@@ -219,7 +228,10 @@ const [formData, setFormData] = useState({
             </button>
           </div>
         </form>
-      </div>
+      </div>):(
+                <PayPalCheckout baseAmount={amount}  />
+
+      )}
     </div>
   );
 };
