@@ -337,7 +337,7 @@ export const topDealsData = [
     title: "Living Room",
     location: "Idu,Abuja",
     price: 145,
-    discount: 115,
+    discount: 130,
   },
   {
     id: 2,
@@ -345,7 +345,7 @@ export const topDealsData = [
     title: "Outdoor Area",
     location: "Idu,Abuja",
     price: 145,
-    discount: 115,
+    discount: 130,
   },
   {
     id: 3,
@@ -353,7 +353,7 @@ export const topDealsData = [
     title: "Kitchen",
     location: "Idu,Abuja",
     price: 145,
-    discount: 115,
+    discount: 130,
   },
   {
     id: 4,
@@ -361,7 +361,7 @@ export const topDealsData = [
     title: "Bedroom",
     location: "Idu,Abuja",
     price: 145,
-    discount: 115,
+    discount: 130,
   },
 ];
 

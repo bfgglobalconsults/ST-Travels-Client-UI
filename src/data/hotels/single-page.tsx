@@ -55,17 +55,17 @@ export const imagesection3 = [
   {
     id: 1,
     img: "/assets/images/hotel/room/13.jpeg",
-    title: "poll images",
+    title: "relax area images",
   },
   {
     id: 2,
     img: "/assets/images/hotel/room/14.jpeg",
-    title: "poll images",
+    title: "relax area images",
   },
   {
     id: 3,
     img: "/assets/images/hotel/room/15.jpeg",
-    title: "poll images",
+    title: "relax area images",
   },
 ];
 
@@ -127,8 +127,8 @@ export const roomData = [
         name: "non refundable",
       },
     ],
-    discount:85,
-    price: 65,
+    discount:95,
+    price: 80,
   },
   {
     id: 2,
@@ -163,8 +163,8 @@ export const roomData = [
         name: "free cancellation",
       },
     ],
-    discount: 105,
-    price: 90,
+    discount: 125,
+    price: 105,
   },
   {
     id: 3,
@@ -203,8 +203,8 @@ export const roomData = [
         name: "Dinner & lunch",
       },
     ],
-    discount: 130,
-    price: 115,
+    discount: 140,
+    price: 130,
   },
 ];
 

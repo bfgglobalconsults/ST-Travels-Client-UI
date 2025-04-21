@@ -30,9 +30,9 @@ const HotelBannerDetail: FC = () => {
       </div>
       <div className="right-part">
         <h2 className="price">
-          $115 <span>/ per night</span>
+          $130 <span>/ per night</span>
         </h2>
-        <Link href="/hotel/booking/booking-page">
+        <Link href="/en/shortlet/booking/booking-page">
           <Button
             btnClass="btn btn-rounded btn-sm color1"
             name="book this now"
