@@ -13,7 +13,7 @@ const Rooms: FC<IRoomProps> = ({ tab }) => {
     const router = useRouter();
 
     const handleSubmit = () => {
-          router.push("/hotel/booking/booking-page");
+          router.push("/en/shortlet/booking/booking-page");
 
     }
 
@@ -79,12 +79,12 @@ const Rooms: FC<IRoomProps> = ({ tab }) => {
                         <span>per night</span>
                         {/* <Link href="/hotel/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name={BookNow} /></Link> */}
                        
-                          <Button
+                          {/* <Button
                             onClick={handleSubmit}
                             type="submit"
                             btnClass="btn btn-rounded btn-sm color1"
                             name={BookNow}
-                          />
+                          /> */}
                       </div>
                     </div>
                   </td>

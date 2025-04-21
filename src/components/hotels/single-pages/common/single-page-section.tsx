@@ -12,6 +12,7 @@ import { imagesection1, imagesection2, imagesection3 } from "@/data/hotels/singl
 
 import Description from "../classic/sticky-description-section/description";
 import ImageSection from "@/components/common/image-section/image-section";
+import HotelBookInfo from "./sidebar/hotel-book-info";
 
 const SinglePageSection: FC<ISinglePageSectionProps> = ({ detail, side, tab, thumbnail }) => {
   return (
@@ -27,7 +28,7 @@ const SinglePageSection: FC<ISinglePageSectionProps> = ({ detail, side, tab, thu
           </div>
           <div className={`col-xl-3 col-lg-4 ${side === "right" ? "order-1" : ""}`} id="booking">
             <div className="sticky-cls">
-              <BookInfo />
+              <HotelBookInfo />
               <ContactInfo />
               {/* <WeatherInfo /> */}
             </div>

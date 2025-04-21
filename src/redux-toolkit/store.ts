@@ -12,6 +12,7 @@ import hotelReducer from "./hotel-api";
 import tourReducer from "./tour-api";
 import flightReducer from "./flight-api";
 import flightData from "./reducers/flight-data";
+import hotelData from "./reducers/hotel-data";
 import cabReducer from "./cab-api";
 import restaurantReducer from "./restaurant-api";
 import bookingSlice from "./reducers/bookingSlice";
@@ -30,6 +31,7 @@ export const store = configureStore({
     tour: tourReducer,
     flight: flightReducer,
     flightData,
+    hotelData,
     cab: cabReducer,
     restaurant: restaurantReducer,
     booking: bookingSlice
