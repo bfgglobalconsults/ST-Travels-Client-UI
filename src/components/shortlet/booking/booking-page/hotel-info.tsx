@@ -244,7 +244,7 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                 value={price}
                 onChange={(e) => handlePrice(Number(e.target.value))}
               >
-                <option value={75}>Basic Rate ($75)</option>
+                <option value={90}>Basic Rate ($90)</option>
                 <option value={100}>Premium Rate ($100)</option>
                 <option value={125}>Elite Rate ($125)</option>
               </select>
