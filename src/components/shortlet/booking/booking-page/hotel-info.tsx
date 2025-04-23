@@ -69,69 +69,57 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
     return "";
   };
 
-  //   const { i18LangStatus } = useSelector((state: RootState) => state.language);
-  //   const payBtn = () => {
-  //     push(`${i18LangStatus}/hotel/booking/checkout`);
-  //   };
   const [amounts, setAmounts] = useState(0);
-  const [isVerified, setIsVerified] = useState(false);
+  // Remove custom reCAPTCHA state since we'll rely on Formspree's built-in handling
   const [showPayPal, setShowPayPal] = useState(false);
-
-  // const [formData, setFormData] = useState({
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   mobileNo: "",
-  //   destination: "",
-  //   specialRequest: "",
-  //   promoCode: "",
-  // });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Make sure to use the correct form ID from Formspree
   const [state, handleSubmit] = useForm("mjkwbran");
 
-  // const handleInputChange = (
-  //   event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  // ) => {
-  //   const { name, value } = event.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     [name]: value,
-  //   }));
-  // };
-
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     setIsSubmitting(true);
-    handleSubmit(event).then(() => {
-      setIsSubmitting(false);
-    });
-  };
 
-  async function handleCaptchaSubmission(token: string | null) {
-    try {
-      if (token) {
-        await fetch("/api/recaptcha", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ token }),
-        });
-        setIsVerified(true);
-      }
-    } catch (e) {
-      setIsVerified(false);
+    // Get form data to send to Formspree
+    const formData = new FormData(event.currentTarget);
+
+    // Add calculated amount to form data
+    formData.append("calculatedAmount", amounts.toString());
+
+    // Add check-in and check-out dates in a readable format
+    if (startDate) {
+      formData.append("checkInDate", new Date(startDate).toLocaleDateString());
     }
-  }
+    if (returnDate) {
+      formData.append(
+        "checkOutDate",
+        new Date(returnDate).toLocaleDateString()
+      );
+    }
 
-  const handleChange = (token: string | null) => {
-    handleCaptchaSubmission(token);
+    try {
+      // Submit the form
+      await handleSubmit(event);
+
+      // Check if there were any errors
+      if (state.errors) {
+        throw new Error("Form submission failed");
+      }
+
+      setIsSubmitting(false);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setIsSubmitting(false);
+
+      toast.error("There was an error submitting the form. Please try again.", {
+        duration: 7000,
+        position: "top-right",
+      });
+    }
   };
 
-  function handleExpired() {
-    setIsVerified(false);
-  }
+  // Remove the custom reCAPTCHA handling functions since we'll rely on Formspree's built-in handling
 
   useEffect(() => {
     if (state.succeeded && !isSubmitting) {
@@ -139,15 +127,6 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
         duration: 7000,
         position: "top-right",
       });
-      // setFormData({
-      //   firstName: "",
-      //   lastName: "",
-      //   email: "",
-      //   mobileNo: "",
-      //   destination: "",
-      //   specialRequest: "",
-      //   promoCode: "",
-      // });
       setShowPayPal(true);
     } else if (state.errors && !isSubmitting) {
       const errorMessage = Array.isArray(state.errors)
@@ -160,6 +139,36 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
       });
     }
   }, [state.succeeded, state.errors, isSubmitting]);
+
+  useEffect(() => {
+    // Calculate the amount whenever price, startDate, or returnDate changes
+    if (startDate && returnDate && price) {
+      const days = Math.max(
+        1,
+        Math.ceil(
+          (new Date(returnDate).getTime() - new Date(startDate).getTime()) /
+            (1000 * 60 * 60 * 24)
+        )
+      );
+      const calculatedAmount = days * Number(price);
+      setAmounts(calculatedAmount);
+    }
+  }, [price, startDate, returnDate]);
+
+  // Calculate total amount for display
+  const totalAmount =
+    startDate && returnDate && price
+      ? (
+          Math.max(
+            1,
+            Math.ceil(
+              (new Date(returnDate).getTime() - new Date(startDate).getTime()) /
+                (1000 * 60 * 60 * 24)
+            )
+          ) * Number(price)
+        ).toFixed(2)
+      : "0.00";
+
   return (
     <div className="col-lg-7">
       {!showPayPal ? (
@@ -202,6 +211,11 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                 placeholder="Enter email"
                 required
               />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
               <small id="emailHelp" className="form-text text-muted">
                 Booking confirmation will be sent to this email ID.
               </small>
@@ -215,6 +229,11 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                 className="form-control"
                 required
               />
+              <ValidationError
+                prefix="Phone"
+                field="mobileNo"
+                errors={state.errors}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="price">Price Range</label>
@@ -225,7 +244,7 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                 value={price}
                 onChange={(e) => handlePrice(Number(e.target.value))}
               >
-                <option value={75}>Basic Rate ($75)</option>
+                <option value={90}>Basic Rate ($90)</option>
                 <option value={100}>Premium Rate ($100)</option>
                 <option value={125}>Elite Rate ($125)</option>
               </select>
@@ -254,6 +273,7 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                   name="startDate"
                   value={startDate ? formatDate(startDate) : ""}
                   onChange={handleStartDateChange}
+                  required
                 />
               </div>
               <div className="form-group col-md-6">
@@ -265,46 +285,20 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                   name="returnDate"
                   value={returnDate ? formatDate(returnDate) : ""}
                   onChange={handleReturnDateChange}
+                  required
                 />
               </div>
-                <div className="form-group col-12 mt-3">
+              <div className="form-group col-12 mt-3">
                 <label htmlFor="total">Total Amount</label>
                 <input
                   type="text"
                   className="form-control"
                   id="total"
                   name="total"
-                  value={
-                  startDate && returnDate
-                    ? `$${(
-                      Math.max(
-                      1,
-                      Math.ceil(
-                        (new Date(returnDate).getTime() -
-                        new Date(startDate).getTime()) /
-                        (1000 * 60 * 60 * 24)
-                      )
-                      ) * Number(price)
-                    ).toFixed(2)}`
-                    : "$0.00"
-                  }
-                  onChange={(e) => {
-                  const calculatedAmount =
-                    startDate && returnDate
-                    ? Math.max(
-                      1,
-                      Math.ceil(
-                        (new Date(returnDate).getTime() -
-                        new Date(startDate).getTime()) /
-                        (1000 * 60 * 60 * 24)
-                      )
-                      ) * Number(price)
-                    : 0;
-                  setAmounts(calculatedAmount);
-                  }}
+                  value={`$${totalAmount}`}
                   readOnly
                 />
-                </div>
+              </div>
             </div>
             <div className="form-group">
               <label htmlFor="specialRequest">{SpecialRequest}</label>
@@ -330,17 +324,13 @@ const HotelInfo: FC<HotelInfoProps> = ({ amount = 0 }) => {
                 </div>
               </div>
             </div>
-            <ReCAPTCHA
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
-              ref={recaptchaRef}
-              onChange={handleChange}
-              onExpired={handleExpired}
-            />
+            {/* Remove the custom ReCAPTCHA component */}
+            <ValidationError errors={state.errors} />
             <div className="submit-btn">
               <button
                 type="submit"
                 className="btn btn-lower btn-curvy my-4"
-                disabled={!isVerified || isSubmitting}
+                disabled={isSubmitting}
               >
                 {isSubmitting ? "Loading..." : "Submit"}
               </button>
