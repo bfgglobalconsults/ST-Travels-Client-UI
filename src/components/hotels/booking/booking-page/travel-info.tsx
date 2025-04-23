@@ -212,17 +212,17 @@ const [formData, setFormData] = useState({
               </div>
             </div>
           </div>
-          <ReCAPTCHA
+          {/* <ReCAPTCHA
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
             ref={recaptchaRef}
             onChange={handleChange}
             onExpired={handleExpired}
-          />
+          /> */}
           <div className="submit-btn">
             <button
               type="submit"
               className="btn btn-lower btn-curvy my-4"
-              disabled={!isVerified || isSubmitting}
+              disabled={isSubmitting}
             >
               {isSubmitting ? "Loading..." : "Submit"}
             </button>

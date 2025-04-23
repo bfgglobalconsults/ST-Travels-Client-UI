@@ -221,20 +221,20 @@ const VisaBanner = () => {
                           </div>
                         </div>
                         <div className="dialog-footer">
-                          <ReCAPTCHA
+                          {/* <ReCAPTCHA
                             sitekey={
                               process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""
                             }
                             ref={recaptchaRef}
                             onChange={handleChange}
                             onExpired={handleExpired}
-                          />
+                          /> */}
                           <button
                             type="submit"
                             className="btn btn-lower btn-curvy my-4"
-                            disabled={!isVerified}
+                            disabled={isSubmitting}
                           >
-                            Submit
+                            {isSubmitting ? "Loading..." : "Submit"}
                           </button>
                         </div>
                       </form>
